@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--MultiWiiWinGUI, Version 2.3.5127.41688-->
+<!--GUI Settings-->
+<!--Do not change this file manually, unless you know what are you doing-->
+<PARAMETERS>
+    <FCVERSION value="23" />
+    <LOGFOLDER value="C:\Users\jaime\Downloads\cuadricoptero_HK_multiwii\Release\Logs" />
+    <CAPTUREFOLDER value="C:\Users\jaime\Downloads\cuadricoptero_HK_multiwii\Release\Captures" />
+    <SETTINGSFOLDER value="C:\Users\jaime\Downloads\cuadricoptero_HK_multiwii\Release\Settings" />
+    <LOGATCONNECT value="True" />
+    <SERIALPORT value="COM9" />
+    <SERIALSPEED value="115200" />
+    <LOGRAW value="True" />
+    <LOGATT value="True" />
+    <LOGMAG value="True" />
+    <LOGRCC value="True" />
+    <LOGRCX value="True" />
+    <LOGMOT value="True" />
+    <LOGSRV value="False" />
+    <LOGNAV value="True" />
+    <LOGPAR value="True" />
+    <LOGDBG value="True" />
+    <MAPPROVIDER value="1" />
+    <SPEECH_ENABLED value="True" />
+    <CELLCOUNT value="3" />
+    <MAX_WP_NUMBER value="178" />
+    <WP_RADIUS value="100" />
+</PARAMETERS>

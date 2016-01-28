@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!--MultiWiiWinGUI, Version 2.3.5096.25273-->
+<!--MultiWii FC Parameters file-->
+<!--MultiWii FC software revision 2.3-->
+<PARAMETERS>
+    <VERSION value="23" />
+    <PID id="0" name="Roll" p="38" i="30" d="32" />
+    <PID id="1" name="Pitch" p="37" i="30" d="32" />
+    <PID id="2" name="Yaw" p="50" i="45" d="0" />
+    <PID id="3" name="Altitude" p="68" i="23" d="53" />
+    <PID id="4" name="PosHold" p="15" i="10" d="0" />
+    <PID id="5" name="PosHoldRate" p="34" i="14" d="53" />
+    <PID id="6" name="Navigation Rate" p="25" i="33" d="83" />
+    <PID id="7" name="Level" p="79" i="10" d="100" />
+    <PID id="8" name="Mag" p="80" i="80" d="55" />
+    <AUXFUNC id="0" aux1234="6" />
+    <AUXFUNC id="1" aux1234="6" />
+    <AUXFUNC id="2" aux1234="0" />
+    <AUXFUNC id="3" aux1234="48" />
+    <AUXFUNC id="4" aux1234="6" />
+    <AUXFUNC id="5" aux1234="4" />
+    <AUXFUNC id="6" aux1234="0" />
+    <AUXFUNC id="7" aux1234="2048" />
+    <AUXFUNC id="8" aux1234="1024" />
+    <AUXFUNC id="9" aux1234="256" />
+    <AUXFUNC id="10" aux1234="0" />
+    <AUXFUNC id="11" aux1234="0" />
+    <AUXFUNC id="12" aux1234="0" />
+    <AUXFUNC id="13" aux1234="0" />
+    <AUXFUNC id="14" aux1234="0" />
+    <AUXFUNC id="15" aux1234="0" />
+    <AUXFUNC id="16" aux1234="0" />
+    <AUXFUNC id="17" aux1234="0" />
+    <AUXFUNC id="18" aux1234="0" />
+    <AUXFUNC id="19" aux1234="0" />
+    <AUXFUNC id="20" aux1234="0" />
+    <AUXFUNC id="21" aux1234="0" />
+    <AUXFUNC id="22" aux1234="0" />
+    <AUXFUNC id="23" aux1234="0" />
+    <RCRATE value="81" />
+    <RCEXPO value="76" />
+    <THMID value="50" />
+    <THEXPO value="50" />
+    <ROLLPITCHRATE value="0" />
+    <YAWRATE value="0" />
+    <DYNTHRPID value="0" />
+    <POWERTRIGGER value="0" />
+    <VBATSCALE value="0" />
+    <VBATWARN1 value="0" />
+    <VBATWARN2 value="0" />
+    <VBATCRITICAL value="0" />
+    <MINTHROTTLE value="1150" />
+    <FAILSAFETHROTTLE value="0" />
+    <MAGDEC value="40" />
+    <SERVO id="0" min="1020" max="2000" middle="1500" rate="0" />
+    <SERVO id="1" min="1020" max="2000" middle="1500" rate="0" />
+    <SERVO id="2" min="1020" max="2000" middle="1500" rate="0" />
+    <SERVO id="3" min="1020" max="2000" middle="1500" rate="0" />
+    <SERVO id="4" min="1020" max="2000" middle="1500" rate="0" />
+    <SERVO id="5" min="1236" max="1787" middle="1636" rate="1" />
+    <SERVO id="6" min="1020" max="2000" middle="1500" rate="0" />
+    <SERVO id="7" min="1020" max="2000" middle="1500" rate="0" />
+</PARAMETERS>

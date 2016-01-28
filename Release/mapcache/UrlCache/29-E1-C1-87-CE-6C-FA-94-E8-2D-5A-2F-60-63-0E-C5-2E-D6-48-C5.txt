@@ -1,0 +1,1350 @@
+﻿
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml" xmlns:v = "urn:schemas-microsoft-com:vml" xmlns:web = "http://schemas.live.com/Web/" dir = "ltr">
+	
+	<head>
+	<script type="text/javascript" x="FA75D3C5">//<![CDATA[
+var PRF={add:function(){},start:function(){},end:function(){}}//]]></script>
+
+
+		<script type="text/javascript" x="FA75D3C5">//<![CDATA[
+
+			sb_ppCPL=1;
+			window.pageStartTime = new Date();
+			
+			window.minSilverlightVersion = '4.0.50401.0';
+			window.firstLightRedirectUrl = 'http\x3a\x2f\x2fwww.bing.com\x2fmaps\x2fexplore\x2f\x3forg\x3daj\x23';
+			window.firstLightMainUrl = 'http\x3a\x2f\x2fwww.bing.com\x2fmaps\x2fexplore\x2f\x3forg\x3daj';
+			window.firstLightCookiePath = '/maps';
+			window.Bing = window.Bing||{};
+			window.Bing.MapControl = window.Bing.MapControl||{};
+			window.Bing.MapControl.msve_mapContainer_data={
+				enableTasks:true,
+				pushpins:[],
+				startup:function() {Bing.MapControl.msve_mapContainer.ensureDynamic(function(){if (typeof closeDependency != 'undefined') { closeDependency('MapWrapper'); }})}
+				};
+			
+
+
+
+/*<!--This sets up Microsoft.Maps.Globals-->*/
+
+
+window.Bing = window.Bing || {};
+window.Bing.MapControl = window.Bing.MapControl || {};
+
+Bing.MapControl.MapFeatures = {};
+
+
+
+/*<!-- 
+	The semicolon on the next line is load-bearing. When MapConfig is inlined into the bootstrap view, it's
+	emitted adjacent to additional script. Without the semicolon, it's a syntax error.
+-->*/
+(function(){function i(){var r=document.getElementsByTagName("head")[0],u=navigator,f=!r||!n.onloadcallback&&document.readyState!=="complete"||(u.userAgent.indexOf("MSIE")!==-1||u.vendor==="Apple Computer, Inc.")&&document.readyState!=="complete"&&document.body===null,i;f?document.write('<script src="'+t+'" type="text/javascript" ><\/script>'):(i=document.createElement("script"),i.type="text/javascript",i.language="javascript",i.src=t,r.appendChild(i))}var n,t;window.$MapsNamespace=window.$MapsNamespace||"Microsoft",window[$MapsNamespace]=window[$MapsNamespace]||{},window[$MapsNamespace].Maps=window[$MapsNamespace].Maps||{},n={domain:"http://ecn.dev.virtualearth.net/mapcontrol/v7.0",version:"7.0.20150902134620.61",locale:"es-es",tilelocale:"es-es",ishttpsenabled:false,onloadcallback:"BingMapControlLoaded",tilegeneration:4906,tileMetaGeneration:4904,odmtilegeneration:113,zoomOriginWidth:256,defaultTileSize:256,minMercatorZoom:1,maxMercatorZoom:20,maxFPS:60,maxConcurrentTileDownloads:12,disableVenueMaps:false,disableMicroPOI:false,disableDirections:false,disableAnalytics:false,disableSearch:false,disableTasks:false,disableMyPlaces:false,myPlacesUriFormat:"http://www.bing.com/maps/GeoCommunity.aspx",localScoutSupported:false,localScoutServiceUrlFormat:"nearby.ashx?action={action}&location={latitude},{longitude}&filters={filters}&sortby={sortby}",disableStreetside:false,streetsideGlobalMetadataUriFormat:"http://ecn.dev.virtualearth.net/REST/V1/Imagery/BlockView/StreetMetadata/ECN/{0}/{1}/{2}/{3}.js?jsonp={4}&key=AvlNiRQgHx0x9v3UNufLEfme5-g467LK_fbxxteQANuhtNoL6E9Gjhb_-Nl_FCRL",streetsideChunkMetadataUriFormat:"http://ecn.dev.virtualearth.net/REST/V1/Imagery/BlockView/ChunkMetadata/ECN/{0}/{1}/{2}/{3}.js?jsonp={4}&key=AvlNiRQgHx0x9v3UNufLEfme5-g467LK_fbxxteQANuhtNoL6E9Gjhb_-Nl_FCRL",streetsideImageryUriFormat:"http://ecn.t{1}.tiles.virtualearth.net/tiles/bvi{2}?g={0}&ir=ir0&mkt=en-us&n=f",streetsideSingleBlockLookupWithDataUriFormat:"http://dev.virtualearth.net/REST/V1/Imagery/BlockView/BlockLookupWithData/{0}/{1}/{2},{3}/{4}?jsonp={5}&key=AvlNiRQgHx0x9v3UNufLEfme5-g467LK_fbxxteQANuhtNoL6E9Gjhb_-Nl_FCRL",streetsideSingleBlockTokenLookupWithDataUriFormat:"http://dev.virtualearth.net/REST/V1/Imagery/BlockView/BlockLookupWithData/{0}/{1}/{2}?jsonp={3}&key=AvlNiRQgHx0x9v3UNufLEfme5-g467LK_fbxxteQANuhtNoL6E9Gjhb_-Nl_FCRL",streetsideCubeImageryUriFormat:"http://ecn.t{0}.tiles.virtualearth.net/tiles/hs{1}.jpg?g={2}&n=z",streetsideTileGeneration:"4790",streetsideImageReportingUriFormat:"https://support.discoverbing.com/default.aspx?mkt={0}&productkey=bingmapprivacy&ct=eformts&(!)_SessionID=12345678&(!)_PermalinkURL={1}&(!)_Timestamp={2}&(!)_BubbleID={3}&(!)_CoordinatesofPro={4}",streetsidePermalinkUriFormat:"http://www.bing.com/maps/?v=2&cp={0}~{1}&lvl=22&sty=t~pixelOffset~{2}~streetSide~{3}~isPrivacyFocusEnabled~{4}~blockID~{5}",streetside360PrivacyReportUriFormat:"http://www.bing.com/maps/?mkt={0}&sty=x~lat~{1}~lon~{2}~alt~{3}~z~{4}~h~{5}~p~{6}~b~{7}~pid~5082&app=5082",transitTrainLineComBuyTicketsUriFormat:"http://www.thetrainline.com/buytickets/?utm_source=Microsoft&utm_medium=Maps&WT.mc_id={0}",preloadBingTheme:0,venueMapsLandingPageEnabled:true,displayMapAppsPanel:false,isLocalEntityReportAProblemSupported:false,distanceUnitMiles:false,radixPointDecimal:true,searchBoxContainerID:"sb_form",searchBoxID:"sb_form_q",searchBoxSubmitButtonID:"sb_form_go",sessionId:"",credentials:"",autoSuggestContainerID:"sw_as",autoSuggestMaxResults:"5",autoSuggestServiceHostUrl:"{urischeme}platform.bing.com/geo/autosuggest/v1",autoSuggestServiceUrlFormat:"{host_url}?umv={user_map_view}&ul={user_location}&q={query}&reqid={jsonso}&mr={max_results}&cb={callback}",enableAutoSuggestEndpointUrlParam:false,init:function(){var r,u,n,f,t,i;for(this.protocol=this.ishttpsenabled?"https://":"http://",r="onscriptload",this.onloadcallback==="__"+r+"__"&&(this.onloadcallback=null),this.ishttpsenabled?(this.onDemandDomain="t{subdomain}.ssl.ak.dynamic.tiles.virtualearth.net",this.staticDomain="t{subdomain}.ssl.ak.tiles.virtualearth.net",this.venueMapsEroDomain="ssl-api.bing.com"):(this.onDemandDomain="ak.dynamic.t{subdomain}.tiles.virtualearth.net",this.staticDomain="ak.t{subdomain}.tiles.virtualearth.net",this.venueMapsEroDomain="api.bing.net"),u=this.domain+"/"+this.version+"/css/es/",this.cssPath=u,n=this.domain+"/"+this.version+"/i/",f=this.domain+"/"+this.version+"/js/es-es/",this.jsPath=f,this.directionsImagePath=n+"Directions/",this.venueMapsEroServiceAppId="BF17C84531C2B15EBE4BACA0F545AF4040188EFA",t=[["logServiceUriFormat","{urischeme}dev.virtualearth.net/webservices/v1/LoggingService/LoggingService.svc/Log?entry=0&fmt=1&type=3&group=MapControl&name=AJAX&version={version}&mkt={culture}&auth={credentials}&jsonp=microsoftMapsNetworkCallback"],["roadUriFormat","{urischeme}{ondemanddomain}/comp/ch/{quadkey}?mkt={tilemarket}&it=G,L&shading=hill&og={odmgeneration}&n=z&key={key}"],["roadUnlabeledUriFormat","{urischeme}{staticdomain}/tiles/r{quadkey}?g={generation}&mkt={culture}&lbl=l0&stl=h&shading=hill&n=z"],["aerialUriFormat","{urischeme}{staticdomain}/tiles/a{quadkey}.jpeg?g={generation}&n=z"],["aerialWithLabelsUriFormat","{urischeme}{ondemanddomain}/comp/ch/{quadkey}?mkt={tilemarket}&it=A,G,L&shading=hill&og={odmgeneration}&n=z&key={key}"],["enhancedBirdseyeUriFormat","{urischeme}{staticdomain}/tiles/svi{quadkey}?g={generation}&dir={dir}&n=z"],["enhancedBirdseyeWithLabelsUriFormat","{urischeme}{staticdomain}/tiles/cmd/svhybrid?a={quadkey}&g={generation}&dir={dir}&n=z"],["nativeBirdseyeUriFormat","{urischeme}{staticdomain}/tiles/o{quadkey}-{runtimeindex}-{level}-{index}?g={generation}"],["nativeBirdseyeWithLabelsUriFormat","{urischeme}{staticdomain}/tiles/cmd/ObliqueHybrid?a={quadkey}-{runtimeindex}-{level}-{index}&g={generation}"],["fbUriFormat","{urischeme}{staticdomain}/tiles/r{quadkey}?g={generation}&mkt={culture}&lbl=l1&stl=fb&shading=hill&n=z&key=AkF0mEyG789RQA6CcLimWZMzrDNF6MNSwRJOmNWb9gK_JGiwOBeMoQUoY1MFqksg"],["fbUnlabeledUriFormat","{urischeme}{staticdomain}/tiles/r{quadkey}?g={generation}&mkt={culture}&lbl=l0&stl=fb&shading=hill&n=z&key=AkF0mEyG789RQA6CcLimWZMzrDNF6MNSwRJOmNWb9gK_JGiwOBeMoQUoY1MFqksg"],["weatherLightUriFormat","{urischeme}ecn.dynamic.t{subdomain}.tiles.virtualearth.net/comp/ch/{quadkey}?mkt={culture}&it=GB&cstl=WL&og={odmgeneration}&n=z"],["weatherDarkUriFormat","{urischeme}ecn.dynamic.t{subdomain}.tiles.virtualearth.net/comp/ch/{quadkey}?mkt={culture}&it=GB&cstl=WD&og={odmgeneration}&n=z"],["weatherLightLabelUriFormat","{urischeme}ecn.dynamic.t{subdomain}.tiles.virtualearth.net/comp/ch/{quadkey}?mkt={culture}&it=Z,GF,L&cstl=WL&og={odmgeneration}&n=z"],["weatherDarkLabelUriFormat","{urischeme}ecn.dynamic.t{subdomain}.tiles.virtualearth.net/comp/ch/{quadkey}?mkt={culture}&it=Z,GF,L&cstl=WD&og={odmgeneration}&n=z"],["bingMapsRESTServicesUrl","{urischeme}dev.virtualearth.net/REST/v1/Locations"],["imageryMetadataUrl","{urischeme}dev.virtualearth.net/REST/V1/Imagery/Metadata/{imagerySet}?jsonp=microsoftMapsNetworkCallback&jsonso={jsono}&key={credentials}&centerPoint=47.6,-122.2&zoomLevel=1&include=ImageryProviders&culture={culture}"],["elevationServiceUrl","{urischeme}dev.virtualearth.net/REST/v1/Elevation/BoundingRect/{south},{west},{north},{east}/{rows}/{cols}?jsonp=microsoftMapsNetworkCallback&jsonso={jsono}&key={credentials}"],["nativeBirdseyeMetadataUrl","{urischeme}dev.virtualearth.net/REST/V1/Imagery/Metadata/Birdseye/{centerpoint}?jsonp=microsoftMapsNetworkCallback&jsonso={jsono}&key={credentials}&zl={zoom}&dir={heading}&dl=2"],["venueMapsMetadataJsonpUrl","default={urischeme}dev.virtualearth.net/REST/v1/JsonFilter/VenueMaps/data/{0}?culture={culture}&key={credentials};prod={urischeme}dev.virtualearth.net/REST/v1/JsonFilter/VenueMaps/data/{0}?culture={culture}&key={credentials};dev={urischeme}dev.virtualearth.net/REST/v1/JsonFilter/VenueMapsDev/data/{0}?culture={culture}&key={credentials};staging={urischeme}dev.virtualearth.net/REST/v1/JsonFilter/VenueMapsStaging/data/{0}?culture={culture}&key={credentials};venuemaps1={urischeme}dev.virtualearth.net/REST/v1/JsonFilter/VenueMaps1/data/{0}?culture={culture}&key={credentials};venuemaps2={urischeme}dev.virtualearth.net/REST/v1/JsonFilter/VenueMaps1/data/{0}?culture={culture}&key={credentials}"],["venueMapsTileUrl","default={urischeme}{ondemanddomain}/comp/ch/{{quadkey}}?mkt={culture}&it=Z,VF&og={odmgeneration}&vid={0}&vlv={1}&n=z;prod={urischeme}venuemaps.virtualearth.net/{0}/{1}/{{quadkey}}.png;dev={urischeme}venuemapsdev.blob.core.windows.net/{0}/{1}/{{quadkey}}.png;staging={urischeme}venuemapsstaging.blob.core.windows.net/{0}/{1}/{{quadkey}}.png;venuemaps1={urischeme}venuemaps1.blob.core.windows.net/{0}/{1}/{{quadkey}}.png;venuemaps2={urischeme}venuemaps2.blob.core.windows.net/{0}/{1}/{{quadkey}}.png"],["venueMapsNearbyUrl","{urischeme}dev.virtualearth.net/REST/v1/VenueMaps/PointRadius/{location}/{radius}?jsonp=microsoftMapsNetworkCallback&jsonso={jsono}&output=json&key={credentials}"],["venueMapsEroServiceUrl","{urischeme}{venueMapsEroDomain}/json.aspx?AppId={appid}&Query={query}&Sources=Phonebook&Version=2.0&Market=en-us&UILanguage=en&Latitude={latitude}&Longitude={longitude}&Radius=10.0&Options=EnableHighlighting&Phonebook.Count=1&Phonebook.Offset=0&Phonebook.FileType=YP&Phonebook.SortBy=Distance&JsonType=callback&JsonCallback={jsonp}&Phonebook.LocId={ypid}"],["hotRegionsRoadUrl","{urischeme}{ondemanddomain}/comp/ch/{quadkey}.json?mkt={culture}&it=G,VE,BX,L,LA&shading=hill&jsonp={jsonp}&jsonso={jsonso}&og={odmgeneration}"],["hotRegionsAerialWithLabelsUrl","{urischeme}{ondemanddomain}/comp/ch/{quadkey}.json?mkt={culture}&it=A,G,L,LA&shading=hill&jsonp={jsonp}&jsonso={jsonso}&og={odmgeneration}"],["onDemandRoadUriFormat","{urischeme}{ondemanddomain}/comp/ch/{quadkey}?mkt={culture}&it=G,VE,BX,L,LA&shading=hill&og={odmgeneration}&n=z"],["onDemandAerialWithLabelsUriFormat","{urischeme}{ondemanddomain}/comp/ch/{quadkey}?mkt={culture}&it=A,G,L,LA&shading=hill&og={odmgeneration}&n=z"],["onDemandAerialUriFormat","{urischeme}{ondemanddomain}/comp/ch/{quadkey}?&it=A&shading=hill&og={odmgeneration}&n=z"],["microPOIHotRegionsUrl","{urischeme}{ondemanddomain}/mpoi/MicroPoi/{quadkey}.json?q={query}&filter={filter}&jsonp={jsonp}&jsonso={jsonso}&output=json"],["microPOITilesUrl","{urischeme}{ondemanddomain}/mpoi/MicroPoi/{quadkey}?q={query}&filter={filter}"],["streetsideCoverageMercatorUriFormat","{urischeme}ecn.t{subdomain}.tiles.virtualearth.net/tiles/hcn{quadkey}?g={generation}&n=z"],["streetsideCoverageBirdseyeUriFormat","{urischeme}ecn.t{subdomain}.tiles.virtualearth.net/tiles/hcs{quadkey}?g={generation}&dir={dir}&n=z"],["trafficUriFormat","{urischeme}t{subdomain}-traffic.tiles.virtualearth.net/comp/ch/{quadkey}?it=Z,TF&n=z&key={key}"],["imageryCopyrightUrl","{urischeme}dev.virtualearth.net/REST/V1/Imagery/Copyright/{culture}/{imagerySet}/{zoom}/{minLat}/{minLon}/{maxLat}/{maxLon}?output=json&dir={heading}&jsonp=microsoftMapsNetworkCallback&jsonso={jsono}&key={credentials}"],["directionsService","{urischeme}dev.virtualearth.net/mapcontrol/directions.ashx?"],["directionsMaxWaypoints","25"],["searchService","{urischeme}dev.virtualearth.net/services/v1/SearchService/SearchService.asmx/Search2"],["geocodingService","{urischeme}dev.virtualearth.net/services/v1/geocodeservice/geocodeservice.asmx"],["bingThemeIconUrlFormat",n+"BingTheme/pins/pin_{iconStyle}{imageryStyle}{state}.png"],["biciLoggingService","{urischeme}dev.virtualearth.net/mapcontrol/logging.ashx"],["localDetailsUrl","http://www.bing.com/local/details.aspx?lid={0}&q={1}&mkt={culture}&FORM={2}"],["trafficIncidentsJs","{urischeme}ecn.dev.virtualearth.net/REST/v1/Traffic/Incidents/{bounds}/?jsonp=microsoftMapsNetworkCallback&jsonso={jsono}&severity={sev}&key={credentials}"],["restAdvancedSearchService","{urischeme}dev.virtualearth.net/mapcontrol/search.ashx"],["wikiDataUrl","http://upload.maps.bing.com/WikipediaContentProviderService/WikipediaInfo.ashx?eid={0}"],["streetsideCubeDataLookupUriFormat","{urischeme}dev.virtualearth.net/mapcontrol/HumanScaleServices/GetBubbles.ashx?c={0}&n={1}&s={2}&e={3}&w={4}&jsCallback={5}&key={6}&gen={7}"],["privacyStatementLink","http://www.microsoft.com/privacystatement/{culture}/bing/default.aspx"]],i=t.length;i--;)this[t[i][0]]=t[i][1].replace(/{ondemanddomain}/g,this.onDemandDomain).replace(/{staticdomain}/g,this.staticDomain).replace(/{venueMapsEroDomain}/g,this.venueMapsEroDomain).replace(/{urischeme}/g,this.protocol).replace(/{version}/g,this.version).replace(/{culture}/g,this.locale).replace(/{generation}/g,this.tilegeneration).replace(/{odmgeneration}/g,this.odmtilegeneration).replace(/{tilemarket}/g,this.tilelocale.indexOf("__")==-1?this.tilelocale:this.locale);this.defaultAerialTiltOn=!1,this.allowAerialMap=!0,this.allowBirdseye=!0,this.notileImageUrl=n+"notile.png",this.pushpinImageUrl=n+"poi_search.png",this.spacerImageUrl=n+"spacer.gif",this.microPOIImageUrl=n+"/MicroPOI/",this.venueMapsNumberOfMapTileServers=4,this.venueMapsTileServerSubdomainsX="0,2,4,6",this.venueMapsTileServerSubdomainsY="1,3,5,7",this.logoBingMapsLink="http://www.bing.com/maps/?v=2&cp={0}~{1}&lvl={2}&FORM=BMLOGO",this.logoBingSearchUrl="http://www.bing.com/search?q={0}&FORM=BMSDK1",this.biciPID="5901",this.cursorPath=this.domain+"/"+this.version+"/cursors/",this.imagePath=n,this.trafficMinZoom=5,this.trafficMinIncidentsZoom=8,this.trafficRefresh=180000,this.trafficExpiry=1800000,this.venueMapAction1Context="Mall",this.venueMapAction2Context="Airport",this.mapAppApp1ActionContext="10330",this.mapAppApp2ActionContext="10310"}},n.init(),window[$MapsNamespace].Maps.Globals=n,t=n.jsPath+(typeof VEAPI_perflog=="undefined"?"veapicore.js":"veapicorePerf.js"),1?n.coreJs=t:i()})()
+;
+
+/*<!-- 
+	The line below passes the directions and search service URLs into the map control.
+	The services are on the plat server.  But the current Cosmos logging infrastructure depends on FrontDoor
+	and requires that we hit the service through the appserver.  (We have a FrontDoor URL entry that redirects
+	the service to the plat server.)  The current solution is to override the map control's DirectionService/SearchService
+	URLs when the map control is hosted in the SNR map wrapper, using www.bing.com/maps instead if the plat server.
+	We need to come up with a better solution for mapcontrol logging.
+-->*/
+if (Microsoft && Microsoft.Maps && Microsoft.Maps.Globals) {
+	Microsoft.Maps.Globals.directionsService = "http://www.bing.com/maps/directions.ashx?";
+	Microsoft.Maps.Globals.restAdvancedSearchService = "http://www.bing.com/maps/search.ashx";
+}
+
+
+/*<!--Include the static BootstrapScript.js which is static and can be crunched
+because this file is dynamic, it cannot be crunched-->*/
+// This script file is included with the Bootstrap code for the Bing Map wrapper
+// It sets the static image, and provides funtionality for the map to be converted to a dynamic map
+
+(function ()
+{
+	"use strict";
+
+	// Set up the Bing.MapControl "namespace"
+	var bingNamespace = window.Bing = window.Bing || {};
+	var bingMapNamespace = bingNamespace.MapControl = bingNamespace.MapControl || {};
+	var _initCallbacks = [];
+	var _mapControlCompleted;
+	var _useBingTheme = true;
+
+	// the scriptloaded callback passed to the mapcontrol needs to be a global 
+	// function, since it's accessed via window[callbackName]. 
+	window.BingMapControlLoaded = function() 
+	{
+		var mapsNamespace = Microsoft.Maps;
+		if (_useBingTheme && mapsNamespace.initBingTheme)
+		{
+			mapsNamespace.initBingTheme();
+		}
+
+		var registerModuleOptions = _useBingTheme ? { suppliesCssFor: ['Microsoft.Maps.Themes.BingTheme'], suppliesJsFor: ['Microsoft.Maps.Themes.BingTheme'] } : {};
+
+		// Register a custom module to clear out duplicate references we've already preloaded
+		mapsNamespace.registerModule(
+			'Bing.MapControl.Preload',
+			null,
+			registerModuleOptions);
+
+		mapsNamespace.loadModule('Bing.MapControl.Preload');
+		var i = _initCallbacks.length;
+		while (i--) 
+		{
+			var callback = _initCallbacks[i];
+			callback && callback();
+		}
+		_initCallbacks = [];
+		_mapControlCompleted = true;
+	};
+
+	// The BingMap "class" which encapsulates the static or dynamic map
+	// id: The id of the div where the map is contained
+	// imgUrl: The url to the static image
+	// styleUrls: Urls to CSS required to render the map
+	// scriptUrls: The url to the dynamic map script, and globals
+	// mapOptionsFactory: A function that will return the mapOptions object used to construct the dynamic map
+	// tilePrimeOptions: A JSON object containing zoom, tileX, tileY, tileOffset, and tileFormatKey
+	// useBingTheme: Flag to indicate if bing theme should be used.
+	bingMapNamespace.BingMap = bingMapNamespace.BingMap || function(id, imgUrl, styleUrls, scriptUrls, mapOptionsFactory, tilePrimeOptions, useBingTheme) 
+	{
+		var _this = this;
+		this.Id = id;
+		var _styleUrls = styleUrls;
+		var _scriptUrls = scriptUrls;
+		var _scriptsFetched;
+		var _scriptFetchCallbacks = [];
+		// Pending scripts and styles which can't be downloaded yet until globals are loaded
+		var _pending = [];
+		this._mapOptionsFactory = mapOptionsFactory;
+		this._div = document.getElementById(id);
+		this._data = bingMapNamespace[id + '_data'];
+
+		this.Map = null;
+		this.pushpins = {};
+		bingMapNamespace[id] = _this;
+		if (useBingTheme != undefined)
+		{
+			_useBingTheme = useBingTheme;
+		}
+
+		var imgElement = this._imgElement = document.getElementById(id + '_s');
+		if (imgUrl && imgElement)
+		{
+			imgElement.src = imgUrl;
+			imgElement.style.display = '';
+		}
+		var head = document.getElementsByTagName('head')[0];
+
+		if (bingMapNamespace.TilePrimer && tilePrimeOptions)
+		{
+			this._tilePrimer = new bingMapNamespace.TilePrimer(this._div, tilePrimeOptions.zoom, tilePrimeOptions.tileX, tilePrimeOptions.tileY, tilePrimeOptions.tileOffset, tilePrimeOptions.tileFormatKey);
+		}
+
+		function fetchStyles(styles)
+		{
+			var i = styles.length; 
+
+			while (i--) 
+			{
+				loadStyle(styles[i]);
+			}
+		}
+
+		function loadStyle(style)
+		{
+			if (!style.isLoading)
+			{
+				if (style.dependsOn && !style.dependsOn())
+				{
+					_pending.push(style);
+				}
+				else
+				{
+					// Resolve the delay-computed url
+					if (typeof style.url == "function")
+					{
+						style.url = style.url();
+					}
+					var elStyle = document.createElement('link');
+					elStyle.rel = 'stylesheet';
+					elStyle.type = 'text/css';
+					style.isLoading = true;
+					elStyle.href = style.url;
+					head.appendChild(elStyle);
+				}
+			}
+		}
+
+		// Downloads a set of scripts and executes them, calling callback after the scripts are processed
+		// scripts: The array of scripts to download, of the form {url:"www.foo.com",isLoaded:function(){...}}
+		//   If isLoaded returns true, then it skips downloading the script
+		// callback: The function to execute when all scripts have been processed
+		function fetchScripts(scripts, callback)
+		{
+			var i = scripts.length;
+			var count = i;
+			var completeCount = 0;
+			var onComplete = function() 
+			{
+				completeCount++;
+				if (completeCount == count) 
+				{
+					callback && callback();
+				}
+				// Now that a script is downloaded we might be able to fetch one of the pending scripts or styles
+				var j = _pending.length;
+				while(j--)
+				{
+					var item = _pending[j];
+					if (item && item.dependsOn())
+					{
+						if (item.isScript)
+						{
+							loadScript(item);
+						}
+						else
+						{
+							loadStyle(item);
+						}
+						_pending.splice(j, 1);
+					}
+				}
+			};
+
+			function loadScript(script) 
+			{
+				if (!script.isLoading) 
+				{
+					if (script.dependsOn && !script.dependsOn())
+					{
+						script.isScript = true;
+						_pending.push(script);
+						return;
+					}
+
+					if (!_mapControlCompleted && script.deferInit) 
+					{
+						script.deferred = true;
+						_initCallbacks.push(onComplete);
+					}
+
+					if (script.url)
+					{
+						// Resolve the delay-computed url
+						if (typeof script.url == "function")
+						{
+							script.url = script.url();
+						}
+						var elScript = document.createElement('script');
+						elScript.type = 'text/javascript';
+						elScript.language = 'javascript';
+						script.isLoading = true;
+
+							elScript.onload = function (callbackScript) 
+							{
+								return function() 
+								{
+									callbackScript.onload = null;
+									script.deferred || onComplete();
+								};
+							}(elScript);
+						elScript.src = script.url;
+
+						//Attach to document
+						head.appendChild(elScript);
+					}
+				}	
+			}
+
+			while (i--)
+			{
+				var script = scripts[i];
+				if (script.isLoaded && script.isLoaded()) 
+				{
+					onComplete();
+				} 
+				else 
+				{
+					loadScript(script);
+				}
+			}
+		}
+
+		function onDynamicComplete()
+		{
+			var i = _scriptFetchCallbacks.length;
+			while (i--)
+			{
+				var callback = _scriptFetchCallbacks[i];
+				callback && callback();
+			}
+			_scriptFetchCallbacks = [];
+		}
+
+		// Converts the map to a dynamic (interactive) map
+		// callback: The function to execute after the dynamic map is ready and visible
+		function ensureDynamic(callback)
+		{
+			function createPlatformDependency(globalsPathKey, filename, deferInit)
+			{
+				var dependency =
+				{
+					url: function () 
+					{ 
+						return Microsoft.Maps.Globals[globalsPathKey] + filename;
+					},
+					dependsOn: function ()
+					{
+						return window.Microsoft && Microsoft.Maps && Microsoft.Maps.Globals;
+					},
+					deferInit: deferInit
+				};
+				return dependency;
+			}
+
+			if (_this.Map)
+			{
+				callback && callback();
+			}
+			else
+			{
+				_scriptFetchCallbacks.push(callback);
+				if (!_scriptsFetched) 
+				{
+					if (_useBingTheme)
+					{
+						_scriptUrls.push(createPlatformDependency('jsPath', 'veapiBingTheme.js'));
+						_styleUrls.push(createPlatformDependency('cssPath', 'veapiBingTheme.css'));
+					}
+					_scriptUrls.push(createPlatformDependency('coreJs', '', true));
+
+					fetchStyles(_styleUrls);
+					fetchScripts(_scriptUrls, function() 
+					{ 
+						bingMapNamespace.initMapWrapper && bingMapNamespace.initMapWrapper();
+						_this.onDynamicScriptReady(onDynamicComplete);
+					});
+					_scriptsFetched = true;
+				}
+			}
+		}
+		this.ensureDynamic = ensureDynamic;
+
+		this._data && this._data.startup && this._data.startup();
+	};
+}());
+(function()
+{
+	"use strict"
+	var bingNamespace = window.Bing = window.Bing || {};
+	var bingMapNamespace = bingNamespace.MapControl = bingNamespace.MapControl || {};
+	var C_maxTiles = 16;
+	var C_maxAttempts = 64;
+	var Direction =
+		{
+			right: 0,
+			up: 1,
+			left: 2,
+			down: 3
+		};
+
+	// Tile primer preloads tiles by requesting them while the map control scripts are loading
+	// - parentDiv - The div where the map will reside and where the preload tiles will reside
+	// - zoom - The zoom level for the initial view of the map
+	// - centerTileX - The x coordinate of the center tile (in map tile space from 0 to 2^zoom -1)
+	// - centerTileY - The y coordinate of the center tile (in map tile space from 0 to 2^zoom -1)
+	// - centerOffset - The offset to position the center tile so that the desired lat/long is in the center
+	// - tileFormatKey - The key to the value in Microsoft.Maps.Globals with the correct tile format
+	bingMapNamespace.TilePrimer = function(parentDiv, zoom, centerTileX, centerTileY, centerOffset, tileFormatKey)
+	{
+		var self = this;
+		var Globals = Microsoft.Maps.Globals;
+		var _tileFormat = Globals[tileFormatKey];
+		var _width = parentDiv.clientWidth;
+		var _height = parentDiv.clientHeight;
+		var _maxTileCoordinate = Math.pow(2, zoom) - 1;
+		// centerOffset is the offset from the center point where the center tile should be placed (always negative)
+		// adjust it to be relative to the container's top left
+		centerOffset.x += _width / 2;
+		centerOffset.y += _height / 2;
+		var _tileSize = Globals.defaultTileSize;
+
+		// Couldn't determine which tiles to show, skip primer
+		if (!_tileFormat) 
+		{
+			return;
+		}
+
+		var _tileContainer = document.createElement("div");
+		_tileContainer.style.cssText = "position:relative;overflow:hidden;width:" + _width + "px;height:" + _height + "px";
+		parentDiv.appendChild(_tileContainer);
+
+		//---------------------------------------------------------
+		// Spiral position variables
+		//---------------------------------------------------------
+		// The x coordinate of the current tile from 0 - 2^zoom - 1
+		var _tileX;
+		// The y coordinate of the current tile from 0 - 2^zoom - 1
+		var _tileY;
+		// The offset in pixels from the top-left of the container to place the tile
+		var _offset;
+		// The current direction of the spiral
+		var _direction;
+		// The number of moves remaining before turning
+		var _movesLeft;
+		// The current step in the progress of spiraling  the series goes 1, 1.5, 2, 2.5, 3, 3.5,... but only the
+		// integer part is used effectivly giving a series of 1,1,2,2,3,3,4,4 which is the length of the segments
+		// when spiraling
+		var _step;
+
+		// Add the tiles after page load because the tile loading will prevent the page load event
+		addTiles();
+
+		// Adds a single tile to the the UI to request the tile image
+		function addTile(quadKey, offset)
+		{
+			var img = document.createElement("img");
+			img.src = _tileFormat.replace("{quadkey}", quadKey).replace("{subdomain}", quadKey.charAt(quadKey.length - 1));
+			img.src.replace("http:", window.location.protocol);
+			img.style.cssText = "position:absolute;top:" + offset.y + "px;left:" + offset.x + "px";
+			_tileContainer.appendChild(img);
+		}
+
+		// Adds all visible tiles to request their images
+		function addTiles()
+		{
+			// Initialize the spiraling state
+			_tileX = centerTileX;
+			_tileY = centerTileY;
+			_offset = centerOffset;
+			_direction = Direction.right;
+			_movesLeft = 1;
+			_step = 1;
+
+			// Attempt to add up to C_maxAttempts times or until C_maxTiles were successfully added
+			for (var tileCount = 0, attemptCount = 0; attemptCount < C_maxAttempts && tileCount < C_maxTiles; attemptCount++)
+			{
+				if (isVisible(_offset))
+				{
+					var quadKey = getQuadKey();
+					if (quadKey)
+					{
+						addTile(quadKey, _offset);
+						tileCount++;
+					}
+				}
+				incrementSpiral();
+			}
+		}
+
+		// Gets the quad key for the current tileX and tileY
+		function getQuadKey()
+		{
+			if (_tileY < 0 || _tileY > _maxTileCoordinate)
+			{
+				// We don't wrap around the north/south edge, so this is an invalid tile
+				return null;
+			}
+			var quadKey = '';
+			for (var i = zoom; i > 0; i--)
+			{
+				var digit = 0;
+				var mask = 1 << (i - 1);
+				if ((_tileX & mask) != 0)
+				{
+					digit++;
+				}
+				if ((_tileY & mask) != 0)
+				{
+					digit+=2;
+				}
+				quadKey += digit;
+			}
+			return quadKey;
+		}
+
+		// Determines if a tile offset would make any part of the tile visible
+		function isVisible(offset)
+		{
+			return ((offset.y > -_tileSize) &&
+					(offset.y < _height) &&
+					(offset.x > -_tileSize) &&
+					(offset.x < _width));
+		}
+
+		// Moves around the spiral
+		function incrementSpiral()
+		{
+			switch (_direction)
+			{
+				case Direction.right:
+					_tileX++;
+					_offset.x += _tileSize;
+					break;
+				case Direction.up:
+					_tileY--;
+					_offset.y -= _tileSize;
+					break;
+				case Direction.left:
+					_tileX--;
+					_offset.x -= _tileSize;
+					break;
+				case Direction.down:
+					_tileY++;
+					_offset.y += _tileSize;
+					break;
+			}
+
+			// Perform any wrap-around if necessary
+			if (_tileX > _maxTileCoordinate)
+			{
+				_tileX = 0;
+			}
+			else if (_tileX < 0)
+			{
+				_tileX = _maxTileCoordinate;
+			}
+
+			_movesLeft--;
+			if (_movesLeft <= 0)
+			{
+				// Increment a half step and reset movesLeft
+				_movesLeft = Math.floor(_step += 0.5);
+				// Rotate the direction and wrap if needed
+				if (++_direction > Direction.down)
+				{
+					_direction = Direction.right;
+				}
+			}
+		}
+	};
+})();
+;
+(function()
+{
+	function initialize()
+	{
+		/*<!--Ensure the div is ready before proceeding-->*/
+		if (!document.getElementById("msve_mapContainer") || !Bing.MapControl.msve_mapContainer_data)
+		{
+			window.setTimeout(initialize, 25);
+		}
+		else
+		{
+			/*<!--Create the BingMap object-->*/
+			var map = new Bing.MapControl.BingMap(
+				'msve_mapContainer',null,
+				[ {url:'http://mc1.maps.live.com/mapsux/css/20151201.1241/es-ES/F11/0/MapControl.css'} ],
+				[ {url:'http://mc1.maps.live.com/mapsux/js/20151201.1241/es-ES/F11/0/MapControl.js', isLoaded: function() { return Bing.MapControl.BingMap && Bing.MapControl.BingMap.prototype.onDynamicScriptReady; }},
+					/* <!-- Need a dummy entry for MapConfig since it's been inlined --> */
+					{deferInit: true, isLoaded: function(){ return window.Microsoft && Microsoft.Maps && Microsoft.Maps.Themes && Microsoft.Maps.Themes.BingTheme; }}
+				],
+				function() { return {"credentials":"Anqg-XzYo-sBPlzOWFHIcjC3F8s17P_O7L4RrevsHVg4fJk6g_eEmUBphtSn4ySg","zoom":6,"showLogo":"combined","scalebarPosition":"bottomLeft","labelOverlay":Microsoft.Maps.LabelOverlay.visible,"mapTypeId":Microsoft.Maps.MapTypeId.road,"center":new Microsoft.Maps.Location(40.4255, -3.6839),"useBingTheme":true,"showHotRegions":true,"showBreadcrumb":true,"showDualMapTypeSelector":true,"showVenueMapsExplorer":true,"enableClickableLogo":false,"enableSearchLogo":false,"scheme":"http"} },
+				{"zoom":6,"tileX":31,"tileY":24,"tileOffset":{"x":-88,"y":-33},"tileFormatKey":"onDemandRoadUriFormat"},
+				true);
+			/*<!--Go directly to dynamic mode if InitialRender is dynamic-->*/
+				map.ensureDynamic();
+		}
+	}
+	initialize();
+}());
+
+			
+			//]]>
+		//]]></script>
+		
+
+		<meta http-equiv = "Content-Type" content = "text/html; charset=utf-8" />
+		<meta http-equiv = "imagetoolbar" content = "no" />
+
+		<meta id = "msve_title" name = "title" content = "Bing Mapas: indicaciones de ruta y estado del tráfico y de las carreteras" />
+		<meta id = "msve_description" name = "description" content = "Ve un mapa interactivo y obtén indicaciones de ruta detalladas, con información sobre el tráfico, la condición de las carreteras, callejeros, mapas de Multimap, fotos de satélite y fotos aéreas." />
+		<meta id = "msve_keywords" name = "keywords" content = "mapas, mapa del mundo, indicaciones, callejero, mapa de carreteras, mapa panorámico, tráfico, ubicaciones, vista panorámica, negocios locales, páginas amarillas, imágenes de satélite, multimap, multimap.com, MSN Maps and Directions, mapblast.com, mappoint.msn.com." />
+
+		<meta name = "viewport" content = "" />
+        <meta name = "msapplication-config" content="none" />
+
+        <meta property="og:title" content="Bing Mapas: indicaciones de ruta y estado del tráfico y de las carreteras" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://www.bing.com" />
+        <meta property="og:image" content="http://sc1.maps.live.com//i/mapico.png" />
+		
+		<script type="text/javascript">//<![CDATA[
+si_ST=new Date;
+//]]></script><script type="text/javascript">//<![CDATA[
+_G={ST:(si_ST?si_ST:new Date),Mkt:"es-ES",RTL:false,Ver:"05",IG:"E394A139BACA476FACF04F80DB3ACAC4",EventID:"8892DFF094B141E699EFF6332D3FDD8C",V:"VirtualEarth",P:"VirtualEarth",DA:"Ch1",CID:"09134DB2574E63FC07EE4518566562F5",SUIH:"nj3k3H0NtFwbzCa2s05BWQ",gpUrl:"\/fd\/ls\/GLinkPing.aspx?"};_G.lsUrl="/fd/ls/l?IG="+_G.IG+"&CID="+_G.CID;curUrl="http:\/\/www.bing.com\/header";function si_T(a){if(document.images){_G.GPImg=new Image;_G.GPImg.src=_G.gpUrl+'IG='+_G.IG+'&CID='+_G.CID+'&'+a;}return true;};
+//]]></script><style type="text/css">html,body,h1,h2,h3,h4,h5,h6,p,img,ol,ul,li,form,table,tr,th,td{border:0;border-collapse:collapse;border-spacing:0;list-style:none;margin:0;padding:0}#b_header,.b_footer{font:13px/normal Arial,Helvetica,Sans-Serif}.b_active a,.b_active a:visited,.b_active a:hover,.b_beta{color:#404040}.b_active a{font-weight:700}#id_d h2{font-size:13px;font-weight:400;fount-family:'Segoe UI',Arial,Helvetica,Sans-Serif}#id_d a{color:#1020d0}#id_h .gleamoff .sw_meIc,.id_button .sw_spd,.id_button .sw_meIc,#id_h .sw_pref{background-image:url(/sa/simg/sw_newhead2.png)}#id_h .gleamoff .sw_meIc{height:16px;width:16px;background-position:-627px 0}.id_button .sw_spd{height:20px;width:20px;background-position:-341px 0}.id_button .sw_meIc{height:16px;width:16px;background-position:-521px 0}#id_h .sw_pref{height:16px;width:16px;background-position:-485px 0}#id_h .sw_pref:hover,#id_h .sw_pref:active,#id_h .sw_pref:focus{background-position:-503px 0}#id_h .b_icon{height:20px;width:20px}.b_hide{display:none}.sw_meIc,.sw_spd,.sw_spr,.sw_pref,.b_logo,.b_scopebarWindows,.b_searchboxSubmit,.idp_fb,.idp_wlid,.idp_tw{background-image:url(/sa/simg/sw_newhead2.png);background-repeat:no-repeat}.b_scopebarWindows{background-position:-575px 0}.b_scopebarWindows:hover,.b_scopebarWindows:active,.b_scopebarWindows:focus{background-position:-592px 0}.b_searchboxSubmit{background-position:-97px 0}.b_focus .b_searchboxForm .b_searchboxSubmit{background-position:-122px 0;background-color:#ffb900;border-color:#ffb900}.sw_pref,.idp_fb,.idp_wlid,.idp_tw{background-position:-485px 0;height:16px;width:16px}.sw_pref:hover,.sw_pref:active,.sw_pref:focus{background-position:-503px 0}.idp_fb{background-position:-298px -22px}.idp_wlid{background-position:-384px 0}.idp_tw{background-position:-645px 0}.sw_meIc,.sw_spr,.img_rwds_sml{background-position:-521px 0;height:16px;width:16px}#spcv .sw_meIc,.rigleamon .sw_meIc{background-position:-557px 0}.gleamon .sw_meIc{background-position:-627px 0}.gleamoff .sw_meIc{background-position:-609px 0}.sw_spd{background-position:-341px 0;height:20px;width:20px}.b_logo{width:73px;height:29px;vertical-align:top;text-indent:-999px;float:right;margin-top:6px}.b_logo.b_animate{width:81px;height:60px;background-image:url('/s/a/b_logo_anim.png');background-position:0;margin:-9px 7px -5px 12px}.b_beta{position:absolute;top:98px;left:48px}#b_header .b_searchboxForm{padding:0 0 0 5px}#b_header .b_searchbox{margin-right:11px}#b_header .b_active a:after{content:none}body #b_header{height:120px;padding-bottom:0}#b_header,#id_h{font-family:"Segoe UI",Arial,Helvetica,Sans-Serif}.b_headBorder{margin-left:100px;border-bottom:1px solid #eee;height:120px}#b_header .b_beta{width:32px;height:7px;top:48px;left:43px;text-indent:-999px;background:url(/sa/simg/ms_beta.png) no-repeat}#b_header .b_topbar,#b_header .b_scopebar{background:none;margin-bottom:0}#b_header .b_scopebar{position:relative;margin:20px 0 0;text-transform:none;top:61px;font-size:14px;font-weight:400}#b_header .b_scopebar ul,#b_header .b_scopebar a{padding:0}.b_scopebar li{line-height:30px;margin:0 13px;padding:0 8px}.b_scopebar .b_active{border-top:3px solid #f84e29}.b_scopebar,.b_scopebar a,.b_scopebar a:visited{color:#777}.b_scopebar .b_active a,.b_scopebar a:hover{color:#000}.b_scopebar .b_active a{font-weight:600}.b_navbar{height:50px}#sb_form .b_logoArea{width:71px;margin:-2px 9px 0 0}#sb_form .b_logo{background-position:0 0;width:28px;height:36px}#b_header #sb_form{position:relative;top:-38px;left:-85px}#sb_form .b_searchbox{border-right:none;font-size:20px;margin-top:4px;margin-left:18px;padding-top:0}#sb_form .b_searchbox.b_softkey{width:435px}#sb_form .b_searchboxForm{padding:0;margin-left:5px;margin-top:2px;z-index:101;border:1px solid #ccc}#sb_form .b_searchboxForm:hover{border-color:#a9a9a9}#sb_form .b_searchboxSubmit{vertical-align:middle;width:32px;height:32px;border-width:5px 6px 4px 5px;border-color:#0078d7;border-style:solid;margin:-1px 4px 4px;background-color:#0078d7;background-position:-121px 0}#b_header.b_focus .b_searchboxForm,#sb_form .sa_as{border-color:#999}#sa_ul .sa_s .sa_tm{margin-left:12px}body #id_h{top:10px;height:50px;margin-right:0}#id_h #id_l,#id_h #id_l:hover,#id_h #id_l:focus,#id_h #id_l:active,#id_h #id_rh,#id_h #id_rh:hover,#id_h #id_rh:focus,#id_h #id_rh:active,#id_h .sw_pref,#id_h .sw_pref:hover,#id_h .sw_pref:focus,#id_h .sw_pref:active{border-color:#fff;background-color:#fff}#id_rh,#id_l.id_button{margin:0 12px}#id_rh .id_avatar{margin-left:8px}#id_h #bepfo,#id_h #id_d,#id_h #id_scfo{top:50px;border-top-width:1px}#b_header #id_h #bepfo,#id_h #id_d{left:auto;right:0}#id_h .id_button{line-height:50px}#id_h .sw_meIc{margin-top:17px}#id_h .sw_spd{border-radius:25px;background-position:-30px 0}#id_h #id_p,#id_h #id_a{height:50px;width:50px;margin-top:0;border-radius:25px}#id_f{display:none}#id_l.id_button{padding:0}#id_l .id_avatar{margin-left:8px}#id_h .sw_pref{border-width:16px 0;vertical-align:top;margin-left:12px;background-position:-81px -24px;height:18px;width:17px}#id_h .sw_pref:hover,#id_h .sw_pref:focus,#id_h .sw_pref:active{background-position:-101px -24px}.b_scopebar{background-color:#fff}.b_searchboxForm .b_searchboxSubmit{background-color:#0078d7;border-color:#0078d7}.b_searchboxForm,.sa_as{background-color:#fff}.sa_hd{color:#333}.sw_pref,.b_active a:after{border-color:#fff}.b_active a:after{border-bottom-color:#fff}.b_searchboxForm{border-color:#ccc}.b_scopebar,.b_scopebar a,.b_scopebar a:visited,.id_button,.id_button:visited{color:#777}.id_button:hover,.b_idOpen a#id_l,a#bep.openfo,a#id_rh.openfo{color:#333;background-color:#fff}.b_scopebar .b_active a,.b_scopebar a:hover{color:#000}#sw_as{color:#999}.sa_tm strong{color:#404040}.sa_as{border-color:#999}.sa_hv{background:#f6f5f5}#bepfo{border-color:#fff;background-color:#fff}.b_idOpen #id_l{background-color:#fff}.wpc_bub a{color:#1020d0}.b_searchbox{background-color:transparent}.b_secondaryScope a,.b_secondaryScope a:visited{color:#ffb900;background-color:#444;text-transform:none;padding:0 30px}.b_secondaryScope a:hover{color:#000;background-color:#777}#b_header{margin-bottom:42px}.b_scopebar{height:30px;overflow-y:hidden}.b_scopebar ul{padding:0 0 0 105px}.b_scopebar li,.b_scopebar a,.b_logo,.b_searchboxForm,#id_h .id_button,.id_avatar,.rwds_bep_head,.sw_pref{display:inline-block}.b_scopebar a{padding:0 15px}.b_active a,.b_searchboxForm{position:relative}.b_active a:after{content:" ";border-width:0 9px 9px;border-style:solid;display:inline-block;position:absolute;left:50%;top:23px;margin:0 0 0 -9px}a.b_scopebarWindows{width:15px;height:15px;display:inline-block;padding:0;margin:0 15px -2px}.b_logoArea{width:90px;margin:-2px 10px 0 0;float:left}.b_searchboxForm{padding:0 5px;border-width:1px;border-style:solid}.b_searchbox{width:490px;margin-top:2px;margin-right:0;margin-bottom:3px;margin-left:12px;border:0;padding-top:0;padding-right:10px;padding-bottom:0;padding-left:0;max-height:30px;outline:none;border-right:1px solid;border-color:#ccc;box-sizing:content-box;position:relative;height:40px}.b_focus .b_searchbox{border-width:0}.b_searchboxSubmit{width:40px;height:35px;border-top-width:6px;border-right-width:8px;border-bottom-width:6px;border-left-width:9px;margin:-1px 4px 4px;border-style:solid;text-indent:-99em;vertical-align:bottom;position:static;right:0;top:0}.b_focus .b_searchboxForm .b_searchboxSubmit{background-color:#ffb900;border-color:#ffb900}#b_header .b_searchbox{margin-right:0}.b_focus .b_searchboxForm{border-color:#999}#sw_as{display:none;width:auto;position:relative;z-index:6}.sa_as{border-width:1px;border-style:solid;position:absolute;display:none;width:100%}#sa_ul div.sa_tm{margin-left:12px}.sa_sg{padding:0 5px}#sa_ul .sa_hd{margin-left:17px}.b_searchboxSubmit,.sa_sg{cursor:pointer}#id_h{top:0;height:30px;text-align:right;z-index:2}#id_l,.id_button{padding:0 10px}.id_avatar{vertical-align:top;margin:5px 0 0 10px}.sw_meIc{margin-top:7px}.rwds_bep_head{vertical-align:top;margin:7px 0 0 6px}#bepfo{border-width:0 1px 1px 1px;border-style:solid}#bepfo,#bepfm,#bepfl{width:372px}#bepfm{display:block}#bepfl{text-align:center;margin:50px 0}#id_d,#bepfo,#id_scfo{position:absolute;top:30px;z-index:6;text-align:left;color:#333;background-color:#fff;border:1px solid #ccc;border-top-width:0}#id_scfo{right:0}.b_idOpen #id_d{display:block;padding:11px 0 5px}#sw_tfbb,#id_d{display:none}.sw_pref{border-style:solid;border-width:7px 0 7px 10px;vertical-align:bottom}#b_tween{margin-top:-28px}#b_tween&gt;span{line-height:30px}#b_tween .ftrH{line-height:30px;height:30px}input{font:inherit;font-size:100%}.b_searchboxForm{font:18px/normal 'Segoe UI',Arial,Helvetica,Sans-Serif}.b_beta{font:11px/normal Arial,Helvetica,Sans-Serif}.b_scopebar,.id_button{line-height:30px}.sa_hd,.b_scopebar{text-transform:uppercase}a:hover,.sa_hv{text-decoration:underline}a,#b_header a,#b_header a:hover,#id_h a,#id_h a:hover,.b_toggle,.b_toggle:hover{text-decoration:none}#sa_ul,.pp_title{font:16px/normal 'Segoe UI',Arial,Helvetica,Sans-Serif}.sa_tm{line-height:30px}#sa_ul .sa_hd{font-size:11px;line-height:16px}#sw_as strong{font-family:'Segoe UI Semibold','Segoe UI',Arial,Helvetica,Sans-Serif}#b_header .b_headBorder{margin-right:20px}#id_h{display:none;float:right;margin-right:20px;position:relative}#id_d{right:25px}#id_h #bepfo{right:0}.b_scopebar{display:inline-flex;float:left}.b_navbar:after{clear:both;content:'.';display:block;height:0;visibility:hidden}.b_topbar{background-color:#fff;margin-bottom:10px}#langChange.langdisp{display:inline-block;visibility:visible}@media all and (max-width:1200px){#langChange.langdisp{display:none}}#langChange a{color:#777}#langChange a:hover{color:#000}#langChange span{margin:0 10px}#langChange{color:#777;margin-right:14px}#b_header .b_searchboxSubmit{position:absolute;top:3px;right:0}#sb_form{min-width:680px}#b_header .b_searchboxForm{border:0;padding:0}#b_header .b_searchbox{border:1px solid #ccc;max-height:35px;padding:0 17px}#b_header #sb_form_q{margin:0;width:200px}#b_header #sb_form_q2{margin:0 0 0 5px;width:242px}.b_searchboxSubmit{height:37px;border-width:7px 9px 7px 8px}.sb_form_labels label{float:left;padding:5px 0 0 0;line-height:16px}#sb_form_label2{margin:0 0 0 23px;width:265px}#sb_form_label{margin:0 0 0 118px;width:218px}.b_footer{background-color:#333;color:#fff;float:left;width:100%;line-height:18px}.b_footer a,.b_footer a:visited,.b_footer span{color:#777}.b_footer ul{line-height:30px;padding-left:105px}.b_footer li{display:inline-block;color:#777;padding:0 15px 0 15px}.b_footer a,.cbtn{text-decoration:none}.cbtn{font-size:13px;font-weight:700;font-family:Arial,Helvetica,Sans-Serif}.b_footer a:hover,.b_footer a#sb_feedback:hover{color:#fff}.b_footer .b_trademark{float:right;padding-right:20px}.b_fLogo{margin-bottom:13px}#sb_feedback{color:#6cc1e9}</style><script type="text/javascript">//<![CDATA[
+window.onerror||(window.onerror=function(n,t,i,r,u){var f="";typeof n=="object"&&n.srcElement&&n.srcElement.src?f="\"ScriptSrc = '"+escape(n.srcElement.src.replace(/'/g,""))+"'\"":(n=""+n,f='"'+escape(n.replace(/"/g,""))+'","Meta":"'+escape(t)+'","Line":'+i+',"Char": '+r,u&&u.stack&&(f+=',"Stack":"'+escape(u.stack.replace(location.href,"self").replace(/"/g,"")+'"')));(new Image).src=_G.lsUrl+'&Type=Event.ClientInst&DATA=[{"T":"CI.Error","FID":"CI","Name":"JSError","Text":'+f+"}]";typeof sj_evt!="undefined"&&sj_evt.fire("ErrorInstrumentation",f)});var amd,define,require;(function(n){function e(n,i,u){t[n]||(t[n]={dependencies:i,callback:u},r(n))}function r(n){if(n){if(n)return u(n)}else{if(!f){for(var r in t)u(r);f=!0}return i}}function u(n){var s,e;if(i[n])return i[n];if(t.hasOwnProperty(n)){var h=t[n],f=h.dependencies,l=h.callback,a=r,o={},c=[a,o];if(f.length<2)throw"invalid usage";else if(f.length>2)for(s=f.slice(2,f.length),e=0;e<s.length;e++)c.push(u(s[e]));return l.apply(this,c),i[n]=o,o}}var t={},i={},f=!1;n.define=e;n.require=r})(amd||(amd={}));define=amd.define;require=amd.require;var _w=window,_d=document,sb_ie=window.ActiveXObject!==undefined,sb_i6=sb_ie&&!_w.XMLHttpRequest,_ge=function(n){return _d.getElementById(n)},sb_st=function(n,t){return setTimeout(n,t)},sb_rst=sb_st,sb_ct=function(n){clearTimeout(n)},sb_gt=function(){return(new Date).getTime()},sj_gx=function(){return sb_i6?new ActiveXObject("MSXML2.XMLHTTP"):new XMLHttpRequest};_w.sj_ce=function(n){return _d.createElement(n)};_w.sj_cook={get:function(n,t){var i=_d.cookie.match(new RegExp("\\b"+n+"=[^;]+")),r;return t&&i?(r=i[0].match(new RegExp("\\b"+t+"=([^&]*)")),r?r[1]:null):i?i[0]:null}};_w.sk_merge||(_w.sk_merge=function(n){_d.cookie=n});define("fallback",["require","exports"],function(n,t){function f(){return function(){for(var r,h,c,t=[],n=0;n<arguments.length;n++)t[+n]=arguments[n];if(r=o(arguments.callee),u&&(h=e(r),h.toString()!=f().toString()))return h.apply(null,arguments);c=i[r].q;t[0]==="onPP"&&s();c.push(t)}}function o(n){for(var t in i)if(i[t].h===n)return t}function e(n,t){for(var u,e=n.split("."),i=_w,r=0;r<e.length;r++)u=e[r],typeof i[u]=="undefined"&&t&&(i[u]=r===e.length-1?f():{}),i=i[u];return i}function s(){var e=i["rms.js"].q,o,f,t,n,r,u;if(e.length>0)for(o=!1,f=0;f<e.length;f++){for(t=e[f],n=0;n<t.length;n++)if(r=t[n]["A:rms:answers:Shared:BingCore.Bundle"],r||(r=t[n]["A:rmsBu0"]),r){u=_d.createElement("script");u.setAttribute("data-rms","1");u.src=r;u.type="text/javascript";setTimeout(function(){_d.body.appendChild(u)},0);t.splice(n,1);o=!0;break}if(o)break}}function h(){var n,t,f;for(u=!1,n=0;n<r.length;n++)t=r[n],f=e(t,!0),i[t]={h:f,q:[]}}function c(){for(var t,n=0;n<r.length;n++){var o=r[n],s=i[o].q,h=e(o);for(t=0;t<s.length;t++)h.toString()!==f().toString()&&h.apply(null,s[t])}u=!0}function l(n,t,i,r){n&&((n===_w||n===_d||n===_d.body)&&t=="load"?_w.sj_evt.bind("onP1",i,!0):n.addEventListener?n.addEventListener(t,i,r):n.attachEvent?n.attachEvent("on"+t,i):n["on"+t]=i)}var r=["rms.js","sj_evt.bind","sj_evt.fire","sj_jb","sj_wf","sj_cook.get","sj_cook.set","sj_pd","sj_sp","sj_be","sj_go","sj_ev","sj_ue","sj_evt.unbind","sj_et","Log.Log","sj_mo","sj_so"],i={},u=!1;t.replay=c;h();_w.sj_be=l});function lb(){_w.si_sendCReq&&sb_st(_w.si_sendCReq,800);_w.lbc&&_w.lbc()};ClickTrackingConfig={};function si_ct(n,t,i){var u="getAttribute",f,r;try{for(;n!==document.body;n=n.parentNode){if(f=n.tagName=="A"&&(n[u]("h")||n[u]("data-h"))||n[u]("_ct"),f){r=n[u]("_ctf");r&&_w[r]||(r="si_T");_w[r]&&_w[r]("&"+f,n,i);break}if(t)break}}catch(e){}return!0}(function(){sj_be(document,"mousedown",function(n){si_ct(sb_ie?_w.event.srcElement:n.target,!1,_w.event||n)},!1)})();var wlc_d = 1500,wlc_t = 63589575125;;_w.si_PP=function(n,t,i){var r,e,u,o,s,l,a,f,v,h,c;if(!_G.PPS){for(e=["FC","BC","H","BP",null];r=e.shift();)e.push('"'+r+'":'+(_G[r+"T"]?_G[r+"T"]-_G.ST:-1));if(u=i||_w.performance&&_w.performance.timing,o=null,u&&(s=["unloadEventStart","unloadEventEnd","redirectStart","redirectEnd","fetchStart","domainLookupStart","domainLookupEnd","connectStart","connectEnd","secureConnectionStart","requestStart","responseStart","domLoading","domInteractive","domContentLoadedEventStart","domContentLoadedEventEnd","domComplete","loadEventStart","loadEventEnd","msFirstPaint","responseEnd",""],l=u.navigationStart,l>=0)){for(v=h=a=0;r=s.shift();a++)f=u[r],f>0&&(v|=1<<a,f-=l,s.push(f===h?"":(f-h).toString(16)),h=f);c="navigation";o=',"w3c":"'+v.toString(16)+","+s.join()+'","nav":'+(c in u?u[c]:performance[c].type)}_G.PPImg=new Image;_G.PPImg.src=_G.lsUrl+'&Type=Event.CPT&DATA={"pp":{"S":"'+(t||"L")+'",'+e.join(",")+',"CT":'+(n-_G.ST)+',"IL":'+_d.images.length+"}"+(_G.C1?","+_G.C1:"")+(o!==null?o:"")+"}"+(_G.P?"&P="+_G.P:"")+(_G.DA?"&DA="+_G.DA:"")+(_G.MN?"&MN="+_G.MN:"");_G.PPS=1;sb_st(function(){sj_evt.fire("onPP");sj_evt.fire(_w.p1)},1)}};_w.onbeforeunload=function(){si_PP(new Date,"A")};(function(n){var i,r,t;if(document.querySelector){i=[];r="ad";function u(){var c=sb_gt(),u=document.documentElement,r=document.body,f=-1,e=-1,o=u.clientHeight,s=["#b_results .b_ad",".sb_adsWv2",".ads"],t,h,n;if(r){for(t=0;t<s.length;t++)if(h=s[t],n=document.querySelector(h),n&&n.offsetTop<o){f=n.offsetHeight;e=n.offsetTop;break}i=[e,f,u.clientWidth,o,r.offsetWidth,r.offsetHeight,sb_gt()-c]}}n?(t=n.onbeforefire,n.onbeforefire=function(){t&&t();u();n.mark(r,i)}):(t=si_PP,si_PP=function(){u();var n='"'+r+'":['+i.join()+"]";_G.C1=_G.C1?_G.C1+","+n:n;t.apply(null,[].slice.apply(arguments))})}})(_w.pp);var sj_log=function(n,t,i){var r=new RegExp('"',"g");(new Image).src=_G.lsUrl+'&Type=Event.ClientInst&DATA=[{"T":"'+n+'","FID":"CI","Name":"'+t+'","Text":"'+escape(i.replace(r,""))+'"}]'};_w.AM=["live.com","virtualearth.net","windows.net","onenote","hexun.com","dict.bing.com.cn","msn.com","variflight.com","bing.net","msftoffers.com","chinacloudapp.cn"];(function(){function f(t,r){var u=t.tagName;return(u==="SCRIPT"&&(n.href=t.src)||u==="OBJECT"&&t.type&&t.type.indexOf("flash")>0&&(n.href=t.data))&&n.href.length>0&&n.hostname.length>0&&n.hostname!==location.hostname&&!e(n.hostname)?(sj_log("CI.AntiMalware",r,u.substr(0,1)+":"+n.href.substr(0,i)),!1):!0}function e(n){for(var i=0;i<t.length;i++)if(n.indexOf(t[i])>=0)return!0;return!1}var t=_w.AM,i=100,n=document.createElement("A"),r,u;document.write=function(n){n.length>0&&sj_log("CI.AntiMalware","DW",n.substr(0,i))};typeof Element!="undefined"&&Element.prototype&&(r=Element.prototype.appendChild,Element.prototype.appendChild=function(n){return f(n,"AC")?r.apply(this,arguments):null},u=Element.prototype.insertBefore,Element.prototype.insertBefore=function(n){return f(n,"IB")?u.apply(this,arguments):null})})();
+//]]></script>
+		<!-- *** DIAGNOSTICS INFO. SESSION_ID=00000000-0000-0000-0000-000000000000. SERVER_ID=060053435. *** -->
+
+		
+		<style type = "text/css" media = "screen">
+			
+			#VE_MessageControl{position:absolute;top:169px;left:470px;width:500px;padding:5px;z-index:10000;background-color:#ffffe6;border:1px solid #e9eaf1;display:none}noscript{position:absolute;height:0;top:0;left:0;z-index:10001;width:100%}#noJSContainer{position:absolute;z-index:10001;top:0;height:520px;background:#fff;width:100%}.noJS{padding:20px 35% 20px 20px;font-size:1.2em;line-height:1.4}.disambgContainer{padding:4px;background-repeat:no-repeat;background-position:6px 10px;font-size:.92em}.disambgParse{margin:8px 24px 8px 0}.disambgBtnPanel{text-align:right;margin-top:16px;margin-left:8px;width:100%}.ddInput{float:none;margin-right:15px}.ddInputBox{float:none!important;padding:0!important;margin:0!important;width:242px!important}.WIPModule{margin-bottom:31px}.WIPModule h2{font-size:1.8em;font-weight:200;margin:3px;padding:0 0 10px 0;color:#333}.WIPLinkFarmMainList{list-style:none;padding:0 0 0 8px;margin:0}.WIPLinkFarmMainListItem{clear:left;margin-bottom:39px}.WIPNew{font-size:9px;font-weight:bold;background-color:#bcc1cd;color:#fff;padding:3px;text-transform:uppercase;margin-left:4px}.WIPLinkFarmSubList{list-style:none;padding:0;margin:0}.WIPLinkFarmSubList li{float:left}a.WIPLinkFarmMainLink,a.WIPLinkFarmMainLink:visited{color:#04c;font-size:28px;font-weight:200;word-wrap:break-word}a.WIPLinkFarmSubLink,a.WIPLinkFarmSubLink:visited{color:#5077bb;font-size:14px;font-weight:200}.postscopes{background-color:#f7f7f7;padding:5px;font-size:.9em}#redirect3dMessage{color:#666;font-size:14px;font-weight:200;padding-left:8px}.redirect3dHeader{font-size:28px}#redirect3dMessage a,#redirect3dMessage a:visited{font-size:14px;color:#5077bb}.taskBar{position:absolute;top:0;right:0;margin-top:-2.75em}.taskStrip{margin:0;padding:6px 6px 6px 0;list-style-type:none}.taskStrip li{display:inline!important;padding:0;margin:0}.taskStrip li a{margin:0 8px}.taskItem{display:inline;border:1px solid transparent;background:transparent;padding:3px 0;overflow:visible;width:auto;height:auto;cursor:pointer}#taskBar .taskItem{padding:0 0 3px 0}.taskItem span{margin-right:2px;padding-left:18px}li.clicked button.taskItem{border:1px solid #99afc7}.taskItem img{vertical-align:middle}div.dropDownPanel{background:#fff;position:absolute;top:0;left:0;display:none;visibility:hidden;overflow:hidden;border:1px solid #99afc7;width:17em}div.dropped button.taskItem{display:block;border:1px solid transparent;width:100%;color:#374d92}button.taskItem{position:relative}#taskBar input{font-size:1em;font-family:verdana;vertical-align:top}#taskBar_qparam,#taskBar_what,#taskBar_where{border:1px solid #59990e;padding:3px 3px 0 3px;margin-right:5px;margin-top:5px;float:left}#taskBar_qparam,#taskBar_what{margin-left:10px}#taskBar_qparam{width:28em;margin-bottom:30px}.searchbttn{margin-top:3px;padding-top:2px;padding-bottom:2px;color:#fff;border-width:0;font-weight:bold;cursor:pointer;background:#62a21d}.searchbttn:hover{background-color:#47950c}.Watermark{color:#999!important}.taskItem div{display:inline;margin-left:2px}.taskItem span,.separator,.taskStrip li{vertical-align:middle}.taskBar_IconBackground{display:block;position:absolute;left:0;width:16px;height:16px}li.sep{position:relative;vertical-align:top;margin-right:2px!important}.taskBar_separator{display:block;position:absolute;top:0;left:-3px;background-color:#ccc;width:1px;height:19px}#taskBar .taskBar_separator{top:2px}.higButton{border:solid 1px #fa5;color:#fff;padding:3px 10px;background-color:#ed9631;width:auto;overflow:visible;cursor:pointer;margin-left:5px}.higButton:hover{text-decoration:underline}.scratchpadBrowserPrint{display:none}.clear{position:relative;height:0!important;width:0!important;font-size:0!important;line-height:0!important;margin:0!important;padding:0!important;border:0!important;clear:both!important}.VETask .toolbar{margin-top:10px}#TaskHost_CollectionsViewer .searchResults li{margin:0 0 6px 0;padding:3px 0 3px 40px}.recalllist{position:absolute;top:0}.pl_shadow{position:relative;float:left;padding:0 3px 3px 0;filter:shadow(color=gray,direction=135)}ul.pl_dropDown{margin:0;padding:4px;width:250px;border:solid 1px #99afc7;background-color:#fff;z-index:100}#MultimapPanel h2{margin:0 0 20px}#MultimapPanel h3{color:#666;margin:0 0 10px;font-weight:bold;font-size:1.2em}#MultimapPanel a{font-size:1em}.MultimapPanelBlock{border:1px solid #fff;background:#f7f7f7;-moz-border-radius:4px;-webkit-border-radius:4px;padding:4px 10px;zoom:1}.MultimapMigrationText{font-size:.92em}.landing .MultimapMigrationText{font-size:1em}#MultimapLogo{padding:0;margin:0 0 10px;float:none}#NewFeatures{margin:0;padding:0;list-style:none}#NewFeatures li{margin:0 0 10px}#NewFeatures a{font-size:1.1em;display:block;padding:3px 0;padding-left:50px;overflow:hidden;text-decoration:none}#NewFeatures a .button{margin:-3px 0 0 -50px;display:inline;float:left;height:40px;width:50px;cursor:pointer;background-repeat:no-repeat}#NewFeatures a span{color:#666;display:block;font-size:.9em}#WIPRoutePlanner a .button{background-image:url(http://sc1.maps.live.com//i/out/20160119.1437/taskbar/taskbar_dd_icon.png)}#WIPRoutePlanner a:hover .button{background-image:url(http://sc1.maps.live.com//i/out/20160119.1437/taskbar/taskbar_dd_icon_hover.png)}#WIPRoutePlanner a:active .button{background-image:url(http://sc1.maps.live.com//i/out/20160119.1437/taskbar/taskbar_dd_icon_hover.png)}#WIPMapStyles a .button{background-image:url(http://sc1.maps.live.com//i/out/20160119.1437/taskbar/taskbar_mapStyles.png)}#WIPMapStyles a:hover .button{background-image:url(http://sc1.maps.live.com//i/out/20160119.1437/taskbar/taskbar_mapStyles_hover.png)}#WIPMapStyles a:active .button{background-image:url(http://sc1.maps.live.com//i/out/20160119.1437/taskbar/taskbar_mapStyles_hover.png)}.MSVE_MapContainer{cursor:-moz-grab;text-align:left}.MSVE_MapContainer:active{cursor:-moz-grabbing}.MSVE_minimap_container{position:absolute;z-index:750;top:30px;right:0;border-left:10px solid white;border-bottom:10px solid white;background:#e9e7d4}html{overflow:auto}a:visited{color:#03c}.bing51hdr .sw_a a:visited{color:#777}html,body,#veform,.modalLayer,#content{height:100%;min-height:520px;-ms-content-zooming:none}.veform{min-width:987px}#sw_canvas{padding-top:0!important;padding-left:0!important}body{background-color:#fff;margin:0;padding:0}#veform{height:100%;width:100%;z-index:0}#sw_main{position:static;padding:0;margin:0}.sw_q_nrw{margin:0 0 -.88em;font-size:100%;padding:.19em .31em .25em .56em;height:1.25em;line-height:1.25em}#container{position:relative;height:100%;overflow:hidden;font-size:1em;min-height:520px;font:small/normal Arial,Helvetica,Sans-Serif}#logging{position:absolute;top:0;left:-5000px}#recalllist{position:absolute;visibility:hidden;z-index:411;top:0;left:-5000px}#msve_main{position:relative;height:0;z-index:0;width:auto!important;direction:ltr}#msve_mapArea{position:relative;height:100%;z-index:100;float:right}#msve_mapContainer{height:100%;width:auto;overflow:hidden;background:#e9e7d4;position:relative}#msve_taskArea{position:relative;float:left;width:350px;height:100%;overflow:hidden;z-index:100;border-right:1px solid #b2b2b2}#msve_taskArea .closeButton span{position:absolute;left:-5000px}#msve_taskArea .closeButton{position:absolute;right:5px;height:12px;width:12px;border:none;background:url(http://sc1.maps.live.com//i/out/20160119.1437/vecss.png) no-repeat 0 0;width:12px;height:12px;background-position:0 -611px;overflow:hidden;z-index:100}#msve_taskArea .closeButton:hover{}#RAPLink,#msve_taskArea #feedbackDiv a{display:inline-block;cursor:pointer}#msve_taskArea #feedbackDiv{display:inline-block;margin-top:10px}#msve_taskArea_data{position:relative;overflow:auto;overflow-x:hidden;width:100%}#slider{position:absolute;width:30px;height:24px;top:140px;left:0;z-index:121}#slider span{position:absolute;left:-5000px}#taskBar_directionsBtn .icon{background:transparent url(http://sc1.maps.live.com//i/out/20160119.1437/vecss.png) no-repeat;width:16px;height:16px;background-position:0 -511px}#taskBar_nearbyBtn .icon{background:transparent url(http://sc1.maps.live.com//i/out/20160119.1437/vecss.png) no-repeat;width:16px;height:16px;background-position:0 -562px}#taskBar_transitBtn .icon{width:16px;height:16px;background:transparent url(http://sc1.maps.live.com//i/out/20160119.1437/vecss.png) no-repeat;width:16px;height:16px;background-position:0 -443px}#taskBar_trafficButton{display:inline-block;width:auto;height:29px}#taskBar_trafficButton.on{color:#666}#taskBar_multiMapTransitButton{width:auto;height:29px;cursor:pointer;padding:0 15px;display:none}#taskBar_collectionsButton .icon{background:transparent url(http://sc1.maps.live.com//i/out/20160119.1437/vecss.png) no-repeat;width:16px;height:16px;background-position:0 -494px}#taskBar_shareButton .icon{background:transparent url(http://sc1.maps.live.com//i/out/20160119.1437/vecss.png) no-repeat;width:16px;height:16px;background-position:0 -528px}#taskBar_printBtn .icon{background:transparent url(http://sc1.maps.live.com//i/out/20160119.1437/vecss.png) no-repeat;width:16px;height:16px;background-position:0 -579px}#taskBar_fullScreenButton .icon{background:transparent url(http://sc1.maps.live.com//i/out/20160119.1437/vecss.png) no-repeat;width:16px;height:16px;background-position:0 -460px}.FlyoutGlyph{background-image:url(http://sc1.maps.live.com//i/out/20160119.1437/vecss.png);width:4px;height:8px;background-position:0 -629px}.DropdownGlyph{background-image:url(http://sc1.maps.live.com//i/out/20160119.1437/vecss.png);width:8px;height:4px;background-position:0 -624px}#TaskHost{overflow:visible;position:relative;padding:1px 0}.VETask{padding-right:12px}#TaskHost_MapApp.VETask{padding-right:0!important}#TaskHost_CollectionsExplore,#TaskHost_CollectionsViewer{margin-left:12px;margin-top:16px}#sb_footL{display:none;margin:8px 0 0 10px}#sb_footL #sb_menu{background:url(http://sc1.maps.live.com//i/out/20160119.1437/vecss.png) no-repeat;width:14px;height:14px;background-position:0 -596px}#msve_taskArea_actionBar{position:relative;height:29px;border-bottom:1px solid #d4d4d4}#msve_taskArea_actionBar a,#msve_taskArea_actionBar a:visited{color:#568ac8}#msve_taskArea_actionBar .left,#msve_taskArea_actionBar .center,#msve_taskArea_actionBar .right{width:30%}#msve_taskArea_actionBar .left2Items,#msve_taskArea_actionBar .center2Items{width:50%}#msve_taskArea_actionBar .left{position:absolute;left:8px;z-index:1}#msve_taskArea_actionBar .center{position:absolute;left:0;right:0;top:0;width:100%;text-align:center}#msve_taskArea_actionBar .right{position:absolute;right:8px;top:0}#msve_taskArea_actionBar a.icnBtn,.OverlaysTL a.icnBtn{cursor:pointer;padding:0 15px;display:inline-block;width:auto;height:29px;white-space:nowrap}#msve_taskArea_actionBar a.icnBtn{text-overflow:ellipsis;overflow:hidden}#msve_taskArea_actionBar .left a.icnBtn,#msve_taskArea_actionBar .right a.icnBtn{width:100%}#msve_taskArea_actionBar a.icnBtn .icon,.OverlaysTL a.icnBtn .icon{display:inline-block;margin:7px 2px 6px 0}.OverlaysTL.narrow .icnBtn .text{display:none}#msve_taskArea_actionBar a.btn,.OverlaysTL a.btn,#taskBar_multiMapTransitButton{cursor:pointer;padding:0 15px}.id_h_ltr{right:20px}.id_h_rtl{left:20px}h2{font:small/normal Arial,Helvetica,Sans-Serif}.sw_qbtn{background-image:url(http://sc1.maps.live.com//i/out/20160119.1437/sw_mg_l_4d_bo.png);background-repeat:no-repeat;background-position:-97px 0;width:23px;height:23px;border:0;background-color:#fff;border-color:#fff}.as_sbg{height:40px}.as_sbg_rtl{float:none;display:inline-block}.b_footer{position:fixed;bottom:0;left:0}#spMenuStrip{display:none}#spMenuStrip .taskStrip{padding:0}#spfMenu{padding-top:1px}#spMenuStrip li{float:left;position:relative!important}#spMenuStrip li div.dropDownPanel li{float:none}#spMenuStrip div.dropDownPanel{width:17em}div.spSubMenu{width:6em}.cMDialog{z-index:900;position:relative;background-color:#333;color:#aaa;left:inherit;right:inherit;bottom:auto}.cMDialog .bodyDiv{margin:0 0 6px 6px}.h{display:none}.cMDialog a{cursor:pointer}.cActionLnk{padding:4px 0;display:block}.commitControls{padding-left:4px;float:left;margin-top:14px}.nwywAction{clear:left}.Infobox2 .commitControls{padding-left:4px;float:right;margin-top:14px}#cDialog_cSelLbl{display:block}#collectionList{width:100%;position:relative;z-index:100}.commitControls fieldset{float:right;border:none;padding:0;margin:0}.commitControls .higButton{margin:0;cursor:pointer}#cDialog_message{display:block;margin-right:8px}.floatParent{position:absolute;width:30em;height:55px;z-index:900}.floatParent.h{display:block;left:0;top:0;visibility:hidden}#sendToOptions,#moreOptions{width:auto}#sendToOptions span,#moreOptions span{font-size:.92em!important;margin-right:6px}.eHide{display:none;visibility:hidden}#sToPanel_erostolc,#mPanel_moreLink{visibility:inherit!important}a.taskItem{padding:0;padding-bottom:2px;margin:0;border:none}a.taskItem span{vertical-align:baseline;margin:0;padding:0}.dropDownPanel .taskItem{border:0!important}.OverlaysTL.medium .icnBtn .text{display:none}
+
+			div#PrintMessage
+			{
+				display:none;
+			}
+            
+            
+			.nonplt
+			{
+				display:none;
+			}
+			
+			
+			            		
+		</style>
+
+        <style type = "text/css" media = "print">
+            
+            
+            
+
+			#msve_mapContainer
+			{
+				position: relative !important;
+				margin: 0 !important;
+				left: 0 !important;
+				border: 2pt solid #000;
+				height: 4in !important;
+				width: 6.75in !important;
+				overflow: hidden;
+			}
+			#CannotPrintImageryMsg
+			{
+				display: none;
+			}
+			#mapAppSL
+			{
+				width:980px;
+				height:600px;
+			}
+		
+		</style>
+
+		
+
+		
+		<!--[if lt IE 9]><style type = "text/css">v\:* { behavior:url(#default#VML); } </style><![endif]-->
+
+		<style type = "text/css">
+            a img { border: 0 !important; z-index: 600; }
+			#CannotPrintImageryMsg
+			{
+				display: none;
+			}
+				
+		</style>
+		
+		
+        <style type = "text/css" media = "screen">
+        body 
+        {
+            min-width: 987px;
+        }
+        </style>
+
+        
+
+		<link href="../fd/s/a/bing_p.ico" rel="icon"/>
+	
+		<link id="HeaderStyles" rel="stylesheet" type="text/css" href="http://sc1.maps.live.com//css/out/20160119.1437/es/bingHeader.css" media="screen" />
+	</head>
+	
+	<body>
+	
+	    <noscript>
+	        <div id="noJSContainer">
+	            <div id="noJSText" class="noJS">
+                    <p>Bing Maps proporciona a los EE. UU., Europa, América, África, Asia y al mundo entero mapas de carreteras y satélite, así como callejeros. Obtén indicaciones de ruta, conoce el estado del tráfico local y planea rutas hasta negocios cercanos. Usa las aplicaciones para encontrar las gasolineras próximas con los precios más bajos, buscar estacionamientos cercanos y sus tarifas, y calcular las rutas de los taxis y sus importes.
+Bing Maps es el sustituto de los productos MSN Maps and Directions, Mapblast.com y Mappoint.msn.com.
+Bing Maps usa JavaScript. JavaScript se encuentra deshabilitado o el explorador web no lo admite.</p>
+                </div>
+	        </div>
+        </noscript>
+        
+		
+
+		<!-- Add script to add domains whitelist -->
+		<script type="text/javascript" x="FA75D3C5">//<![CDATA[
+
+			var whitelistedSites = "bing.com,live.com";
+			if (window.AM && whitelistedSites)
+			{
+				var whitelist = whitelistedSites.split(",");
+				for (var i=0; i < whitelist.length; i++)
+				{
+					window.AM.push(whitelist[i]);
+				}
+			}
+		//]]></script>
+
+		<form name="veform" method="post" action="/maps/default.aspx" id="veform" onsubmit="return allowSubmit;" class="veform">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNjU1NDE1ODUxD2QWBgIBDxYCHgRUZXh0Bb6OATxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4vLzwhW0NEQVRBWw0Kc2lfU1Q9bmV3IERhdGU7DQovL11dPjwvc2NyaXB0PjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4vLzwhW0NEQVRBWwpfRz17U1Q6KHNpX1NUP3NpX1NUOm5ldyBEYXRlKSxNa3Q6ImVzLUVTIixSVEw6ZmFsc2UsVmVyOiIwNSIsSUc6IkUzOTRBMTM5QkFDQTQ3NkZBQ0YwNEY4MERCM0FDQUM0IixFdmVudElEOiI4ODkyREZGMDk0QjE0MUU2OTlFRkY2MzMyRDNGREQ4QyIsVjoiVmlydHVhbEVhcnRoIixQOiJWaXJ0dWFsRWFydGgiLERBOiJDaDEiLENJRDoiMDkxMzREQjI1NzRFNjNGQzA3RUU0NTE4NTY2NTYyRjUiLFNVSUg6Im5qM2szSDBOdEZ3YnpDYTJzMDVCV1EiLGdwVXJsOiJcL2ZkXC9sc1wvR0xpbmtQaW5nLmFzcHg/In07X0cubHNVcmw9Ii9mZC9scy9sP0lHPSIrX0cuSUcrIiZDSUQ9IitfRy5DSUQ7Y3VyVXJsPSJodHRwOlwvXC93d3cuYmluZy5jb21cL2hlYWRlciI7ZnVuY3Rpb24gc2lfVChhKXtpZihkb2N1bWVudC5pbWFnZXMpe19HLkdQSW1nPW5ldyBJbWFnZTtfRy5HUEltZy5zcmM9X0cuZ3BVcmwrJ0lHPScrX0cuSUcrJyZDSUQ9JytfRy5DSUQrJyYnK2E7fXJldHVybiB0cnVlO307Ci8vXV0+PC9zY3JpcHQ+PHN0eWxlIHR5cGU9InRleHQvY3NzIj5odG1sLGJvZHksaDEsaDIsaDMsaDQsaDUsaDYscCxpbWcsb2wsdWwsbGksZm9ybSx0YWJsZSx0cix0aCx0ZHtib3JkZXI6MDtib3JkZXItY29sbGFwc2U6Y29sbGFwc2U7Ym9yZGVyLXNwYWNpbmc6MDtsaXN0LXN0eWxlOm5vbmU7bWFyZ2luOjA7cGFkZGluZzowfSNiX2hlYWRlciwuYl9mb290ZXJ7Zm9udDoxM3B4L25vcm1hbCBBcmlhbCxIZWx2ZXRpY2EsU2Fucy1TZXJpZn0uYl9hY3RpdmUgYSwuYl9hY3RpdmUgYTp2aXNpdGVkLC5iX2FjdGl2ZSBhOmhvdmVyLC5iX2JldGF7Y29sb3I6IzQwNDA0MH0uYl9hY3RpdmUgYXtmb250LXdlaWdodDo3MDB9I2lkX2QgaDJ7Zm9udC1zaXplOjEzcHg7Zm9udC13ZWlnaHQ6NDAwO2ZvdW50LWZhbWlseTonU2Vnb2UgVUknLEFyaWFsLEhlbHZldGljYSxTYW5zLVNlcmlmfSNpZF9kIGF7Y29sb3I6IzEwMjBkMH0jaWRfaCAuZ2xlYW1vZmYgLnN3X21lSWMsLmlkX2J1dHRvbiAuc3dfc3BkLC5pZF9idXR0b24gLnN3X21lSWMsI2lkX2ggLnN3X3ByZWZ7YmFja2dyb3VuZC1pbWFnZTp1cmwoL3NhL3NpbWcvc3dfbmV3aGVhZDIucG5nKX0jaWRfaCAuZ2xlYW1vZmYgLnN3X21lSWN7aGVpZ2h0OjE2cHg7d2lkdGg6MTZweDtiYWNrZ3JvdW5kLXBvc2l0aW9uOi02MjdweCAwfS5pZF9idXR0b24gLnN3X3NwZHtoZWlnaHQ6MjBweDt3aWR0aDoyMHB4O2JhY2tncm91bmQtcG9zaXRpb246LTM0MXB4IDB9LmlkX2J1dHRvbiAuc3dfbWVJY3toZWlnaHQ6MTZweDt3aWR0aDoxNnB4O2JhY2tncm91bmQtcG9zaXRpb246LTUyMXB4IDB9I2lkX2ggLnN3X3ByZWZ7aGVpZ2h0OjE2cHg7d2lkdGg6MTZweDtiYWNrZ3JvdW5kLXBvc2l0aW9uOi00ODVweCAwfSNpZF9oIC5zd19wcmVmOmhvdmVyLCNpZF9oIC5zd19wcmVmOmFjdGl2ZSwjaWRfaCAuc3dfcHJlZjpmb2N1c3tiYWNrZ3JvdW5kLXBvc2l0aW9uOi01MDNweCAwfSNpZF9oIC5iX2ljb257aGVpZ2h0OjIwcHg7d2lkdGg6MjBweH0uYl9oaWRle2Rpc3BsYXk6bm9uZX0uc3dfbWVJYywuc3dfc3BkLC5zd19zcHIsLnN3X3ByZWYsLmJfbG9nbywuYl9zY29wZWJhcldpbmRvd3MsLmJfc2VhcmNoYm94U3VibWl0LC5pZHBfZmIsLmlkcF93bGlkLC5pZHBfdHd7YmFja2dyb3VuZC1pbWFnZTp1cmwoL3NhL3NpbWcvc3dfbmV3aGVhZDIucG5nKTtiYWNrZ3JvdW5kLXJlcGVhdDpuby1yZXBlYXR9LmJfc2NvcGViYXJXaW5kb3dze2JhY2tncm91bmQtcG9zaXRpb246LTU3NXB4IDB9LmJfc2NvcGViYXJXaW5kb3dzOmhvdmVyLC5iX3Njb3BlYmFyV2luZG93czphY3RpdmUsLmJfc2NvcGViYXJXaW5kb3dzOmZvY3Vze2JhY2tncm91bmQtcG9zaXRpb246LTU5MnB4IDB9LmJfc2VhcmNoYm94U3VibWl0e2JhY2tncm91bmQtcG9zaXRpb246LTk3cHggMH0uYl9mb2N1cyAuYl9zZWFyY2hib3hGb3JtIC5iX3NlYXJjaGJveFN1Ym1pdHtiYWNrZ3JvdW5kLXBvc2l0aW9uOi0xMjJweCAwO2JhY2tncm91bmQtY29sb3I6I2ZmYjkwMDtib3JkZXItY29sb3I6I2ZmYjkwMH0uc3dfcHJlZiwuaWRwX2ZiLC5pZHBfd2xpZCwuaWRwX3R3e2JhY2tncm91bmQtcG9zaXRpb246LTQ4NXB4IDA7aGVpZ2h0OjE2cHg7d2lkdGg6MTZweH0uc3dfcHJlZjpob3Zlciwuc3dfcHJlZjphY3RpdmUsLnN3X3ByZWY6Zm9jdXN7YmFja2dyb3VuZC1wb3NpdGlvbjotNTAzcHggMH0uaWRwX2Zie2JhY2tncm91bmQtcG9zaXRpb246LTI5OHB4IC0yMnB4fS5pZHBfd2xpZHtiYWNrZ3JvdW5kLXBvc2l0aW9uOi0zODRweCAwfS5pZHBfdHd7YmFja2dyb3VuZC1wb3NpdGlvbjotNjQ1cHggMH0uc3dfbWVJYywuc3dfc3ByLC5pbWdfcndkc19zbWx7YmFja2dyb3VuZC1wb3NpdGlvbjotNTIxcHggMDtoZWlnaHQ6MTZweDt3aWR0aDoxNnB4fSNzcGN2IC5zd19tZUljLC5yaWdsZWFtb24gLnN3X21lSWN7YmFja2dyb3VuZC1wb3NpdGlvbjotNTU3cHggMH0uZ2xlYW1vbiAuc3dfbWVJY3tiYWNrZ3JvdW5kLXBvc2l0aW9uOi02MjdweCAwfS5nbGVhbW9mZiAuc3dfbWVJY3tiYWNrZ3JvdW5kLXBvc2l0aW9uOi02MDlweCAwfS5zd19zcGR7YmFja2dyb3VuZC1wb3NpdGlvbjotMzQxcHggMDtoZWlnaHQ6MjBweDt3aWR0aDoyMHB4fS5iX2xvZ297d2lkdGg6NzNweDtoZWlnaHQ6MjlweDt2ZXJ0aWNhbC1hbGlnbjp0b3A7dGV4dC1pbmRlbnQ6LTk5OXB4O2Zsb2F0OnJpZ2h0O21hcmdpbi10b3A6NnB4fS5iX2xvZ28uYl9hbmltYXRle3dpZHRoOjgxcHg7aGVpZ2h0OjYwcHg7YmFja2dyb3VuZC1pbWFnZTp1cmwoJy9zL2EvYl9sb2dvX2FuaW0ucG5nJyk7YmFja2dyb3VuZC1wb3NpdGlvbjowO21hcmdpbjotOXB4IDdweCAtNXB4IDEycHh9LmJfYmV0YXtwb3NpdGlvbjphYnNvbHV0ZTt0b3A6OThweDtsZWZ0OjQ4cHh9I2JfaGVhZGVyIC5iX3NlYXJjaGJveEZvcm17cGFkZGluZzowIDAgMCA1cHh9I2JfaGVhZGVyIC5iX3NlYXJjaGJveHttYXJnaW4tcmlnaHQ6MTFweH0jYl9oZWFkZXIgLmJfYWN0aXZlIGE6YWZ0ZXJ7Y29udGVudDpub25lfWJvZHkgI2JfaGVhZGVye2hlaWdodDoxMjBweDtwYWRkaW5nLWJvdHRvbTowfSNiX2hlYWRlciwjaWRfaHtmb250LWZhbWlseToiU2Vnb2UgVUkiLEFyaWFsLEhlbHZldGljYSxTYW5zLVNlcmlmfS5iX2hlYWRCb3JkZXJ7bWFyZ2luLWxlZnQ6MTAwcHg7Ym9yZGVyLWJvdHRvbToxcHggc29saWQgI2VlZTtoZWlnaHQ6MTIwcHh9I2JfaGVhZGVyIC5iX2JldGF7d2lkdGg6MzJweDtoZWlnaHQ6N3B4O3RvcDo0OHB4O2xlZnQ6NDNweDt0ZXh0LWluZGVudDotOTk5cHg7YmFja2dyb3VuZDp1cmwoL3NhL3NpbWcvbXNfYmV0YS5wbmcpIG5vLXJlcGVhdH0jYl9oZWFkZXIgLmJfdG9wYmFyLCNiX2hlYWRlciAuYl9zY29wZWJhcntiYWNrZ3JvdW5kOm5vbmU7bWFyZ2luLWJvdHRvbTowfSNiX2hlYWRlciAuYl9zY29wZWJhcntwb3NpdGlvbjpyZWxhdGl2ZTttYXJnaW46MjBweCAwIDA7dGV4dC10cmFuc2Zvcm06bm9uZTt0b3A6NjFweDtmb250LXNpemU6MTRweDtmb250LXdlaWdodDo0MDB9I2JfaGVhZGVyIC5iX3Njb3BlYmFyIHVsLCNiX2hlYWRlciAuYl9zY29wZWJhciBhe3BhZGRpbmc6MH0uYl9zY29wZWJhciBsaXtsaW5lLWhlaWdodDozMHB4O21hcmdpbjowIDEzcHg7cGFkZGluZzowIDhweH0uYl9zY29wZWJhciAuYl9hY3RpdmV7Ym9yZGVyLXRvcDozcHggc29saWQgI2Y4NGUyOX0uYl9zY29wZWJhciwuYl9zY29wZWJhciBhLC5iX3Njb3BlYmFyIGE6dmlzaXRlZHtjb2xvcjojNzc3fS5iX3Njb3BlYmFyIC5iX2FjdGl2ZSBhLC5iX3Njb3BlYmFyIGE6aG92ZXJ7Y29sb3I6IzAwMH0uYl9zY29wZWJhciAuYl9hY3RpdmUgYXtmb250LXdlaWdodDo2MDB9LmJfbmF2YmFye2hlaWdodDo1MHB4fSNzYl9mb3JtIC5iX2xvZ29BcmVhe3dpZHRoOjcxcHg7bWFyZ2luOi0ycHggOXB4IDAgMH0jc2JfZm9ybSAuYl9sb2dve2JhY2tncm91bmQtcG9zaXRpb246MCAwO3dpZHRoOjI4cHg7aGVpZ2h0OjM2cHh9I2JfaGVhZGVyICNzYl9mb3Jte3Bvc2l0aW9uOnJlbGF0aXZlO3RvcDotMzhweDtsZWZ0Oi04NXB4fSNzYl9mb3JtIC5iX3NlYXJjaGJveHtib3JkZXItcmlnaHQ6bm9uZTtmb250LXNpemU6MjBweDttYXJnaW4tdG9wOjRweDttYXJnaW4tbGVmdDoxOHB4O3BhZGRpbmctdG9wOjB9I3NiX2Zvcm0gLmJfc2VhcmNoYm94LmJfc29mdGtleXt3aWR0aDo0MzVweH0jc2JfZm9ybSAuYl9zZWFyY2hib3hGb3Jte3BhZGRpbmc6MDttYXJnaW4tbGVmdDo1cHg7bWFyZ2luLXRvcDoycHg7ei1pbmRleDoxMDE7Ym9yZGVyOjFweCBzb2xpZCAjY2NjfSNzYl9mb3JtIC5iX3NlYXJjaGJveEZvcm06aG92ZXJ7Ym9yZGVyLWNvbG9yOiNhOWE5YTl9I3NiX2Zvcm0gLmJfc2VhcmNoYm94U3VibWl0e3ZlcnRpY2FsLWFsaWduOm1pZGRsZTt3aWR0aDozMnB4O2hlaWdodDozMnB4O2JvcmRlci13aWR0aDo1cHggNnB4IDRweCA1cHg7Ym9yZGVyLWNvbG9yOiMwMDc4ZDc7Ym9yZGVyLXN0eWxlOnNvbGlkO21hcmdpbjotMXB4IDRweCA0cHg7YmFja2dyb3VuZC1jb2xvcjojMDA3OGQ3O2JhY2tncm91bmQtcG9zaXRpb246LTEyMXB4IDB9I2JfaGVhZGVyLmJfZm9jdXMgLmJfc2VhcmNoYm94Rm9ybSwjc2JfZm9ybSAuc2FfYXN7Ym9yZGVyLWNvbG9yOiM5OTl9I3NhX3VsIC5zYV9zIC5zYV90bXttYXJnaW4tbGVmdDoxMnB4fWJvZHkgI2lkX2h7dG9wOjEwcHg7aGVpZ2h0OjUwcHg7bWFyZ2luLXJpZ2h0OjB9I2lkX2ggI2lkX2wsI2lkX2ggI2lkX2w6aG92ZXIsI2lkX2ggI2lkX2w6Zm9jdXMsI2lkX2ggI2lkX2w6YWN0aXZlLCNpZF9oICNpZF9yaCwjaWRfaCAjaWRfcmg6aG92ZXIsI2lkX2ggI2lkX3JoOmZvY3VzLCNpZF9oICNpZF9yaDphY3RpdmUsI2lkX2ggLnN3X3ByZWYsI2lkX2ggLnN3X3ByZWY6aG92ZXIsI2lkX2ggLnN3X3ByZWY6Zm9jdXMsI2lkX2ggLnN3X3ByZWY6YWN0aXZle2JvcmRlci1jb2xvcjojZmZmO2JhY2tncm91bmQtY29sb3I6I2ZmZn0jaWRfcmgsI2lkX2wuaWRfYnV0dG9ue21hcmdpbjowIDEycHh9I2lkX3JoIC5pZF9hdmF0YXJ7bWFyZ2luLWxlZnQ6OHB4fSNpZF9oICNiZXBmbywjaWRfaCAjaWRfZCwjaWRfaCAjaWRfc2Nmb3t0b3A6NTBweDtib3JkZXItdG9wLXdpZHRoOjFweH0jYl9oZWFkZXIgI2lkX2ggI2JlcGZvLCNpZF9oICNpZF9ke2xlZnQ6YXV0bztyaWdodDowfSNpZF9oIC5pZF9idXR0b257bGluZS1oZWlnaHQ6NTBweH0jaWRfaCAuc3dfbWVJY3ttYXJnaW4tdG9wOjE3cHh9I2lkX2ggLnN3X3NwZHtib3JkZXItcmFkaXVzOjI1cHg7YmFja2dyb3VuZC1wb3NpdGlvbjotMzBweCAwfSNpZF9oICNpZF9wLCNpZF9oICNpZF9he2hlaWdodDo1MHB4O3dpZHRoOjUwcHg7bWFyZ2luLXRvcDowO2JvcmRlci1yYWRpdXM6MjVweH0jaWRfZntkaXNwbGF5Om5vbmV9I2lkX2wuaWRfYnV0dG9ue3BhZGRpbmc6MH0jaWRfbCAuaWRfYXZhdGFye21hcmdpbi1sZWZ0OjhweH0jaWRfaCAuc3dfcHJlZntib3JkZXItd2lkdGg6MTZweCAwO3ZlcnRpY2FsLWFsaWduOnRvcDttYXJnaW4tbGVmdDoxMnB4O2JhY2tncm91bmQtcG9zaXRpb246LTgxcHggLTI0cHg7aGVpZ2h0OjE4cHg7d2lkdGg6MTdweH0jaWRfaCAuc3dfcHJlZjpob3ZlciwjaWRfaCAuc3dfcHJlZjpmb2N1cywjaWRfaCAuc3dfcHJlZjphY3RpdmV7YmFja2dyb3VuZC1wb3NpdGlvbjotMTAxcHggLTI0cHh9LmJfc2NvcGViYXJ7YmFja2dyb3VuZC1jb2xvcjojZmZmfS5iX3NlYXJjaGJveEZvcm0gLmJfc2VhcmNoYm94U3VibWl0e2JhY2tncm91bmQtY29sb3I6IzAwNzhkNztib3JkZXItY29sb3I6IzAwNzhkN30uYl9zZWFyY2hib3hGb3JtLC5zYV9hc3tiYWNrZ3JvdW5kLWNvbG9yOiNmZmZ9LnNhX2hke2NvbG9yOiMzMzN9LnN3X3ByZWYsLmJfYWN0aXZlIGE6YWZ0ZXJ7Ym9yZGVyLWNvbG9yOiNmZmZ9LmJfYWN0aXZlIGE6YWZ0ZXJ7Ym9yZGVyLWJvdHRvbS1jb2xvcjojZmZmfS5iX3NlYXJjaGJveEZvcm17Ym9yZGVyLWNvbG9yOiNjY2N9LmJfc2NvcGViYXIsLmJfc2NvcGViYXIgYSwuYl9zY29wZWJhciBhOnZpc2l0ZWQsLmlkX2J1dHRvbiwuaWRfYnV0dG9uOnZpc2l0ZWR7Y29sb3I6Izc3N30uaWRfYnV0dG9uOmhvdmVyLC5iX2lkT3BlbiBhI2lkX2wsYSNiZXAub3BlbmZvLGEjaWRfcmgub3BlbmZve2NvbG9yOiMzMzM7YmFja2dyb3VuZC1jb2xvcjojZmZmfS5iX3Njb3BlYmFyIC5iX2FjdGl2ZSBhLC5iX3Njb3BlYmFyIGE6aG92ZXJ7Y29sb3I6IzAwMH0jc3dfYXN7Y29sb3I6Izk5OX0uc2FfdG0gc3Ryb25ne2NvbG9yOiM0MDQwNDB9LnNhX2Fze2JvcmRlci1jb2xvcjojOTk5fS5zYV9odntiYWNrZ3JvdW5kOiNmNmY1ZjV9I2JlcGZve2JvcmRlci1jb2xvcjojZmZmO2JhY2tncm91bmQtY29sb3I6I2ZmZn0uYl9pZE9wZW4gI2lkX2x7YmFja2dyb3VuZC1jb2xvcjojZmZmfS53cGNfYnViIGF7Y29sb3I6IzEwMjBkMH0uYl9zZWFyY2hib3h7YmFja2dyb3VuZC1jb2xvcjp0cmFuc3BhcmVudH0uYl9zZWNvbmRhcnlTY29wZSBhLC5iX3NlY29uZGFyeVNjb3BlIGE6dmlzaXRlZHtjb2xvcjojZmZiOTAwO2JhY2tncm91bmQtY29sb3I6IzQ0NDt0ZXh0LXRyYW5zZm9ybTpub25lO3BhZGRpbmc6MCAzMHB4fS5iX3NlY29uZGFyeVNjb3BlIGE6aG92ZXJ7Y29sb3I6IzAwMDtiYWNrZ3JvdW5kLWNvbG9yOiM3Nzd9I2JfaGVhZGVye21hcmdpbi1ib3R0b206NDJweH0uYl9zY29wZWJhcntoZWlnaHQ6MzBweDtvdmVyZmxvdy15OmhpZGRlbn0uYl9zY29wZWJhciB1bHtwYWRkaW5nOjAgMCAwIDEwNXB4fS5iX3Njb3BlYmFyIGxpLC5iX3Njb3BlYmFyIGEsLmJfbG9nbywuYl9zZWFyY2hib3hGb3JtLCNpZF9oIC5pZF9idXR0b24sLmlkX2F2YXRhciwucndkc19iZXBfaGVhZCwuc3dfcHJlZntkaXNwbGF5OmlubGluZS1ibG9ja30uYl9zY29wZWJhciBhe3BhZGRpbmc6MCAxNXB4fS5iX2FjdGl2ZSBhLC5iX3NlYXJjaGJveEZvcm17cG9zaXRpb246cmVsYXRpdmV9LmJfYWN0aXZlIGE6YWZ0ZXJ7Y29udGVudDoiICI7Ym9yZGVyLXdpZHRoOjAgOXB4IDlweDtib3JkZXItc3R5bGU6c29saWQ7ZGlzcGxheTppbmxpbmUtYmxvY2s7cG9zaXRpb246YWJzb2x1dGU7bGVmdDo1MCU7dG9wOjIzcHg7bWFyZ2luOjAgMCAwIC05cHh9YS5iX3Njb3BlYmFyV2luZG93c3t3aWR0aDoxNXB4O2hlaWdodDoxNXB4O2Rpc3BsYXk6aW5saW5lLWJsb2NrO3BhZGRpbmc6MDttYXJnaW46MCAxNXB4IC0ycHh9LmJfbG9nb0FyZWF7d2lkdGg6OTBweDttYXJnaW46LTJweCAxMHB4IDAgMDtmbG9hdDpsZWZ0fS5iX3NlYXJjaGJveEZvcm17cGFkZGluZzowIDVweDtib3JkZXItd2lkdGg6MXB4O2JvcmRlci1zdHlsZTpzb2xpZH0uYl9zZWFyY2hib3h7d2lkdGg6NDkwcHg7bWFyZ2luLXRvcDoycHg7bWFyZ2luLXJpZ2h0OjA7bWFyZ2luLWJvdHRvbTozcHg7bWFyZ2luLWxlZnQ6MTJweDtib3JkZXI6MDtwYWRkaW5nLXRvcDowO3BhZGRpbmctcmlnaHQ6MTBweDtwYWRkaW5nLWJvdHRvbTowO3BhZGRpbmctbGVmdDowO21heC1oZWlnaHQ6MzBweDtvdXRsaW5lOm5vbmU7Ym9yZGVyLXJpZ2h0OjFweCBzb2xpZDtib3JkZXItY29sb3I6I2NjYztib3gtc2l6aW5nOmNvbnRlbnQtYm94O3Bvc2l0aW9uOnJlbGF0aXZlO2hlaWdodDo0MHB4fS5iX2ZvY3VzIC5iX3NlYXJjaGJveHtib3JkZXItd2lkdGg6MH0uYl9zZWFyY2hib3hTdWJtaXR7d2lkdGg6NDBweDtoZWlnaHQ6MzVweDtib3JkZXItdG9wLXdpZHRoOjZweDtib3JkZXItcmlnaHQtd2lkdGg6OHB4O2JvcmRlci1ib3R0b20td2lkdGg6NnB4O2JvcmRlci1sZWZ0LXdpZHRoOjlweDttYXJnaW46LTFweCA0cHggNHB4O2JvcmRlci1zdHlsZTpzb2xpZDt0ZXh0LWluZGVudDotOTllbTt2ZXJ0aWNhbC1hbGlnbjpib3R0b207cG9zaXRpb246c3RhdGljO3JpZ2h0OjA7dG9wOjB9LmJfZm9jdXMgLmJfc2VhcmNoYm94Rm9ybSAuYl9zZWFyY2hib3hTdWJtaXR7YmFja2dyb3VuZC1jb2xvcjojZmZiOTAwO2JvcmRlci1jb2xvcjojZmZiOTAwfSNiX2hlYWRlciAuYl9zZWFyY2hib3h7bWFyZ2luLXJpZ2h0OjB9LmJfZm9jdXMgLmJfc2VhcmNoYm94Rm9ybXtib3JkZXItY29sb3I6Izk5OX0jc3dfYXN7ZGlzcGxheTpub25lO3dpZHRoOmF1dG87cG9zaXRpb246cmVsYXRpdmU7ei1pbmRleDo2fS5zYV9hc3tib3JkZXItd2lkdGg6MXB4O2JvcmRlci1zdHlsZTpzb2xpZDtwb3NpdGlvbjphYnNvbHV0ZTtkaXNwbGF5Om5vbmU7d2lkdGg6MTAwJX0jc2FfdWwgZGl2LnNhX3Rte21hcmdpbi1sZWZ0OjEycHh9LnNhX3Nne3BhZGRpbmc6MCA1cHh9I3NhX3VsIC5zYV9oZHttYXJnaW4tbGVmdDoxN3B4fS5iX3NlYXJjaGJveFN1Ym1pdCwuc2Ffc2d7Y3Vyc29yOnBvaW50ZXJ9I2lkX2h7dG9wOjA7aGVpZ2h0OjMwcHg7dGV4dC1hbGlnbjpyaWdodDt6LWluZGV4OjJ9I2lkX2wsLmlkX2J1dHRvbntwYWRkaW5nOjAgMTBweH0uaWRfYXZhdGFye3ZlcnRpY2FsLWFsaWduOnRvcDttYXJnaW46NXB4IDAgMCAxMHB4fS5zd19tZUlje21hcmdpbi10b3A6N3B4fS5yd2RzX2JlcF9oZWFke3ZlcnRpY2FsLWFsaWduOnRvcDttYXJnaW46N3B4IDAgMCA2cHh9I2JlcGZve2JvcmRlci13aWR0aDowIDFweCAxcHggMXB4O2JvcmRlci1zdHlsZTpzb2xpZH0jYmVwZm8sI2JlcGZtLCNiZXBmbHt3aWR0aDozNzJweH0jYmVwZm17ZGlzcGxheTpibG9ja30jYmVwZmx7dGV4dC1hbGlnbjpjZW50ZXI7bWFyZ2luOjUwcHggMH0jaWRfZCwjYmVwZm8sI2lkX3NjZm97cG9zaXRpb246YWJzb2x1dGU7dG9wOjMwcHg7ei1pbmRleDo2O3RleHQtYWxpZ246bGVmdDtjb2xvcjojMzMzO2JhY2tncm91bmQtY29sb3I6I2ZmZjtib3JkZXI6MXB4IHNvbGlkICNjY2M7Ym9yZGVyLXRvcC13aWR0aDowfSNpZF9zY2Zve3JpZ2h0OjB9LmJfaWRPcGVuICNpZF9ke2Rpc3BsYXk6YmxvY2s7cGFkZGluZzoxMXB4IDAgNXB4fSNzd190ZmJiLCNpZF9ke2Rpc3BsYXk6bm9uZX0uc3dfcHJlZntib3JkZXItc3R5bGU6c29saWQ7Ym9yZGVyLXdpZHRoOjdweCAwIDdweCAxMHB4O3ZlcnRpY2FsLWFsaWduOmJvdHRvbX0jYl90d2VlbnttYXJnaW4tdG9wOi0yOHB4fSNiX3R3ZWVuJmd0O3NwYW57bGluZS1oZWlnaHQ6MzBweH0jYl90d2VlbiAuZnRySHtsaW5lLWhlaWdodDozMHB4O2hlaWdodDozMHB4fWlucHV0e2ZvbnQ6aW5oZXJpdDtmb250LXNpemU6MTAwJX0uYl9zZWFyY2hib3hGb3Jte2ZvbnQ6MThweC9ub3JtYWwgJ1NlZ29lIFVJJyxBcmlhbCxIZWx2ZXRpY2EsU2Fucy1TZXJpZn0uYl9iZXRhe2ZvbnQ6MTFweC9ub3JtYWwgQXJpYWwsSGVsdmV0aWNhLFNhbnMtU2VyaWZ9LmJfc2NvcGViYXIsLmlkX2J1dHRvbntsaW5lLWhlaWdodDozMHB4fS5zYV9oZCwuYl9zY29wZWJhcnt0ZXh0LXRyYW5zZm9ybTp1cHBlcmNhc2V9YTpob3Zlciwuc2FfaHZ7dGV4dC1kZWNvcmF0aW9uOnVuZGVybGluZX1hLCNiX2hlYWRlciBhLCNiX2hlYWRlciBhOmhvdmVyLCNpZF9oIGEsI2lkX2ggYTpob3ZlciwuYl90b2dnbGUsLmJfdG9nZ2xlOmhvdmVye3RleHQtZGVjb3JhdGlvbjpub25lfSNzYV91bCwucHBfdGl0bGV7Zm9udDoxNnB4L25vcm1hbCAnU2Vnb2UgVUknLEFyaWFsLEhlbHZldGljYSxTYW5zLVNlcmlmfS5zYV90bXtsaW5lLWhlaWdodDozMHB4fSNzYV91bCAuc2FfaGR7Zm9udC1zaXplOjExcHg7bGluZS1oZWlnaHQ6MTZweH0jc3dfYXMgc3Ryb25ne2ZvbnQtZmFtaWx5OidTZWdvZSBVSSBTZW1pYm9sZCcsJ1NlZ29lIFVJJyxBcmlhbCxIZWx2ZXRpY2EsU2Fucy1TZXJpZn0jYl9oZWFkZXIgLmJfaGVhZEJvcmRlcnttYXJnaW4tcmlnaHQ6MjBweH0jaWRfaHtkaXNwbGF5Om5vbmU7ZmxvYXQ6cmlnaHQ7bWFyZ2luLXJpZ2h0OjIwcHg7cG9zaXRpb246cmVsYXRpdmV9I2lkX2R7cmlnaHQ6MjVweH0jaWRfaCAjYmVwZm97cmlnaHQ6MH0uYl9zY29wZWJhcntkaXNwbGF5OmlubGluZS1mbGV4O2Zsb2F0OmxlZnR9LmJfbmF2YmFyOmFmdGVye2NsZWFyOmJvdGg7Y29udGVudDonLic7ZGlzcGxheTpibG9jaztoZWlnaHQ6MDt2aXNpYmlsaXR5OmhpZGRlbn0uYl90b3BiYXJ7YmFja2dyb3VuZC1jb2xvcjojZmZmO21hcmdpbi1ib3R0b206MTBweH0jbGFuZ0NoYW5nZS5sYW5nZGlzcHtkaXNwbGF5OmlubGluZS1ibG9jazt2aXNpYmlsaXR5OnZpc2libGV9QG1lZGlhIGFsbCBhbmQgKG1heC13aWR0aDoxMjAwcHgpeyNsYW5nQ2hhbmdlLmxhbmdkaXNwe2Rpc3BsYXk6bm9uZX19I2xhbmdDaGFuZ2UgYXtjb2xvcjojNzc3fSNsYW5nQ2hhbmdlIGE6aG92ZXJ7Y29sb3I6IzAwMH0jbGFuZ0NoYW5nZSBzcGFue21hcmdpbjowIDEwcHh9I2xhbmdDaGFuZ2V7Y29sb3I6Izc3NzttYXJnaW4tcmlnaHQ6MTRweH0jYl9oZWFkZXIgLmJfc2VhcmNoYm94U3VibWl0e3Bvc2l0aW9uOmFic29sdXRlO3RvcDozcHg7cmlnaHQ6MH0jc2JfZm9ybXttaW4td2lkdGg6NjgwcHh9I2JfaGVhZGVyIC5iX3NlYXJjaGJveEZvcm17Ym9yZGVyOjA7cGFkZGluZzowfSNiX2hlYWRlciAuYl9zZWFyY2hib3h7Ym9yZGVyOjFweCBzb2xpZCAjY2NjO21heC1oZWlnaHQ6MzVweDtwYWRkaW5nOjAgMTdweH0jYl9oZWFkZXIgI3NiX2Zvcm1fcXttYXJnaW46MDt3aWR0aDoyMDBweH0jYl9oZWFkZXIgI3NiX2Zvcm1fcTJ7bWFyZ2luOjAgMCAwIDVweDt3aWR0aDoyNDJweH0uYl9zZWFyY2hib3hTdWJtaXR7aGVpZ2h0OjM3cHg7Ym9yZGVyLXdpZHRoOjdweCA5cHggN3B4IDhweH0uc2JfZm9ybV9sYWJlbHMgbGFiZWx7ZmxvYXQ6bGVmdDtwYWRkaW5nOjVweCAwIDAgMDtsaW5lLWhlaWdodDoxNnB4fSNzYl9mb3JtX2xhYmVsMnttYXJnaW46MCAwIDAgMjNweDt3aWR0aDoyNjVweH0jc2JfZm9ybV9sYWJlbHttYXJnaW46MCAwIDAgMTE4cHg7d2lkdGg6MjE4cHh9LmJfZm9vdGVye2JhY2tncm91bmQtY29sb3I6IzMzMztjb2xvcjojZmZmO2Zsb2F0OmxlZnQ7d2lkdGg6MTAwJTtsaW5lLWhlaWdodDoxOHB4fS5iX2Zvb3RlciBhLC5iX2Zvb3RlciBhOnZpc2l0ZWQsLmJfZm9vdGVyIHNwYW57Y29sb3I6Izc3N30uYl9mb290ZXIgdWx7bGluZS1oZWlnaHQ6MzBweDtwYWRkaW5nLWxlZnQ6MTA1cHh9LmJfZm9vdGVyIGxpe2Rpc3BsYXk6aW5saW5lLWJsb2NrO2NvbG9yOiM3Nzc7cGFkZGluZzowIDE1cHggMCAxNXB4fS5iX2Zvb3RlciBhLC5jYnRue3RleHQtZGVjb3JhdGlvbjpub25lfS5jYnRue2ZvbnQtc2l6ZToxM3B4O2ZvbnQtd2VpZ2h0OjcwMDtmb250LWZhbWlseTpBcmlhbCxIZWx2ZXRpY2EsU2Fucy1TZXJpZn0uYl9mb290ZXIgYTpob3ZlciwuYl9mb290ZXIgYSNzYl9mZWVkYmFjazpob3Zlcntjb2xvcjojZmZmfS5iX2Zvb3RlciAuYl90cmFkZW1hcmt7ZmxvYXQ6cmlnaHQ7cGFkZGluZy1yaWdodDoyMHB4fS5iX2ZMb2dve21hcmdpbi1ib3R0b206MTNweH0jc2JfZmVlZGJhY2t7Y29sb3I6IzZjYzFlOX08L3N0eWxlPjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4vLzwhW0NEQVRBWwp3aW5kb3cub25lcnJvcnx8KHdpbmRvdy5vbmVycm9yPWZ1bmN0aW9uKG4sdCxpLHIsdSl7dmFyIGY9IiI7dHlwZW9mIG49PSJvYmplY3QiJiZuLnNyY0VsZW1lbnQmJm4uc3JjRWxlbWVudC5zcmM/Zj0iXCJTY3JpcHRTcmMgPSAnIitlc2NhcGUobi5zcmNFbGVtZW50LnNyYy5yZXBsYWNlKC8nL2csIiIpKSsiJ1wiIjoobj0iIituLGY9JyInK2VzY2FwZShuLnJlcGxhY2UoLyIvZywiIikpKyciLCJNZXRhIjoiJytlc2NhcGUodCkrJyIsIkxpbmUiOicraSsnLCJDaGFyIjogJytyLHUmJnUuc3RhY2smJihmKz0nLCJTdGFjayI6IicrZXNjYXBlKHUuc3RhY2sucmVwbGFjZShsb2NhdGlvbi5ocmVmLCJzZWxmIikucmVwbGFjZSgvIi9nLCIiKSsnIicpKSk7KG5ldyBJbWFnZSkuc3JjPV9HLmxzVXJsKycmVHlwZT1FdmVudC5DbGllbnRJbnN0JkRBVEE9W3siVCI6IkNJLkVycm9yIiwiRklEIjoiQ0kiLCJOYW1lIjoiSlNFcnJvciIsIlRleHQiOicrZisifV0iO3R5cGVvZiBzal9ldnQhPSJ1bmRlZmluZWQiJiZzal9ldnQuZmlyZSgiRXJyb3JJbnN0cnVtZW50YXRpb24iLGYpfSk7dmFyIGFtZCxkZWZpbmUscmVxdWlyZTsoZnVuY3Rpb24obil7ZnVuY3Rpb24gZShuLGksdSl7dFtuXXx8KHRbbl09e2RlcGVuZGVuY2llczppLGNhbGxiYWNrOnV9LHIobikpfWZ1bmN0aW9uIHIobil7aWYobil7aWYobilyZXR1cm4gdShuKX1lbHNle2lmKCFmKXtmb3IodmFyIHIgaW4gdCl1KHIpO2Y9ITB9cmV0dXJuIGl9fWZ1bmN0aW9uIHUobil7dmFyIHMsZTtpZihpW25dKXJldHVybiBpW25dO2lmKHQuaGFzT3duUHJvcGVydHkobikpe3ZhciBoPXRbbl0sZj1oLmRlcGVuZGVuY2llcyxsPWguY2FsbGJhY2ssYT1yLG89e30sYz1bYSxvXTtpZihmLmxlbmd0aDwyKXRocm93ImludmFsaWQgdXNhZ2UiO2Vsc2UgaWYoZi5sZW5ndGg+Milmb3Iocz1mLnNsaWNlKDIsZi5sZW5ndGgpLGU9MDtlPHMubGVuZ3RoO2UrKyljLnB1c2godShzW2VdKSk7cmV0dXJuIGwuYXBwbHkodGhpcyxjKSxpW25dPW8sb319dmFyIHQ9e30saT17fSxmPSExO24uZGVmaW5lPWU7bi5yZXF1aXJlPXJ9KShhbWR8fChhbWQ9e30pKTtkZWZpbmU9YW1kLmRlZmluZTtyZXF1aXJlPWFtZC5yZXF1aXJlO3ZhciBfdz13aW5kb3csX2Q9ZG9jdW1lbnQsc2JfaWU9d2luZG93LkFjdGl2ZVhPYmplY3QhPT11bmRlZmluZWQsc2JfaTY9c2JfaWUmJiFfdy5YTUxIdHRwUmVxdWVzdCxfZ2U9ZnVuY3Rpb24obil7cmV0dXJuIF9kLmdldEVsZW1lbnRCeUlkKG4pfSxzYl9zdD1mdW5jdGlvbihuLHQpe3JldHVybiBzZXRUaW1lb3V0KG4sdCl9LHNiX3JzdD1zYl9zdCxzYl9jdD1mdW5jdGlvbihuKXtjbGVhclRpbWVvdXQobil9LHNiX2d0PWZ1bmN0aW9uKCl7cmV0dXJuKG5ldyBEYXRlKS5nZXRUaW1lKCl9LHNqX2d4PWZ1bmN0aW9uKCl7cmV0dXJuIHNiX2k2P25ldyBBY3RpdmVYT2JqZWN0KCJNU1hNTDIuWE1MSFRUUCIpOm5ldyBYTUxIdHRwUmVxdWVzdH07X3cuc2pfY2U9ZnVuY3Rpb24obil7cmV0dXJuIF9kLmNyZWF0ZUVsZW1lbnQobil9O193LnNqX2Nvb2s9e2dldDpmdW5jdGlvbihuLHQpe3ZhciBpPV9kLmNvb2tpZS5tYXRjaChuZXcgUmVnRXhwKCJcXGIiK24rIj1bXjtdKyIpKSxyO3JldHVybiB0JiZpPyhyPWlbMF0ubWF0Y2gobmV3IFJlZ0V4cCgiXFxiIit0KyI9KFteJl0qKSIpKSxyP3JbMV06bnVsbCk6aT9pWzBdOm51bGx9fTtfdy5za19tZXJnZXx8KF93LnNrX21lcmdlPWZ1bmN0aW9uKG4pe19kLmNvb2tpZT1ufSk7ZGVmaW5lKCJmYWxsYmFjayIsWyJyZXF1aXJlIiwiZXhwb3J0cyJdLGZ1bmN0aW9uKG4sdCl7ZnVuY3Rpb24gZigpe3JldHVybiBmdW5jdGlvbigpe2Zvcih2YXIgcixoLGMsdD1bXSxuPTA7bjxhcmd1bWVudHMubGVuZ3RoO24rKyl0WytuXT1hcmd1bWVudHNbbl07aWYocj1vKGFyZ3VtZW50cy5jYWxsZWUpLHUmJihoPWUociksaC50b1N0cmluZygpIT1mKCkudG9TdHJpbmcoKSkpcmV0dXJuIGguYXBwbHkobnVsbCxhcmd1bWVudHMpO2M9aVtyXS5xO3RbMF09PT0ib25QUCImJnMoKTtjLnB1c2godCl9fWZ1bmN0aW9uIG8obil7Zm9yKHZhciB0IGluIGkpaWYoaVt0XS5oPT09bilyZXR1cm4gdH1mdW5jdGlvbiBlKG4sdCl7Zm9yKHZhciB1LGU9bi5zcGxpdCgiLiIpLGk9X3cscj0wO3I8ZS5sZW5ndGg7cisrKXU9ZVtyXSx0eXBlb2YgaVt1XT09InVuZGVmaW5lZCImJnQmJihpW3VdPXI9PT1lLmxlbmd0aC0xP2YoKTp7fSksaT1pW3VdO3JldHVybiBpfWZ1bmN0aW9uIHMoKXt2YXIgZT1pWyJybXMuanMiXS5xLG8sZix0LG4scix1O2lmKGUubGVuZ3RoPjApZm9yKG89ITEsZj0wO2Y8ZS5sZW5ndGg7ZisrKXtmb3IodD1lW2ZdLG49MDtuPHQubGVuZ3RoO24rKylpZihyPXRbbl1bIkE6cm1zOmFuc3dlcnM6U2hhcmVkOkJpbmdDb3JlLkJ1bmRsZSJdLHJ8fChyPXRbbl1bIkE6cm1zQnUwIl0pLHIpe3U9X2QuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7dS5zZXRBdHRyaWJ1dGUoImRhdGEtcm1zIiwiMSIpO3Uuc3JjPXI7dS50eXBlPSJ0ZXh0L2phdmFzY3JpcHQiO3NldFRpbWVvdXQoZnVuY3Rpb24oKXtfZC5ib2R5LmFwcGVuZENoaWxkKHUpfSwwKTt0LnNwbGljZShuLDEpO289ITA7YnJlYWt9aWYobylicmVha319ZnVuY3Rpb24gaCgpe3ZhciBuLHQsZjtmb3IodT0hMSxuPTA7bjxyLmxlbmd0aDtuKyspdD1yW25dLGY9ZSh0LCEwKSxpW3RdPXtoOmYscTpbXX19ZnVuY3Rpb24gYygpe2Zvcih2YXIgdCxuPTA7bjxyLmxlbmd0aDtuKyspe3ZhciBvPXJbbl0scz1pW29dLnEsaD1lKG8pO2Zvcih0PTA7dDxzLmxlbmd0aDt0KyspaC50b1N0cmluZygpIT09ZigpLnRvU3RyaW5nKCkmJmguYXBwbHkobnVsbCxzW3RdKX11PSEwfWZ1bmN0aW9uIGwobix0LGkscil7biYmKChuPT09X3d8fG49PT1fZHx8bj09PV9kLmJvZHkpJiZ0PT0ibG9hZCI/X3cuc2pfZXZ0LmJpbmQoIm9uUDEiLGksITApOm4uYWRkRXZlbnRMaXN0ZW5lcj9uLmFkZEV2ZW50TGlzdGVuZXIodCxpLHIpOm4uYXR0YWNoRXZlbnQ/bi5hdHRhY2hFdmVudCgib24iK3QsaSk6blsib24iK3RdPWkpfXZhciByPVsicm1zLmpzIiwic2pfZXZ0LmJpbmQiLCJzal9ldnQuZmlyZSIsInNqX2piIiwic2pfd2YiLCJzal9jb29rLmdldCIsInNqX2Nvb2suc2V0Iiwic2pfcGQiLCJzal9zcCIsInNqX2JlIiwic2pfZ28iLCJzal9ldiIsInNqX3VlIiwic2pfZXZ0LnVuYmluZCIsInNqX2V0IiwiTG9nLkxvZyIsInNqX21vIiwic2pfc28iXSxpPXt9LHU9ITE7dC5yZXBsYXk9YztoKCk7X3cuc2pfYmU9bH0pO2Z1bmN0aW9uIGxiKCl7X3cuc2lfc2VuZENSZXEmJnNiX3N0KF93LnNpX3NlbmRDUmVxLDgwMCk7X3cubGJjJiZfdy5sYmMoKX07Q2xpY2tUcmFja2luZ0NvbmZpZz17fTtmdW5jdGlvbiBzaV9jdChuLHQsaSl7dmFyIHU9ImdldEF0dHJpYnV0ZSIsZixyO3RyeXtmb3IoO24hPT1kb2N1bWVudC5ib2R5O249bi5wYXJlbnROb2RlKXtpZihmPW4udGFnTmFtZT09IkEiJiYoblt1XSgiaCIpfHxuW3VdKCJkYXRhLWgiKSl8fG5bdV0oIl9jdCIpLGYpe3I9blt1XSgiX2N0ZiIpO3ImJl93W3JdfHwocj0ic2lfVCIpO193W3JdJiZfd1tyXSgiJiIrZixuLGkpO2JyZWFrfWlmKHQpYnJlYWt9fWNhdGNoKGUpe31yZXR1cm4hMH0oZnVuY3Rpb24oKXtzal9iZShkb2N1bWVudCwibW91c2Vkb3duIixmdW5jdGlvbihuKXtzaV9jdChzYl9pZT9fdy5ldmVudC5zcmNFbGVtZW50Om4udGFyZ2V0LCExLF93LmV2ZW50fHxuKX0sITEpfSkoKTt2YXIgd2xjX2QgPSAxNTAwLHdsY190ID0gNjM1ODk1NzUxMjU7O193LnNpX1BQPWZ1bmN0aW9uKG4sdCxpKXt2YXIgcixlLHUsbyxzLGwsYSxmLHYsaCxjO2lmKCFfRy5QUFMpe2ZvcihlPVsiRkMiLCJCQyIsIkgiLCJCUCIsbnVsbF07cj1lLnNoaWZ0KCk7KWUucHVzaCgnIicrcisnIjonKyhfR1tyKyJUIl0/X0dbcisiVCJdLV9HLlNUOi0xKSk7aWYodT1pfHxfdy5wZXJmb3JtYW5jZSYmX3cucGVyZm9ybWFuY2UudGltaW5nLG89bnVsbCx1JiYocz1bInVubG9hZEV2ZW50U3RhcnQiLCJ1bmxvYWRFdmVudEVuZCIsInJlZGlyZWN0U3RhcnQiLCJyZWRpcmVjdEVuZCIsImZldGNoU3RhcnQiLCJkb21haW5Mb29rdXBTdGFydCIsImRvbWFpbkxvb2t1cEVuZCIsImNvbm5lY3RTdGFydCIsImNvbm5lY3RFbmQiLCJzZWN1cmVDb25uZWN0aW9uU3RhcnQiLCJyZXF1ZXN0U3RhcnQiLCJyZXNwb25zZVN0YXJ0IiwiZG9tTG9hZGluZyIsImRvbUludGVyYWN0aXZlIiwiZG9tQ29udGVudExvYWRlZEV2ZW50U3RhcnQiLCJkb21Db250ZW50TG9hZGVkRXZlbnRFbmQiLCJkb21Db21wbGV0ZSIsImxvYWRFdmVudFN0YXJ0IiwibG9hZEV2ZW50RW5kIiwibXNGaXJzdFBhaW50IiwicmVzcG9uc2VFbmQiLCIiXSxsPXUubmF2aWdhdGlvblN0YXJ0LGw+PTApKXtmb3Iodj1oPWE9MDtyPXMuc2hpZnQoKTthKyspZj11W3JdLGY+MCYmKHZ8PTE8PGEsZi09bCxzLnB1c2goZj09PWg/IiI6KGYtaCkudG9TdHJpbmcoMTYpKSxoPWYpO2M9Im5hdmlnYXRpb24iO289JywidzNjIjoiJyt2LnRvU3RyaW5nKDE2KSsiLCIrcy5qb2luKCkrJyIsIm5hdiI6JysoYyBpbiB1P3VbY106cGVyZm9ybWFuY2VbY10udHlwZSl9X0cuUFBJbWc9bmV3IEltYWdlO19HLlBQSW1nLnNyYz1fRy5sc1VybCsnJlR5cGU9RXZlbnQuQ1BUJkRBVEE9eyJwcCI6eyJTIjoiJysodHx8IkwiKSsnIiwnK2Uuam9pbigiLCIpKycsIkNUIjonKyhuLV9HLlNUKSsnLCJJTCI6JytfZC5pbWFnZXMubGVuZ3RoKyJ9IisoX0cuQzE/IiwiK19HLkMxOiIiKSsobyE9PW51bGw/bzoiIikrIn0iKyhfRy5QPyImUD0iK19HLlA6IiIpKyhfRy5EQT8iJkRBPSIrX0cuREE6IiIpKyhfRy5NTj8iJk1OPSIrX0cuTU46IiIpO19HLlBQUz0xO3NiX3N0KGZ1bmN0aW9uKCl7c2pfZXZ0LmZpcmUoIm9uUFAiKTtzal9ldnQuZmlyZShfdy5wMSl9LDEpfX07X3cub25iZWZvcmV1bmxvYWQ9ZnVuY3Rpb24oKXtzaV9QUChuZXcgRGF0ZSwiQSIpfTsoZnVuY3Rpb24obil7dmFyIGkscix0O2lmKGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3Ipe2k9W107cj0iYWQiO2Z1bmN0aW9uIHUoKXt2YXIgYz1zYl9ndCgpLHU9ZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50LHI9ZG9jdW1lbnQuYm9keSxmPS0xLGU9LTEsbz11LmNsaWVudEhlaWdodCxzPVsiI2JfcmVzdWx0cyAuYl9hZCIsIi5zYl9hZHNXdjIiLCIuYWRzIl0sdCxoLG47aWYocil7Zm9yKHQ9MDt0PHMubGVuZ3RoO3QrKylpZihoPXNbdF0sbj1kb2N1bWVudC5xdWVyeVNlbGVjdG9yKGgpLG4mJm4ub2Zmc2V0VG9wPG8pe2Y9bi5vZmZzZXRIZWlnaHQ7ZT1uLm9mZnNldFRvcDticmVha31pPVtlLGYsdS5jbGllbnRXaWR0aCxvLHIub2Zmc2V0V2lkdGgsci5vZmZzZXRIZWlnaHQsc2JfZ3QoKS1jXX19bj8odD1uLm9uYmVmb3JlZmlyZSxuLm9uYmVmb3JlZmlyZT1mdW5jdGlvbigpe3QmJnQoKTt1KCk7bi5tYXJrKHIsaSl9KToodD1zaV9QUCxzaV9QUD1mdW5jdGlvbigpe3UoKTt2YXIgbj0nIicrcisnIjpbJytpLmpvaW4oKSsiXSI7X0cuQzE9X0cuQzE/X0cuQzErIiwiK246bjt0LmFwcGx5KG51bGwsW10uc2xpY2UuYXBwbHkoYXJndW1lbnRzKSl9KX19KShfdy5wcCk7dmFyIHNqX2xvZz1mdW5jdGlvbihuLHQsaSl7dmFyIHI9bmV3IFJlZ0V4cCgnIicsImciKTsobmV3IEltYWdlKS5zcmM9X0cubHNVcmwrJyZUeXBlPUV2ZW50LkNsaWVudEluc3QmREFUQT1beyJUIjoiJytuKyciLCJGSUQiOiJDSSIsIk5hbWUiOiInK3QrJyIsIlRleHQiOiInK2VzY2FwZShpLnJlcGxhY2UociwiIikpKycifV0nfTtfdy5BTT1bImxpdmUuY29tIiwidmlydHVhbGVhcnRoLm5ldCIsIndpbmRvd3MubmV0Iiwib25lbm90ZSIsImhleHVuLmNvbSIsImRpY3QuYmluZy5jb20uY24iLCJtc24uY29tIiwidmFyaWZsaWdodC5jb20iLCJiaW5nLm5ldCIsIm1zZnRvZmZlcnMuY29tIiwiY2hpbmFjbG91ZGFwcC5jbiJdOyhmdW5jdGlvbigpe2Z1bmN0aW9uIGYodCxyKXt2YXIgdT10LnRhZ05hbWU7cmV0dXJuKHU9PT0iU0NSSVBUIiYmKG4uaHJlZj10LnNyYyl8fHU9PT0iT0JKRUNUIiYmdC50eXBlJiZ0LnR5cGUuaW5kZXhPZigiZmxhc2giKT4wJiYobi5ocmVmPXQuZGF0YSkpJiZuLmhyZWYubGVuZ3RoPjAmJm4uaG9zdG5hbWUubGVuZ3RoPjAmJm4uaG9zdG5hbWUhPT1sb2NhdGlvbi5ob3N0bmFtZSYmIWUobi5ob3N0bmFtZSk/KHNqX2xvZygiQ0kuQW50aU1hbHdhcmUiLHIsdS5zdWJzdHIoMCwxKSsiOiIrbi5ocmVmLnN1YnN0cigwLGkpKSwhMSk6ITB9ZnVuY3Rpb24gZShuKXtmb3IodmFyIGk9MDtpPHQubGVuZ3RoO2krKylpZihuLmluZGV4T2YodFtpXSk+PTApcmV0dXJuITA7cmV0dXJuITF9dmFyIHQ9X3cuQU0saT0xMDAsbj1kb2N1bWVudC5jcmVhdGVFbGVtZW50KCJBIikscix1O2RvY3VtZW50LndyaXRlPWZ1bmN0aW9uKG4pe24ubGVuZ3RoPjAmJnNqX2xvZygiQ0kuQW50aU1hbHdhcmUiLCJEVyIsbi5zdWJzdHIoMCxpKSl9O3R5cGVvZiBFbGVtZW50IT0idW5kZWZpbmVkIiYmRWxlbWVudC5wcm90b3R5cGUmJihyPUVsZW1lbnQucHJvdG90eXBlLmFwcGVuZENoaWxkLEVsZW1lbnQucHJvdG90eXBlLmFwcGVuZENoaWxkPWZ1bmN0aW9uKG4pe3JldHVybiBmKG4sIkFDIik/ci5hcHBseSh0aGlzLGFyZ3VtZW50cyk6bnVsbH0sdT1FbGVtZW50LnByb3RvdHlwZS5pbnNlcnRCZWZvcmUsRWxlbWVudC5wcm90b3R5cGUuaW5zZXJ0QmVmb3JlPWZ1bmN0aW9uKG4pe3JldHVybiBmKG4sIklCIik/dS5hcHBseSh0aGlzLGFyZ3VtZW50cyk6bnVsbH0pfSkoKTsKLy9dXT48L3NjcmlwdD5kAgcPFgQeBmFjdGlvbgUSL21hcHMvZGVmYXVsdC5hc3B4HgVjbGFzcwUGdmVmb3JtFgQCAg8WAh8ABec1PGRpdiBpZD0iYl9hcGlfaGVhZGVyIj48aGVhZGVyIGlkPSJiX2hlYWRlciI+PGRpdiBjbGFzcz0iYl9oZWFkQm9yZGVyIj48ZGl2IGNsYXNzPSJiX3RvcGJhciI+PGRpdiBjbGFzcz0iYl9uYXZiYXIiPjxuYXYgYXJpYS1sYWJlbD0ibmF2aWdhdGlvbiIgY2xhc3M9ImJfc2NvcGViYXIiIHJvbGU9Im5hdmlnYXRpb24iIGlkPSJiX3Njb3BlYmFyIj48dWw+PGxpPjxhIGhyZWY9Ii9zZWFyY2g/cT0mYW1wO0ZPUk09SERSU0MxIiBoPSJJRD1WaXJ0dWFsRWFydGgsNTAwMi4xIj5XZWI8L2E+PC9saT48bGk+PGEgaHJlZj0iL2ltYWdlcy9zZWFyY2g/cT0mYW1wO0ZPUk09SERSU0MyIiBoPSJJRD1WaXJ0dWFsRWFydGgsNTAwMy4xIj5JbcOhZ2VuZXM8L2E+PC9saT48bGk+PGEgaHJlZj0iL3ZpZGVvcy9zZWFyY2g/cT0mYW1wO0ZPUk09SERSU0MzIiBoPSJJRD1WaXJ0dWFsRWFydGgsNTAwNC4xIj5Ww61kZW9zPC9hPjwvbGk+PGxpIGNsYXNzPSJiX2FjdGl2ZSI+PGEgaHJlZj0iL21hcHMvP0ZPUk09SERSU0M0IiBoPSJJRD1WaXJ0dWFsRWFydGgsNTAwNS4xIj5NYXBhczwvYT48L2xpPjxsaT48YSBocmVmPSIvbmV3cy9zZWFyY2g/cT0mYW1wO0ZPUk09SERSU0M2IiBoPSJJRD1WaXJ0dWFsRWFydGgsNTAwNi4xIj5Ob3RpY2lhczwvYT48L2xpPjxsaT48YSBocmVmPSIvZXhwbG9yZT9xPSZhbXA7Rk9STT1IRFJTQzUiIGg9IklEPVZpcnR1YWxFYXJ0aCw1MDA3LjEiPkV4cGxvcmFyPC9hPjwvbGk+PC91bD48L25hdj48c3BhbiBpZD0ibGFuZ0NoYW5nZSIgY2xhc3M9ImJfaGlkZSI+PGEgaHJlZj0iL2hlYWRlcj9Jc2R1YWxzZWFyY2hib3g9MSZhbXA7aGFzbGFiZWw9MSZhbXA7SXNTZWFyY2hCb3hTdXBwcmVzc2VkPTAmYW1wO3E9JmFtcDtxMj0mYW1wO0lHPUUzOTRBMTM5QkFDQTQ3NkZBQ0YwNEY4MERCM0FDQUM0JmFtcDtJc1NsaW1Gb290ZXI9MSZhbXA7SXNGdWxsQnJhbmRCdW5kbGU9MCZhbXA7QXR0YWNoVG9GZWVkYmFja0Zvb3Rlckxpbms9MCZhbXA7SXNQb3BVcExvZ2luUHJvdmlkZXJFbmFibGVkPTEmYW1wO0lzUmVsYXRpdmVJZGVudGl0eT0xJmFtcDtDb250ZW50UHJvdmlkZXI9VmlydHVhbEVhcnRoJmFtcDtWZXJ0aWNhbD1WaXJ0dWFsRWFydGgmYW1wO2lpZD1WaXJ0dWFsRWFydGgmYW1wO3Njb3BlPWxvY2FsJmFtcDtzZXRta3Q9ZXMtZXMmYW1wO3NldGxhbmc9Y2EtZXMmYW1wO3NpZD0xMkQ2QjIxREZFNEQ2NzExMTBEMkJBQjdGRjY2NjY0RSIgaD0iSUQ9VmlydHVhbEVhcnRoLDUwMDguMSI+Y2F0YWzDoDwvYT48c3Bhbj58PC9zcGFuPjxhIGhyZWY9Ii9oZWFkZXI/SXNkdWFsc2VhcmNoYm94PTEmYW1wO2hhc2xhYmVsPTEmYW1wO0lzU2VhcmNoQm94U3VwcHJlc3NlZD0wJmFtcDtxPSZhbXA7cTI9JmFtcDtJRz1FMzk0QTEzOUJBQ0E0NzZGQUNGMDRGODBEQjNBQ0FDNCZhbXA7SXNTbGltRm9vdGVyPTEmYW1wO0lzRnVsbEJyYW5kQnVuZGxlPTAmYW1wO0F0dGFjaFRvRmVlZGJhY2tGb290ZXJMaW5rPTAmYW1wO0lzUG9wVXBMb2dpblByb3ZpZGVyRW5hYmxlZD0xJmFtcDtJc1JlbGF0aXZlSWRlbnRpdHk9MSZhbXA7Q29udGVudFByb3ZpZGVyPVZpcnR1YWxFYXJ0aCZhbXA7VmVydGljYWw9VmlydHVhbEVhcnRoJmFtcDtpaWQ9VmlydHVhbEVhcnRoJmFtcDtzY29wZT1sb2NhbCZhbXA7c2V0bWt0PWVzLWVzJmFtcDtzZXRsYW5nPWVuLXVzJmFtcDtzaWQ9MTJENkIyMURGRTRENjcxMTEwRDJCQUI3RkY2NjY2NEUiIGg9IklEPVZpcnR1YWxFYXJ0aCw1MDA5LjEiPkVuZ2xpc2g8L2E+PC9zcGFuPjxkaXYgaWQ9ImlkX2giIHJvbGU9ImNvbXBsZW1lbnRhcnkiIGNsYXNzPSJpZF9oX2x0ciI+PGEgaHJlZj0iamF2YXNjcmlwdDp2b2lkKDApOyIgaWQ9ImlkX2wiIGNsYXNzPSJpZF9idXR0b24iIGg9IklEPVZpcnR1YWxFYXJ0aCw1MDEyLjEiPjxzcGFuIGlkPSJpZF9zIj5JbmljaWFyIHNlc2nDs248L3NwYW4+PHNwYW4gaWQ9ImlkX2YiPkhvbGEsIHswfTwvc3Bhbj48c3BhbiBjbGFzcz0ic3dfc3BkIGlkX2F2YXRhciIgaWQ9ImlkX2EiPjwvc3Bhbj48c3BhbiBpZD0iaWRfbiIgc3R5bGU9ImRpc3BsYXk6bm9uZSI+PC9zcGFuPjxpbWcgaWQ9ImlkX3AiIGNsYXNzPSJiX2ljb24gaWRfYXZhdGFyIiBzdHlsZT0iZGlzcGxheTpub25lIiBzcmM9ImRhdGE6aW1hZ2UvZ2lmO2Jhc2U2NCxSMGxHT0RsaEFRQUJBSUFBQUFBQUFQLy8veUg1QkFFQUFBRUFMQUFBQUFBQkFBRUFBQUlCVEFBNyIgb25FcnJvcj0iaWYoc3JjPT09Jy9zL2EvYW5vbi5wbmcnKXt0aGlzLm9uZXJyb3I9bnVsbDt9IHRoaXMuc3JjPScvcy9hL2Fub24ucG5nJzsiIC8+PC9hPjxhIGhyZWY9ImphdmFzY3JpcHQ6dm9pZCgwKTsiIGlkPSJpZF9zYyIgY2xhc3M9InN3X3ByZWYiIHRpdGxlPSJQcmVmZXJlbmNpYXMiIGg9IklEPVZpcnR1YWxFYXJ0aCw1MDIyLjEiPjwvYT48c3BhbiBpZD0iaWRfc2NmbyIgX2lpZD0iVmlydHVhbEVhcnRoLjUwMjEiIGNsYXNzPSJiX2hpZGUiPjwvc3Bhbj48c3BhbiBpZD0iaWRfZCIgX2lpZD0iVmlydHVhbEVhcnRoLjUwMjMiPjwvc3Bhbj48L2Rpdj48ZGl2IGlkPSJzd190ZmJiIj48L2Rpdj48L2Rpdj48L2Rpdj48ZGl2IGlkPSJzYl9mb3JtIj48YSBocmVmPSIvP0ZPUk09WjlGRDEiIGNsYXNzPSJiX2xvZ29BcmVhIiBoPSJJRD1WaXJ0dWFsRWFydGgsNTAxMS4xIj48aDEgY2xhc3M9ImJfbG9nbyI+QmluZzwvaDE+PC9hPjxkaXYgY2xhc3M9ImJfc2VhcmNoYm94Rm9ybSI+PGlucHV0IGNsYXNzPSJiX3NlYXJjaGJveCIgaWQ9InNiX2Zvcm1fcSIgbmFtZT0id2hhdCIgdGl0bGU9IkVzY3JpYmUgZWwgdMOpcm1pbm8gZGUgYsO6c3F1ZWRhIiB0eXBlPSJzZWFyY2giIHZhbHVlPSIiIG1heGxlbmd0aD0iMTAwMCIgb25mb2N1cz0iX2dlKCdiX2hlYWRlcicpLmNsYXNzTmFtZT0nYl9mb2N1cyc7IiBkaXI9IiIgYXV0b2NhcGl0YWxpemU9Im9mZiIgYXV0b2NvcnJlY3Q9Im9mZiIgYXV0b2NvbXBsZXRlPSJvZmYiIHNwZWxsY2hlY2s9ImZhbHNlIiAvPjxpbnB1dCBjbGFzcz0iYl9zZWFyY2hib3giIGlkPSJzYl9mb3JtX3EyIiBuYW1lPSJ3aGVyZSIgdGl0bGU9IkVzY3JpYmUgZWwgdMOpcm1pbm8gZGUgYsO6c3F1ZWRhIiB0eXBlPSJzZWFyY2giIG1heGxlbmd0aD0iMTAwMCIgb25mb2N1cz0iX2dlKCdiX2hlYWRlcicpLmNsYXNzTmFtZT0nYl9mb2N1cyc7IiBhdXRvY2FwaXRhbGl6ZT0ib2ZmIiBhdXRvY29ycmVjdD0ib2ZmIiBhdXRvY29tcGxldGU9Im9mZiIgc3BlbGxjaGVjaz0iZmFsc2UiIC8+PGlucHV0IHR5cGU9InN1Ym1pdCIgY2xhc3M9ImJfc2VhcmNoYm94U3VibWl0IiBpZD0ic2JfZm9ybV9nbyIgdGl0bGU9IkJ1c2NhciIgdGFiSW5kZXg9IjAiIG5hbWU9ImdvIiB2YWx1ZT0iIiAvPjxpbnB1dCBpZD0ic2FfcXMiIG5hbWU9InFzIiB2YWx1ZT0iZHMiIHR5cGU9ImhpZGRlbiIgLz48aW5wdXQgdHlwZT0iaGlkZGVuIiB2YWx1ZT0iIiBuYW1lPSJmb3JtIiAvPjxpbnB1dCB0eXBlPSJoaWRkZW4iIHZhbHVlPSJsb2NhbCIgbmFtZT0ic2NvcGUiIC8+PC9kaXY+PGRpdiBjbGFzcz0ic2JfZm9ybV9sYWJlbHMiPjxsYWJlbCBpZD0ic2JfZm9ybV9sYWJlbCIgZm9yPSJzYl9mb3JtX3EiPjwvbGFiZWw+PGxhYmVsIGlkPSJzYl9mb3JtX2xhYmVsMiIgZm9yPSJzYl9mb3JtX3EyIj48L2xhYmVsPjwvZGl2PjwvZGl2PjwvZGl2PjwvaGVhZGVyPjwvZGl2PjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4vLzwhW0NEQVRBWwp2YXIgd2xjX2QgPSAxNTAwLHdsY190ID0gNjM1ODk1NzUxMjU7O19HLkFwcFZlcj0iOF8wMV8yXzQ2MjUwMjgiOwovL11dPjwvc2NyaXB0PjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4vLzwhW0NEQVRBWwooZnVuY3Rpb24obix0KXtvbmxvYWQ9ZnVuY3Rpb24oKXtfRy5CUFQ9bmV3IERhdGU7biYmbigpOyFfdy5zYl9wcENQTCYmdCYmc2Jfc3QoZnVuY3Rpb24oKXt0KG5ldyBEYXRlKX0sMCl9fSkoX3cub25sb2FkLF93LnNpX1BQKTt2YXIgU2VhcmNoQm94OyhmdW5jdGlvbihuKXtmdW5jdGlvbiBmKCl7aT1fZ2UoInNiX2Zvcm1fcSIpO3Q9X2dlKCJiX2hlYWRlciIpO3NqX2JlKF9kLmJvZHksImNsaWNrIixyKX1mdW5jdGlvbiByKG4pe3NqX2V0KG4pIT1pJiYodC5jbGFzc05hbWU9dC5jbGFzc05hbWUucmVwbGFjZSh1LCIiKSl9dmFyIHU9LyhefFxzKWJfZm9jdXMoPyFcUykvZ2ksaSx0O24ucmVtb3ZlRm9jdXNDbGFzcz1yO3NqX2V2dC5iaW5kKCJvblAxIixmKX0pKFNlYXJjaEJveHx8KFNlYXJjaEJveD17fSkpO3ZhciBJZGVudGl0eSA9IElkZW50aXR5IHx8IHt9OyhmdW5jdGlvbihpKXtpLndsSW1nU20gPSAiaHR0cHM6Ly9jaWQtezB9LnVzZXJzLnN0b3JhZ2UubGl2ZS5jb20vdXNlcnMvMHh7MH0vbXlwcm9maWxlL2V4cHJlc3Npb25wcm9maWxlL3Byb2ZpbGVwaG90bzpVc2VyVGlsZVN0YXRpYy9wP2NrPTFcdTAwMjZleD03MjBcdTAwMjZmb2ZvZmY9MVx1MDAyNnNpZD0xMkQ2QjIxREZFNEQ2NzExMTBEMkJBQjdGRjY2NjY0RSI7aS53bEltZ0xnID0gImh0dHBzOi8vY2lkLXswfS51c2Vycy5zdG9yYWdlLmxpdmUuY29tL3VzZXJzLzB4ezB9L215cHJvZmlsZS9leHByZXNzaW9ucHJvZmlsZS9wcm9maWxlcGhvdG86VXNlclRpbGVNZWRpdW0vcD9jaz0xXHUwMDI2ZXg9NzIwXHUwMDI2Zm9mb2ZmPTFcdTAwMjZzaWQ9MTJENkIyMURGRTRENjcxMTEwRDJCQUI3RkY2NjY2NEUiO2kucG9wdXBMb2dpblVybHMgPXsiV2luZG93c0xpdmVJZCI6Imh0dHBzOi8vbG9naW4ubGl2ZS5jb20vbG9naW4uc3JmP3dhPXdzaWduaW4xLjBcdTAwMjZycHNudj0xMVx1MDAyNmN0PTE0NTM5NzgzMjZcdTAwMjZydmVyPTYuMC41Mjg2LjBcdTAwMjZ3cD1NQklcdTAwMjZ3cmVwbHk9aHR0cHM6JTJGJTJmd3d3LmJpbmcuY29tJTJGc2VjdXJlJTJGUGFzc3BvcnQuYXNweCUzRnBvcHVwJTNEMVx1MDAyNmxjPTMwODJcdTAwMjZpZD0yNjQ5NjAifTt9KShJZGVudGl0eSk7OyhmdW5jdGlvbihuLHQpe2lmKHQpe3ZhciBpPSExLHI9ZnVuY3Rpb24oKXtpfHwoaT0hMCx0eXBlb2Ygd2xjIT0idW5kZWZpbmVkIiYmd2xjKHNqX2V2dCxzal9jb29rLnNldCx3bGNfdCkpfTtuLmJpbmQoIm9uUDEiLGZ1bmN0aW9uKCl7dmFyIGk9c2V0VGltZW91dChyLHQpO24uYmluZCgiZmI6Y29ubmVjdGluZyIsZnVuY3Rpb24oKXtjbGVhclRpbWVvdXQoaSk7bi5iaW5kKCJmYjpjb25uZWN0ZWQiLHIsMSl9LDEpfSwxKX19KShzal9ldnQsd2xjX2QpO3ZhciBzY2g9c2NofHx7fTsoZnVuY3Rpb24oKXt2YXIgdD1fZ2UoImlkX2giKSxuPV9nZSgiaWRfc2MiKSxpPSJjbGljayI7c2pfZXZ0LmJpbmQoIm9uUDEiLGZ1bmN0aW9uKCl7c2V0VGltZW91dChmdW5jdGlvbigpe3QmJm4mJihzal9qYigiQmx1ZS9TZXJ2aWNlc0hlYWRlckZseW91dF9jIiwwLHQsIm1vdXNlb3ZlciIsbixpLG4sImZvY3VzIiksc2pfYmUobixpLGZ1bmN0aW9uKG4pe3NjaC5jbGs9bn0pKX0sNTApfSwxKX0pKCk7X3cucm1zLmpzKHsnQTpybXM6YW5zd2VyczpTaGFyZWQ6QmluZ0NvcmUuQnVuZGxlJzonXC9ybXNcL0JpbmdDb3JlLkJ1bmRsZVwvamMsbmpcLzQ5MDc3MTdjXC9lYjA3NzgwOS5qcz9idT1ybXMrYW5zd2VycytTaGFyZWQrQmluZ0NvcmUlMjRDbGllbnRJbnN0VjIlMjREdXBsaWNhdGVYbHNEZWZhdWx0Q29uZmlnJTJjQmluZ0NvcmUlMjRDbGllbnRJbnN0VjIlMjRTaGFyZWRMb2NhbFN0b3JhZ2VDb25maWdEZWZhdWx0JTJjQmluZ0NvcmUlMjRzaGFyZWQlMmNCaW5nQ29yZSUyNGVudiUyY0JpbmdDb3JlJTI0ZXZlbnQuY3VzdG9tJTJjQmluZ0NvcmUlMjRldmVudC5uYXRpdmUlMmNCaW5nQ29yZSUyNG9uSFRNTCUyY0JpbmdDb3JlJTI0ZG9tJTJjQmluZ0NvcmUlMjRjb29raWVzJTJjQmluZ0NvcmUlMjRybXMlMmNCaW5nQ29yZSUyNENsaWVudEluc3RWMiUyNExvZ1VwbG9hZENhcEZlYXR1cmVEaXNhYmxlZCUyY0JpbmdDb3JlJTI0Q2xpZW50SW5zdFYyJTI0Q2xpZW50SW5zdENvbmZpZ1NlcGFyYXRlT2ZmbGluZVF1ZXVlJTJjQmluZ0NvcmUlMjRjbGllbnRpbnN0JTJjQmluZ0NvcmUlMjRyZXBsYXklMmNCaW5nQ29yZSUyNEFuaW1hdGlvbiUyY0JpbmdDb3JlJTI0ZmFkZUFuaW1hdGlvbiUyY0JpbmdDb3JlJTI0ZnJhbWV3b3JrJTJjQmluZ0NvcmUlMjRDb3JlVXRpbGl0aWVzJ30seydBOnJtczphbnN3ZXJzOlZpc3VhbFN5c3RlbTpMYW5ndWFnZVN3aXRjaCc6J1wvcm1zXC9MYW5ndWFnZVN3aXRjaFwvamMsbmpcLzZhZTQ0YzMzXC84MjYzZDI0ZC5qcz9idT1ybXMrYW5zd2VycytWaXN1YWxTeXN0ZW0rTGFuZ3VhZ2VTd2l0Y2gnfSx7J0E6cm1zOmFuc3dlcnM6SWRlbnRpdHk6Qmx1ZUlkZW50aXR5RHJvcGRvd25Cb290c3RyYXAnOidcL3Jtc1wvcm1zJTIwYW5zd2VycyUyMElkZW50aXR5JTIwQmx1ZSRCbHVlSWRlbnRpdHlEcm9wZG93bkJvb3RTdHJhcFwvamMsbmpcLzJjZTE2YzRlXC9iNGRlOTM4Ny5qcyd9LHsnQTpybXM6YW5zd2VyczpJZGVudGl0eTpCbHVlSWRlbnRpdHlIZWFkZXInOidcL3Jtc1wvcm1zJTIwYW5zd2VycyUyMElkZW50aXR5JTIwQmx1ZSRCbHVlSWRlbnRpdHlIZWFkZXJcL2pjLG5qXC9mNzFhMDM1NlwvNTE2N2E2NDAuanMnfSx7J0E6MCc6MH0pOzsKLy9dXT48L3NjcmlwdD48ZGl2IGlkPSJhUm1zRGVmZXIiPjxzY3JpcHQgdHlwZT0idGV4dC9ybXMiPi8vPCFbQ0RBVEFbCnZhciB3bGM9ZnVuY3Rpb24obix0LGkpe3ZhciB1LGYscjtuJiZJZGVudGl0eSYmKHU9SWRlbnRpdHkucG9wdXBMb2dpblVybHMpJiYoZj11LldpbmRvd3NMaXZlSWQpJiZJZGVudGl0eS53bFByb2ZpbGUmJihyPV9kLmNyZWF0ZUVsZW1lbnQoImlmcmFtZSIpLHIuc3R5bGUuZGlzcGxheT0ibm9uZSIsci5zcmM9ZisiJmNoZWNrZGE9MSIsX2QuYm9keS5hcHBlbmRDaGlsZChyKSxpJiZ0JiZ0KCJXTFMiLCJUUyIsaSwwLCIvIikpfTsKLy9dXT48L3NjcmlwdD48L2Rpdj5kAiQPFgIfAAW6BjxkaXYgaWQ9ImJfYXBpX2Zvb3RlciI+PGZvb3RlciBjbGFzcz0iYl9mb290ZXIiIGlkPSJiX2Zvb3RlciI+PHVsPjxsaT48YSBocmVmPSJodHRwOi8vZ28ubWljcm9zb2Z0LmNvbS9md2xpbmsvP0xpbmtJZD0yNDg2ODYmYW1wO0NMQ0lEPUMwQSIgaD0iSUQ9VmlydHVhbEVhcnRoLDUwMjYuMSI+UHJpdmFjaWRhZCB5IGNvb2tpZXM8L2E+PC9saT48bGk+PGEgaHJlZj0iaHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9MjQ2MzM4JmFtcDtDTENJRD1DMEEiIGg9IklEPVZpcnR1YWxFYXJ0aCw1MDI3LjEiPkxlZ2FsPC9hPjwvbGk+PGxpPjxhIGhyZWY9Imh0dHA6Ly9nby5taWNyb3NvZnQuY29tLz9saW5raWQ9OTg0NDMyOCIgaD0iSUQ9VmlydHVhbEVhcnRoLDUwMjguMSI+QW51bmNpb3M8L2E+PC9saT48bGk+PGEgaHJlZj0iaHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9Mjg2NzU5JmFtcDtDTENJRD00MEEiIHRhcmdldD0iX2JsYW5rIiBoPSJJRD1WaXJ0dWFsRWFydGgsNTAyOS4xIj5Tb2JyZSBudWVzdHJhIHB1YmxpY2lkYWQ8L2E+PC9saT48bGk+PGEgaHJlZj0iamF2YXNjcmlwdDpWRVNoZWxsLkhlbHAub3BlbkxpdmVIZWxwKCk7IiBpZD0ic2JfaGVscCIgaD0iSUQ9VmlydHVhbEVhcnRoLDUwMzEuMSI+QXl1ZGE8L2E+PC9saT48bGk+PGEgaHJlZj0iIyIgaWQ9InNiX2ZlZWRiYWNrIiBoPSJJRD1WaXJ0dWFsRWFydGgsNTAzMi4xIj5Db21lbnRhcmlvczwvYT48L2xpPjxsaSBjbGFzcz0iYl90cmFkZW1hcmsiPjxzcGFuPsKpIDIwMTYgTWljcm9zb2Z0PC9zcGFuPjwvbGk+PC91bD48L2Zvb3Rlcj48L2Rpdj5kAgkPDxYCHgdWaXNpYmxlaGRkGAgFE011bHRpdmlld0ZpcnN0Q2h1bmsPD2RmZAUNTXVsdGl2aWV3UmFpbA8PZAIBZAUUTXVsdGl2aWV3U2Vjb25kQ2h1bmsPD2QCAWQFFmZkUmFpbERhdGEkUmFpbExheW91dHMPD2QCAWQFG011bHRpdmlld0ZpcnN0Q2h1bmtSYWlsTW9kZQ8PZAIBZAUaVGFza0hvc3QkQ29sbGVjdGlvbnNWaWV3ZXIPFCsAAmRoZAUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFCk1hcENvbnRyb2wFJVRhc2tIb3N0JENvbGxlY3Rpb25zVmlld2VyUGFnZUNvbnRleHQPD2UWAGSrNcNs3bGvsAWmcNU7EEV9ET0dsg==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['veform'];
+if (!theForm) {
+    theForm = document.veform;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+
+<script type="text/javascript" x="FA75D3C5">//<![CDATA[
+function __InvokeTwoBoxSearch(what, where)
+{
+if ((!what) && (!where)) return;
+if (what) $ID('sb_form_q').value=what;if (where) $ID('sb_form_q2').value=where;
+__doPostBack('sb_form_go', '');
+}
+function __InvokePlaceSearch(where)
+{
+if (!where) return;
+$ID('sb_form_q2').value=where;
+__doPostBack('sb_form_go', '');
+}
+//]]></script><script type="text/javascript" x="FA75D3C5">//<![CDATA[
+function __InvokeCategorySearch(arg){
+__doPostBack('InvokeCategorySearch',arg)
+}
+//]]></script><script type="text/javascript" x="FA75D3C5">//<![CDATA[
+function __InvokeCategoryBrowser(arg){
+try{VEShell.WelcomeHelper.logWelcomePanelSearchLinkClick(arguments);}catch(ex){}__doPostBack('InvokeCategoryBrowser',arg)
+}
+//]]></script><script type="text/javascript" x="FA75D3C5">//<![CDATA[
+function __InvokeCollectionViewer(arg){
+__doPostBack('InvokeCollectionViewer',arg)
+}
+//]]></script><script type="text/javascript" x="FA75D3C5">//<![CDATA[
+function __InvokeWIPKeywordSearch(arg){
+__doPostBack('InvokeWIPKeywordSearch',arg)
+}
+//]]></script><script type="text/javascript" x="FA75D3C5">//<![CDATA[
+function SetProgressForExternalTrigger(id, style)
+{
+}
+//]]></script>
+
+
+<script type="text/javascript" x="FA75D3C5">//<![CDATA[
+
+var PageMethods = function() {
+PageMethods.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+function ajaxInitPageMethods(){PageMethods.prototype = {
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return PageMethods._staticInstance.get_path();},
+ToCosmos:function(p,l,c,s,r,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'ToCosmos',false,{p:p,l:l,c:c,s:s,r:r},succeededCallback,failedCallback,userContext); },
+Squish:function(queryParams,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'Squish',true,{queryParams:queryParams},succeededCallback,failedCallback,userContext); },
+Shorten:function(queryParams,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'Shorten',true,{queryParams:queryParams},succeededCallback,failedCallback,userContext); }}
+PageMethods.registerClass('PageMethods',Sys.Net.WebServiceProxy);
+PageMethods._staticInstance = new PageMethods();
+PageMethods.set_path = function(value) { PageMethods._staticInstance.set_path(value); }
+PageMethods.get_path = function() { return PageMethods._staticInstance.get_path(); }
+PageMethods.set_timeout = function(value) { PageMethods._staticInstance.set_timeout(value); }
+PageMethods.get_timeout = function() { return PageMethods._staticInstance.get_timeout(); }
+PageMethods.set_defaultUserContext = function(value) { PageMethods._staticInstance.set_defaultUserContext(value); }
+PageMethods.get_defaultUserContext = function() { return PageMethods._staticInstance.get_defaultUserContext(); }
+PageMethods.set_defaultSucceededCallback = function(value) { PageMethods._staticInstance.set_defaultSucceededCallback(value); }
+PageMethods.get_defaultSucceededCallback = function() { return PageMethods._staticInstance.get_defaultSucceededCallback(); }
+PageMethods.set_defaultFailedCallback = function(value) { PageMethods._staticInstance.set_defaultFailedCallback(value); }
+PageMethods.get_defaultFailedCallback = function() { return PageMethods._staticInstance.get_defaultFailedCallback(); }
+PageMethods.set_path("/default.aspx");
+PageMethods.ToCosmos= function(p,l,c,s,r,onSuccess,onFailed,userContext) {PageMethods._staticInstance.ToCosmos(p,l,c,s,r,onSuccess,onFailed,userContext); }
+PageMethods.Squish= function(queryParams,onSuccess,onFailed,userContext) {PageMethods._staticInstance.Squish(queryParams,onSuccess,onFailed,userContext); }
+PageMethods.Shorten= function(queryParams,onSuccess,onFailed,userContext) {PageMethods._staticInstance.Shorten(queryParams,onSuccess,onFailed,userContext); }
+}//]]></script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+</div>
+			<div id = "container">
+				<script type="text/javascript" x="FA75D3C5">//<![CDATA[
+
+function ajaxInitPhase1(){Sys.WebForms.PageRequestManager._initialize('scriptManager', document.getElementById('veform'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tTaskHost$CollectionsViewer'], ['InvokeCategorySearch','InvokeCategoryBrowser','InvokeCollectionViewer','InvokeWIPKeywordSearch','MapControl','backButton'], [], 90);
+}//]]></script>
+
+				
+				
+				<!-- Add header content here. Needs to be inside veform for the scripts to intercept clicks and key presses -->
+				<div id="b_api_header"><header id="b_header"><div class="b_headBorder"><div class="b_topbar"><div class="b_navbar"><nav aria-label="navigation" class="b_scopebar" role="navigation" id="b_scopebar"><ul><li><a href="/search?q=&amp;FORM=HDRSC1" h="ID=VirtualEarth,5002.1">Web</a></li><li><a href="/images/search?q=&amp;FORM=HDRSC2" h="ID=VirtualEarth,5003.1">Imágenes</a></li><li><a href="/videos/search?q=&amp;FORM=HDRSC3" h="ID=VirtualEarth,5004.1">Vídeos</a></li><li class="b_active"><a href="/maps/?FORM=HDRSC4" h="ID=VirtualEarth,5005.1">Mapas</a></li><li><a href="/news/search?q=&amp;FORM=HDRSC6" h="ID=VirtualEarth,5006.1">Noticias</a></li><li><a href="/explore?q=&amp;FORM=HDRSC5" h="ID=VirtualEarth,5007.1">Explorar</a></li></ul></nav><span id="langChange" class="b_hide"><a href="/header?Isdualsearchbox=1&amp;haslabel=1&amp;IsSearchBoxSuppressed=0&amp;q=&amp;q2=&amp;IG=E394A139BACA476FACF04F80DB3ACAC4&amp;IsSlimFooter=1&amp;IsFullBrandBundle=0&amp;AttachToFeedbackFooterLink=0&amp;IsPopUpLoginProviderEnabled=1&amp;IsRelativeIdentity=1&amp;ContentProvider=VirtualEarth&amp;Vertical=VirtualEarth&amp;iid=VirtualEarth&amp;scope=local&amp;setmkt=es-es&amp;setlang=ca-es&amp;sid=12D6B21DFE4D671110D2BAB7FF66664E" h="ID=VirtualEarth,5008.1">català</a><span>|</span><a href="/header?Isdualsearchbox=1&amp;haslabel=1&amp;IsSearchBoxSuppressed=0&amp;q=&amp;q2=&amp;IG=E394A139BACA476FACF04F80DB3ACAC4&amp;IsSlimFooter=1&amp;IsFullBrandBundle=0&amp;AttachToFeedbackFooterLink=0&amp;IsPopUpLoginProviderEnabled=1&amp;IsRelativeIdentity=1&amp;ContentProvider=VirtualEarth&amp;Vertical=VirtualEarth&amp;iid=VirtualEarth&amp;scope=local&amp;setmkt=es-es&amp;setlang=en-us&amp;sid=12D6B21DFE4D671110D2BAB7FF66664E" h="ID=VirtualEarth,5009.1">English</a></span><div id="id_h" role="complementary" class="id_h_ltr"><a href="javascript:void(0);" id="id_l" class="id_button" h="ID=VirtualEarth,5012.1"><span id="id_s">Iniciar sesión</span><span id="id_f">Hola, {0}</span><span class="sw_spd id_avatar" id="id_a"></span><span id="id_n" style="display:none"></span><img id="id_p" class="b_icon id_avatar" style="display:none" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" onError="if(src==='/s/a/anon.png'){this.onerror=null;} this.src='/s/a/anon.png';" /></a><a href="javascript:void(0);" id="id_sc" class="sw_pref" title="Preferencias" h="ID=VirtualEarth,5022.1"></a><span id="id_scfo" _iid="VirtualEarth.5021" class="b_hide"></span><span id="id_d" _iid="VirtualEarth.5023"></span></div><div id="sw_tfbb"></div></div></div><div id="sb_form"><a href="/?FORM=Z9FD1" class="b_logoArea" h="ID=VirtualEarth,5011.1"><h1 class="b_logo">Bing</h1></a><div class="b_searchboxForm"><input class="b_searchbox" id="sb_form_q" name="what" title="Escribe el término de búsqueda" type="search" value="" maxlength="1000" onfocus="_ge('b_header').className='b_focus';" dir="" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" /><input class="b_searchbox" id="sb_form_q2" name="where" title="Escribe el término de búsqueda" type="search" maxlength="1000" onfocus="_ge('b_header').className='b_focus';" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" /><input type="submit" class="b_searchboxSubmit" id="sb_form_go" title="Buscar" tabIndex="0" name="go" value="" /><input id="sa_qs" name="qs" value="ds" type="hidden" /><input type="hidden" value="" name="form" /><input type="hidden" value="local" name="scope" /></div><div class="sb_form_labels"><label id="sb_form_label" for="sb_form_q"></label><label id="sb_form_label2" for="sb_form_q2"></label></div></div></div></header></div><script type="text/javascript">//<![CDATA[
+var wlc_d = 1500,wlc_t = 63589575125;;_G.AppVer="8_01_2_4625028";
+//]]></script><script type="text/javascript">//<![CDATA[
+(function(n,t){onload=function(){_G.BPT=new Date;n&&n();!_w.sb_ppCPL&&t&&sb_st(function(){t(new Date)},0)}})(_w.onload,_w.si_PP);var SearchBox;(function(n){function f(){i=_ge("sb_form_q");t=_ge("b_header");sj_be(_d.body,"click",r)}function r(n){sj_et(n)!=i&&(t.className=t.className.replace(u,""))}var u=/(^|\s)b_focus(?!\S)/gi,i,t;n.removeFocusClass=r;sj_evt.bind("onP1",f)})(SearchBox||(SearchBox={}));var Identity = Identity || {};(function(i){i.wlImgSm = "https://cid-{0}.users.storage.live.com/users/0x{0}/myprofile/expressionprofile/profilephoto:UserTileStatic/p?ck=1\u0026ex=720\u0026fofoff=1\u0026sid=12D6B21DFE4D671110D2BAB7FF66664E";i.wlImgLg = "https://cid-{0}.users.storage.live.com/users/0x{0}/myprofile/expressionprofile/profilephoto:UserTileMedium/p?ck=1\u0026ex=720\u0026fofoff=1\u0026sid=12D6B21DFE4D671110D2BAB7FF66664E";i.popupLoginUrls ={"WindowsLiveId":"https://login.live.com/login.srf?wa=wsignin1.0\u0026rpsnv=11\u0026ct=1453978326\u0026rver=6.0.5286.0\u0026wp=MBI\u0026wreply=https:%2F%2fwww.bing.com%2Fsecure%2FPassport.aspx%3Fpopup%3D1\u0026lc=3082\u0026id=264960"};})(Identity);;(function(n,t){if(t){var i=!1,r=function(){i||(i=!0,typeof wlc!="undefined"&&wlc(sj_evt,sj_cook.set,wlc_t))};n.bind("onP1",function(){var i=setTimeout(r,t);n.bind("fb:connecting",function(){clearTimeout(i);n.bind("fb:connected",r,1)},1)},1)}})(sj_evt,wlc_d);var sch=sch||{};(function(){var t=_ge("id_h"),n=_ge("id_sc"),i="click";sj_evt.bind("onP1",function(){setTimeout(function(){t&&n&&(sj_jb("Blue/ServicesHeaderFlyout_c",0,t,"mouseover",n,i,n,"focus"),sj_be(n,i,function(n){sch.clk=n}))},50)},1)})();_w.rms.js({'A:rms:answers:Shared:BingCore.Bundle':'\/rms\/BingCore.Bundle\/jc,nj\/4907717c\/eb077809.js?bu=rms+answers+Shared+BingCore%24ClientInstV2%24DuplicateXlsDefaultConfig%2cBingCore%24ClientInstV2%24SharedLocalStorageConfigDefault%2cBingCore%24shared%2cBingCore%24env%2cBingCore%24event.custom%2cBingCore%24event.native%2cBingCore%24onHTML%2cBingCore%24dom%2cBingCore%24cookies%2cBingCore%24rms%2cBingCore%24ClientInstV2%24LogUploadCapFeatureDisabled%2cBingCore%24ClientInstV2%24ClientInstConfigSeparateOfflineQueue%2cBingCore%24clientinst%2cBingCore%24replay%2cBingCore%24Animation%2cBingCore%24fadeAnimation%2cBingCore%24framework%2cBingCore%24CoreUtilities'},{'A:rms:answers:VisualSystem:LanguageSwitch':'\/rms\/LanguageSwitch\/jc,nj\/6ae44c33\/8263d24d.js?bu=rms+answers+VisualSystem+LanguageSwitch'},{'A:rms:answers:Identity:BlueIdentityDropdownBootstrap':'\/rms\/rms%20answers%20Identity%20Blue$BlueIdentityDropdownBootStrap\/jc,nj\/2ce16c4e\/b4de9387.js'},{'A:rms:answers:Identity:BlueIdentityHeader':'\/rms\/rms%20answers%20Identity%20Blue$BlueIdentityHeader\/jc,nj\/f71a0356\/5167a640.js'},{'A:0':0});;
+//]]></script><div id="aRmsDefer"><script type="text/rms">//<![CDATA[
+var wlc=function(n,t,i){var u,f,r;n&&Identity&&(u=Identity.popupLoginUrls)&&(f=u.WindowsLiveId)&&Identity.wlProfile&&(r=_d.createElement("iframe"),r.style.display="none",r.src=f+"&checkda=1",_d.body.appendChild(r),i&&t&&t("WLS","TS",i,0,"/"))};
+//]]></script></div>
+				<input name="qf" type="text" id="qf" style="display:none;" />
+                <input name="qfwh" type="text" id="qfwh" style="display:none;" />
+                <input name="qfb" type="button" id="qfb" style="display:none;" />
+                
+                
+
+				<script type="text/javascript" x="FA75D3C5">//<![CDATA[
+
+					window.headerTime = new Date();
+					//]]></script>
+
+				<script type="text/javascript" x="FA75D3C5">//<![CDATA[
+
+					var isIE6 = false;
+					var needPseudoHover = false;
+				//]]></script>
+				<!--[if lt IE 7]>
+				<script type="text/javascript" x="FA75D3C5">//<![CDATA[
+
+					isIE6 = needPseudoHover = true;
+				//]]></script>
+				<![endif]-->
+
+				
+				
+                
+				<script type="text/javascript" x="FA75D3C5">//<![CDATA[
+
+                    window.isClientRenderModeBingJson = false;
+					window.isBingWWAMode = false;
+                    window.contextRelativeApplicationPath = '/maps';
+					window.veScript = 'http://sc1.maps.live.com//js/out/20160119.1437/es-es/veshell.js';
+                    window.historysrc = '/maps/History.htm';
+					window.delayedStyle = 'http://sc1.maps.live.com//css/out/20160119.1437/es/delayed.css';
+					window.browserPrintStyle = 'http://sc1.maps.live.com//css/out/20160119.1437/es/browserprint.css';
+					window.ceState = { isPermalink : true, annotations : [] };
+					window.showCollectionsExplorer = false;
+					window.imageryData = [{"filename":"explore_imagery_BE_1043.png","heading":270,"imageName":" ","imageRegion":"Italia","itemId":"37","latitude":41.892396,"longitude":12.486649,"mapLink":"http:\/\/www.bing.com\/maps\/?v=2&cp=qzgk28j16r9n&lvl=17&dir=270&sty=o&form=LMLTCC","mapTypeId":"be","zoomLevel":17},{"filename":"explore_imagery_2060.png","heading":0,"imageName":" ","imageRegion":"Islandia","itemId":"203","latitude":64.146493,"longitude":-21.913509,"mapLink":"http:\/\/www.bing.com\/maps\/?v=2&cp=64.142921~-21.905119&lvl=15&dir=0&sty=a&form=LMLTCC","mapTypeId":"a","zoomLevel":15},{"filename":"ExternalPreviewOptinImage.png","heading":0,"imageName":"overlay","imageRegion":"preview","itemId":"preview","latitude":0,"longitude":0,"mapLink":"\/mapspreview\/signup","mapTypeId":"preview","zoomLevel":1}];
+					function openDependency(n,t){function o(n){PRF.start(n),this.id=n,this.isReady=!1}function s(n,t){var i=[],r=t;this.key=n,this.isClosed=!1,this.addDependency=function(n){var t=i.push(n);i[n.id]=i[t-1]},this.dependencyExists=function(n){return i[n]!=null},this.getDependencies=function(){return i},this.executeCallback=function(){typeof r=="function"&&r.call()},this.reset=function(){this.isClosed=!1,i=[]}}var f=!1,i=__DEP_COL_HASH[n],r,e,u;for(i||(i=new s(n,t),r=__DEP_COL_HASH.push(i),__DEP_COL_HASH[n]=__DEP_COL_HASH[r-1]),i.isClosed&&i.reset(),e=arguments.length,r=2;r<e;r++)u=arguments[r],i.dependencyExists(u)?f=!0:i.addDependency(new o(u));return!f}function closeDependency(n){var t,o=__DEP_COL_HASH.length,r,e;n:for(t=0;t<o;t++){var i=__DEP_COL_HASH[t],u=i.getDependencies(),f=u[n];if(typeof f!="undefined"&&f!=null&&(f.isReady=!0,PRF.end(n,n),!i.isClosed)){for(e=u.length,r=0;r<e;r++)if(!u[r].isReady)continue n;i.isClosed=!0,i.executeCallback()}}}window.__DEP_COL_HASH||(window.__DEP_COL_HASH=[]);var VENetwork=new function(){function u(){var n=new Date,t=Date.UTC(n.getFullYear(),n.getMonth(),n.getDate(),n.getHours(),n.getMinutes(),n.getSeconds(),n.getMilliseconds());return t+Math.round(Math.random()*1e6)}function f(n){n&&n()}function i(n,t){n&&n(t)}function e(){var n=document.getElementsByTagName("head")[0];if(!n)throw new VEException("VENetwork:cstr","err_noheadelement",L_noheadelement_text);return n}function s(){return n||(n=e(),r=document.getElementById("StyleInsertBefore")),n}function h(){return t||(t=e()),t}function o(){return typeof Bing!="undefined"&&typeof Bing.Resource!="undefined"}var c=this,n,r=null,t;this.AttachStyleSheet=function(n,t,i,e){var c,l,h;if(typeof n!="string"||!n.length)throw new VEException("VENetwork:AttachStylesheet","err_nostylesurl","");return c=u(),o()?(l=e=="print"?Bing.Resource.MediaTypes.Print:Bing.Resource.MediaTypes.Screen,h=Bing.Resource.addLinkedStyleSheet(n,t,[l])):(h=document.createElement("link"),h.rel=i==!0?"alternate stylesheet":"stylesheet",e&&(h.media=e),h.type="text/css",h.rev="stylesheet",h.id=c,h.href=n,s().insertBefore(h,r),navigator.userAgent.indexOf("IE")>=0?h.onreadystatechange=function(){h&&("loaded"==h.readyState||"complete"==h.readyState)&&(h.onreadystatechange=null,f(t))}:f(t)),c},this.DownloadScript=function(n,t,r){var e,f;if(typeof n!="string"||!n.length)throw new VEException("VENetwork:DownloadScript","err_noscripturl",L_noscripturl_text);return e=u(),o()?f=Bing.Resource.addScriptByReference(n,function(){i(t,r)}):(f=document.createElement("script"),f.type="text/javascript",f.language="javascript",f.id=e,f.src=n,f.onreadystatechange!==undefined&&f.onload===undefined?f.onreadystatechange=function(){f&&("loaded"==f.readyState||"complete"==f.readyState)&&(f.onreadystatechange=null,i(t,r))}:f.onload=function(){f.onload=null,i(t,r)},h().appendChild(f)),e}},VEBootstrap=new function(){function h(){if(e){$create=VEShell.DemandLoadBehaviors.createOrDemandLoad,v(),y(),ajaxInitPhase1(),ajaxInitPageMethods(),window.initGimmeScriptSharpCompat&&window.initGimmeScriptSharpCompat(),window.initGimmeExtensions&&window.initGimmeExtensions(),ajaxInitPhase2();var t=n("b_header");t&&(Gimme("html").set_style({"overflow-y":"auto"}),a(),c()),Sys.Application.add_init(VEShell.App.start)}else o=!0}function c(){var t=n("b_header");t.style.cssText="margin-bottom: 0px; border-bottom: none;"}function l(n,t,i){if(n&&n.addEventListener)n.addEventListener(t,i,!0);else if(n&&n.attachEvent)n.attachEvent("on"+t,i);else return!1}function a(){var i=/q=[^&]*&/g,r=n("b_scopebar"),t=r.firstChild;t&&t.tagName==="UL"&&l(t,"click",function(t){var r=t.target||t.srcElement,u;r.tagName==="LI"&&(r=r.firstChild),u=n("sb_form_q").value,r.tagName==="A"&&u&&(r.href=r.href.replace(i,"q="+encodeURIComponent(u.trim())+"&"))})}function u(n){return Sys&&Sys.__registeredTypes&&Sys.__registeredTypes[n]}function v(){var f,t,n,r;if(i)for(f=i.length,t=0;t<f;t++)n=i[t],n&&n.length>=2&&(r=n[1],r&&n[0]&&!u(r)&&n[0].registerEnum(r,n[2]))}function y(){var f,t,n,i;if(r)for(f=r.length,t=0;t<f;t++)n=r[t],n&&(i=n[1],i&&n[0]&&!u(i)&&n[0].registerInterface(i))}function n(n){return document.getElementById(n)}var e,o,i,r,f,s,t;openDependency("veshell",h,"VEShell.js","MapWrapper"),this.Load=function(){window.Microsoft=window.Microsoft||{},window.Microsoft.Maps=window.Microsoft.Maps||{},VENetwork.DownloadScript(window.veScript,null)},this.RegisterNamespace=function(n){for(var r=window,u=n.split("."),f,i,t=0;t<u.length;t++)f=u[t],i=r[f],i||(i=r[f]={__namespace:!0,__typeName:u.slice(0,t+1).join(".")},i.getName=function(){return this.__typeName}),r=i},i=[],r=[],Function.prototype.registerEnumDelayed=function(n,t){if(typeof this.registerEnum!="undefined"&&!u(n)){this.registerEnum(n,t);return}i.push([this,n,t])},Function.prototype.registerInterfaceDelayed=function(n){typeof this.registerInterface=="undefined"||u(n)?r.push([this,n]):this.registerInterface(n)},this.Go=function(){window.allowSubmit=!1,f=n("TaskHost"),s=n("msve_taskArea_data"),s.appendChild(f),t=n("sb_footL"),t&&s.appendChild(t),e=!0,o&&h()},this.OnUnload=function(){window.pageUnloading||(Bing&&Bing.Event&&Bing.Event.Native&&Bing.Event.Native.unbind&&_w&&(Bing.Event.Native.unbind(_w,"load",VEBootstrap.OnLoad),Bing.Event.Native.unbind(_w,"unload",VEBootstrap.OnUnload)),Sys.Application.dispose(),Sys.WebForms.PageRequestManager.getInstance().dispose(),e=!1,o=!1,delete __DEP_COL_HASH,delete VENetwork,delete VEShell,delete Sys,delete Type,delete Function.prototype.registerEnumDelayed,delete Function.prototype.registerInterfaceDelayed,delete Function.prototype.registerInterface,delete Function.prototype.registerEnum,delete Function.__htClasses)},this.OnLoad=function(){VEBootstrap.Resize(isIE6,!0)},this.Resize=function(i,r){var o=n("msve_main"),y=n("content"),g=n("container"),l,a,e,nt,w,v,tt,it,b,k,rt,u,d,ut;if((window.isClientRenderModeBingJson||window.isBingWWAMode)&&y&&(l=document.body.offsetHeight-y.offsetTop,l<=520&&(l=520),y.style.height=l+"px"),a=n("b_header"),a){var s=n("b_header"),h=n("b_footer"),c=0,p=30;window.getComputedStyle?(c=s?window.getComputedStyle(s,null).getPropertyValue("margin-bottom").replace("px",""):0,p=h?window.getComputedStyle(h,null).getPropertyValue("height").replace("px",""):0):(c=s?s.currentStyle.marginBottom.replace("px",""):0,c=="auto"&&(c=0),h&&(p=h.currentStyle.height!="auto"?h.currentStyle.height.replace("px",""):30)),e=g.offsetHeight-s.offsetHeight-c-p}else e=g.offsetHeight-o.offsetTop;e>0&&(o.style.height=e+"px"),r&&(u=n("msve_mapContainer"),nt=n("msve_taskArea"),u.style.position="absolute",u.style.top=u.style.right="0",u.style.width=o.offsetWidth-nt.offsetWidth+"px",a&&(u.style.height=e+"px")),w=n("msve_taskArea_data"),v=e-w.offsetTop,v>0&&(w.style.height=v+"px",t&&(tt=20,t.style.display="block",it=v-t.offsetHeight-10,f.style.minHeight=it-f.offsetTop-tt+"px")),o.className=o.className,a&&(b=n("sb_form_go"),b&&(k=n("sb_form"),rt=k&&k.getAttribute("class")=="as_sbg",rt&&(b.style.marginTop="2px")),u=n("msve_mapContainer"),u&&(u.style.height=e+"px"),d=n("sb_form_label"),ut=n("sb_form_label2"),d&&!ut&&(d.style.width="auto"))}}
+
+					VEBootstrap.Load();
+				//]]></script>
+
+                
+<div id="spMenuStrip">
+    <ul id="spcMenu" class="taskStrip">
+        <li>
+            <button id="spMenuBar_myCollections" title="Mis lugares" name="spMenuBar$myCollections" type="button"><div id="spMenuBar_IconMyCollections" class="taskBar_IconBackground"></div><div><span>Mis lugares</span></div></button>
+        </li>
+        <li class="sep">
+            <div class="taskBar_separator">
+            </div>
+        </li>
+        <li>
+            <button id="spMenuBar_actionsAnchor" title="Acciones" class="taskItem" name="spMenuBar$actionsAnchor" type="button"><div id="spMenuBar_IconActionAnchor" class="taskBar_IconBackground"></div><div><span style="padding-right:10px;">Acciones</span></div><div class="DropdownGlyph" style="right:4px;top:8px;position:absolute;"></div></button><div id="spMenuBar_actionsAnchor_dropdown" class="dropDownPanel">
+	<ul><li><button id="spMenuBar_actionProperties" class="taskItem sEnable" name="spMenuBar$actionProperties" type="button"><div><span>Ver propiedades</span></div></button></li><li><button id="spMenuBar_actionClear" class="taskItem sDisable" name="spMenuBar$actionClear" type="button"><div><span>Borrar </span></div></button></li><li><hr class="" /></li><li><button id="spMenuBar_actionEmail" title="Correo" class="taskItem" name="spMenuBar$actionEmail" type="button"><div><span>Correo</span></div></button></li><li><button id="spMenuBar_exportAnchor" title="Exportar" class="taskItem" name="spMenuBar$exportAnchor" type="button"><div><span style="padding-right:10px;">Exportar</span></div><div class="FlyoutGlyph" style="right:4px;position:absolute;"></div></button><div id="spMenuBar_exportAnchor_dropdown" class="dropDownPanel spSubMenu">
+		<ul><li><button id="spMenuBar_actionExportKML" class="taskItem" name="spMenuBar$actionExportKML" type="button"><div><span>KML</span></div></button></li><li><button id="spMenuBar_actionExportGPX" class="taskItem" name="spMenuBar$actionExportGPX" type="button"><div><span>GPX</span></div></button></li><li><button id="spMenuBar_actionExportRSS" class="taskItem sEnable" name="spMenuBar$actionExportRSS" type="button"><div><span>GeoRSS</span></div></button></li></ul>
+	</div></li><li><hr class="sEnable" /></li><li><button id="spMenuBar_actionDelete" class="taskItem sEnable" name="spMenuBar$actionDelete" type="button"><div><span>Eliminar</span></div></button></li></ul>
+</div>
+        </li>
+    </ul>
+    <ul id="spfMenu" class="taskStrip">
+        <li>
+            <button id="spMenuBar_newCollection" title="Nueva lista" name="spMenuBar$newCollection" type="button"><div id="spMenuBar_IconNewCollection" class="taskBar_IconBackground"></div><div><span>Nueva lista</span></div></button>
+        </li>
+        <li class="sep">
+            <div class="taskBar_separator">
+            </div>
+        </li>
+        <li>
+            <button id="spMenuBar_import" title="Importar" name="spMenuBar$import" type="button"><div id="spMenuBar_IconImport" class="taskBar_IconBackground"></div><div><span>Importar</span></div></button>
+        </li>
+    </ul>
+</div>
+
+                
+<div id="sendToOptions" class="dropDownPanel">
+    <ul>
+        <li>
+            <button id="sToPanel_sToEmail" name="sToPanel$sToEmail" type="button"><div><span>Correo</span></div></button>
+        </li>
+    </ul>
+    <div id="s2pLinkHolder" class="eHide"></div>
+</div>
+<a id="sToPanel_erostolc" class="taskItem eHide sendToLaunch" name="sToPanel$erostolc" href="#"><span>Enviar</span></a>
+
+                
+<div id="moreOptions" class="dropDownPanel">
+    <ul>
+        <li>
+            <button id="mPanel_mSave" name="mPanel$mSave" type="button"><div><span>Guardar</span></div></button>
+        </li>
+        <li>
+            <button id="mPanel_mZoom" name="mPanel$mZoom" type="button"><div><span>Zoom</span></div></button>
+        </li>
+        <li>
+            <button id="mPanel_mMenu" name="mPanel$mMenu" type="button"><div><span>Menú</span></div></button>
+        </li>
+        <li>
+            <button id="mPanel_mStreetside" name="mPanel$mStreetside" type="button"><div><span>Streetside</span></div></button>
+        </li>
+        <li>
+            <button id="mPanel_mBookIt" name="mPanel$mBookIt" type="button"><div><span>Reservar</span></div></button>
+        </li>
+        <li>
+            <button id="mPanel_mMall" name="mPanel$mMall" type="button"></button>
+        </li>
+		<li>
+            
+        </li>
+    </ul>
+	<div id="saveLinkHolder" class="eHide"></div>
+    <div id="streetLinkHolder" class="eHide"></div>
+    <div id="menuLinkHolder" class="eHide"></div>
+    <div id="zoomLinkHolder" class="eHide"></div>
+    <div id="bookItLinkHolder" class="eHide"></div>
+    <div id="mallLinkHolder" class="eHide"></div>
+</div>
+<a id="mPanel_moreLink" class="taskItem eHide moreLaunch" name="mPanel$moreLink" href="#"><span>Más...</span></a>
+
+
+                
+    
+    			
+<div id="collMgmtDlg" class="cMDialog h">
+    <div class="header">
+        <span id="cDialog_Label2">Label</span>
+        <button id="cDialog_closeBtn" name="cDialog$closeBtn" type="button"><div id="cDialog_ctl00" class="taskBar_IconBackground"></div></button>
+    </div>
+    <div id="cMsgIcon">
+    </div>
+    <div class="bodyDiv">
+        <div class="messageBar">
+            <span id="cDialog_message">Se ha agregado el elemento a %1.</span>
+            <a id="msgAction" class="cActionLnk">
+                Ir allí
+            </a>
+        </div>
+        <div id="cDlgForm">
+            <div class="cSelect" style="float: left">
+                <span id="cDialog_cSelLbl">Elegir una lista de lugares:</span>
+                <span id="cDialog_cSelLblLite">Se ha guardado en:</span>
+                <select id="collectionList">
+                </select>
+            </div>
+            <div class="commitControls">
+                <fieldset>
+                    <button id="cDialog_cDlgForm_save" class="cDialogButton" name="cDialog$cDlgForm_save" type="button"><div id="cDialog_ctl02" class="taskBar_IconBackground"></div><div><span>Guardar</span></div></button>
+                    <button id="cDialog_cDlgForm_cancel" class="cDialogButton" name="cDialog$cDlgForm_cancel" type="button"><div id="cDialog_ctl06" class="taskBar_IconBackground"></div><div><span>Cancelar</span></div></button>
+                </fieldset>
+                <div class="clear">
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    </div>
+    <a ID="cDlgClose" href="#" title="Cerrar"></a>
+</div>
+<div id="cDlgfltParent" class="floatParent h"></div>
+
+
+				<div id = "msve_main">
+					<span id="InvokeCategorySearch"></span>
+                    <span id="InvokeCategoryBrowser"></span>
+                    <span id="InvokeCollectionViewer"></span>
+					<span id="InvokeWIPKeywordSearch"></span>
+               		
+                    
+		            <div id = "PrintMessage">
+		                Imprime esta página en un formato más legible: haz clic en <strong>Imprimir</strong> en la esquina superior derecha del mapa.
+		            </div>
+		            <div id = "CannotPrintImageryMsg">
+			            <img id="CannotPrintImg"/>&nbsp;
+                        <span id="CannotPrintMsgTxt"></span>
+		            </div>
+
+                    <div id="msve_taskContainer" data-global="{}">
+					    <div id = "msve_taskArea" style="">
+						    <div id = "msve_taskArea_actionBar">
+							    <span class="left2Items">
+								    
+								    <a id = "taskBar_directionsBtn" class="icnBtn tb" title = "Obtener indicaciones de conducción, de tránsito o para ir a pie">
+									    <span class="icon">&nbsp;</span>
+									    <span class="text">Indicaciones</span>
+								    </a>
+								    
+							    </span>
+							    <span class="center2Items">
+								    
+								    <a id = "taskBar_collectionsButton" class="icnBtn tb" title = "Ver tus lugares">
+									    <span class="icon">&nbsp;</span>
+									    <span class="text">Mis&nbsp;lugares</span>
+								    </a>
+								    
+							    </span>
+							    <span class="right2Items">
+								    
+							    </span>
+							    
+							    <span style="display:none">
+								    
+								    <a id = "taskBar_trafficButton" class="btn tb NavBar_button NavBar_toolButton" title = "Ver tráfico actual">
+									    <span>Tráfico</span>
+								    </a>
+								    
+								    <a id = "taskBar_shareButton" class="icnBtn tb" title = "Compartir tu mapa">
+									    <span class="icon">&nbsp;</span>
+									    <span class="text">Compartir</span>
+								    </a>
+								    
+								    <a id = "taskBar_printBtn" class="icnBtn tb" title = "Imprimir mapas en el mejor formato">
+									    <span class="icon">&nbsp;</span>
+									    <span class="text">Imprimir</span>
+								    </a>
+									
+								    <a id = "taskBar_fullScreenButton" class="icnBtn tb" title = "Pantalla completa">
+									    <span class="icon">&nbsp;</span>
+									    <span class="text">Pantalla completa</span>
+								    </a>
+                                    <a id = "taskBar_v8PromotionButton" class="icnBtn tb NavBar_button NavBar_toolButton" title = "Prueba el nuevo Bing Maps">
+									    <span class="text">Prueba el nuevo Bing Maps</span>
+								    </a>
+								    
+
+							    </span>
+						    </div>
+						    <div id = "msve_taskArea_data" tabindex = "0" >
+							    
+						    </div>
+					    </div>
+                        
+                        <div id="scratchpadPrintUI" class="scratchpadBrowserPrint">
+                            <p id="scratchpadPrintTitle" style="word-wrap: break-word; font-size: 18px;"></p>
+                            <ul id="scratchpadPrintList" class="collectionList"></ul>
+                        </div>
+                    </div>
+
+					<div id = "msve_mapArea">
+						<div id = "msve_mapContainer">
+							<a id = "slider" class = "collapse noprint" href = "#ToggleTaskArea"></a>
+							<div class="MSVE_minimap_container" style="display:none">
+							</div>
+						</div>
+
+						<span id="MapControl" AttachToExistingMap="true" style="position: absolute"><input type="hidden" name="MapControl$MapControl" id="MapControl_MapControl" value="{'M':1,'Z':6,'MS':0,'HO':0,'C':{'Latitude':40.4255,'Longitude':-3.6839},'TL':{'Latitude':0,'Longitude':0},'BR':{'Latitude':0,'Longitude':0},'TR':{'Latitude':0,'Longitude':0},'BL':{'Latitude':0,'Longitude':0},'H':0,'MW':0,'MH':0}" /></span>
+
+						<input type="hidden" id="zoomLevelFromSearch" name="zoomLevelFromSearch" value="" />
+						<input type="hidden" id="centerPointFromSearch" name="centerPointFromSearch" value="" />
+						
+
+					</div>
+				</div>
+
+                
+				
+             </div>
+
+			<script type="text/javascript" x="FA75D3C5">//<![CDATA[
+
+				try
+				{
+					
+					if(	isClientRenderModeBingJson &&
+						Bing && 
+						Bing.Event && 
+						Bing.Event.Native && 
+						Bing.Event.Native.bind && 
+						_w)
+					{
+						Bing.Event.Native.bind(_w, "load", VEBootstrap.OnLoad);
+					}
+				}
+				catch(e){}
+				VEBootstrap.Resize(isIE6, true);
+				window.mainRenderTime = new Date();
+				//]]></script>
+
+			<div id="TaskHost">
+	
+				<div data-container="LeftContainer">
+                    <div class="loadingRoot" data-containerAreaType="loadingArea">
+						<div style="margin-top:335px">
+							<div class = "loadingImg"></div>
+							<span class="loadingText">Espera un momento...</span>
+						</div>
+					</div>
+                    <span data-containerAreaType="closeArea" class="BingMapPanel_CloseButton inactive"></span>
+					<div id ="leftContainerContentRoot" data-containerAreaType="taskArea">
+						<Welcome welcomeTaskData="${WelcomeTaskData}"></Welcome>
+					</div>
+                </div>
+
+				<div class="VETask" id = "TaskHost_WelcomeTask" style="">
+					
+				</div>
+
+				<div class="nonplt">
+					<div id="TaskHost_CollectionsViewer" class="VETask">
+		<input type="hidden" name="TaskHost$CollectionsViewer_state" id="TaskHost_CollectionsViewer_state" value="false" />
+	</div>
+				</div>
+				
+				<input type="hidden" name="TaskHost$TaskDescription" id="TaskHost_TaskDescription" />
+			
+</div>
+            
+			
+			<input type="hidden" name="taskbarSearchIdField" id="taskbarSearchIdField" />
+
+            
+            <input type="hidden" name="Search_FDQuery" id="Search_FDQuery" />
+
+            
+            <input type="hidden" name="Search_FDASData" id="Search_FDASData" />
+
+            
+	        <input name="goa" type="hidden" id="goa" />
+            
+			<input name="mapViewChangedSinceLastExplicitSearch" type="hidden" id="mapViewChangedSinceLastExplicitSearch" />
+
+		    
+            <input type="hidden" name="jsondata" id="jsondata" />
+
+            
+    		<span id="clientEnvironment"></span>
+
+            
+    		<span id="venueMapSettings"></span>
+
+    		
+    		<input type="hidden" name="mapApps" id="mapApps" />
+
+			
+			<span id="HyperExtenderManager"></span>
+				
+			
+            <!-- Support for back button history, must be at bottom of form to ensure it is last to have PreRender called on it -->
+            <span id="backButton" style="display:none;"></span>
+				
+			<!-- Add footer content here. Needs to be inside veform for the scripts to intercept clicks and key presses -->
+			<div id="b_api_footer"><footer class="b_footer" id="b_footer"><ul><li><a href="http://go.microsoft.com/fwlink/?LinkId=248686&amp;CLCID=C0A" h="ID=VirtualEarth,5026.1">Privacidad y cookies</a></li><li><a href="http://go.microsoft.com/fwlink/?LinkID=246338&amp;CLCID=C0A" h="ID=VirtualEarth,5027.1">Legal</a></li><li><a href="http://go.microsoft.com/?linkid=9844328" h="ID=VirtualEarth,5028.1">Anuncios</a></li><li><a href="http://go.microsoft.com/fwlink/?LinkID=286759&amp;CLCID=40A" target="_blank" h="ID=VirtualEarth,5029.1">Sobre nuestra publicidad</a></li><li><a href="javascript:VEShell.Help.openLiveHelp();" id="sb_help" h="ID=VirtualEarth,5031.1">Ayuda</a></li><li><a href="#" id="sb_feedback" h="ID=VirtualEarth,5032.1">Comentarios</a></li><li class="b_trademark"><span>© 2016 Microsoft</span></li></ul></footer></div>
+
+   		
+
+
+<script type="text/javascript" x="FA75D3C5">//<![CDATA[
+
+function ajaxInitPhase2(){Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(VEShell.PasteBehavior, null, null, null, $get("qf"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.SubFormEnterKeyBehavior, {"submitButtonId":"qfb"}, null, null, $get("qf"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuHoverBehavior, {"isTop":true,"mouseOutClass":"taskItem","mouseOverClass":"taskItemFocus"}, null, null, $get("spMenuBar_myCollections"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuClickBehavior, {"clickAction":function() { showMyCollections(); },"clickClass":"clicked","preventDefault":false}, null, null, $get("spMenuBar_myCollections"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuHoverBehavior, {"isTop":true,"mouseOutClass":"taskItem","mouseOverClass":"taskItemFocus"}, null, null, $get("spMenuBar_actionsAnchor"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuDropDownBehavior, {"bounderId":"null","clickClass":"clicked","dropDownPanelId":"actionsAnchor_dropdown","droppedClass":"dropped","onHide":"spFlyoutOnHide","onHideType":"VE_Help","onShow":"spFlyoutOnShow","onShowType":"VE_Help","timeout":1200,"topLevel":true}, null, null, $get("spMenuBar_actionsAnchor"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuClickBehavior, {"clickAction":function(){setProperties();},"clickClass":"clicked","preventDefault":false}, null, null, $get("spMenuBar_actionProperties"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuHoverBehavior, {"isTop":false,"mouseOutClass":"taskItem","mouseOverClass":"taskItemFocus"}, null, null, $get("spMenuBar_actionProperties"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuClickBehavior, {"clickAction":function(){ClearAnnotations();},"clickClass":"clicked","preventDefault":false}, null, null, $get("spMenuBar_actionClear"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuHoverBehavior, {"isTop":false,"mouseOutClass":"taskItem","mouseOverClass":"taskItemFocus"}, null, null, $get("spMenuBar_actionClear"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuClickBehavior, {"clickAction":function() {Collections.CollectionsTask.sendToEmail();},"clickClass":"clicked","preventDefault":false}, null, null, $get("spMenuBar_actionEmail"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuHoverBehavior, {"isTop":false,"mouseOutClass":"taskItem","mouseOverClass":"taskItemFocus"}, null, null, $get("spMenuBar_actionEmail"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuHoverBehavior, {"isTop":false,"mouseOutClass":"taskItem","mouseOverClass":"taskItemFocus"}, null, null, $get("spMenuBar_exportAnchor"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuDropDownBehavior, {"bounderId":"null","clickClass":"clicked","dropDownPanelId":"exportAnchor_dropdown","droppedClass":"dropped","onHide":"spFlyoutOnHide","onHideType":"VE_Help","onShow":"spFlyoutOnShow","onShowType":"VE_Help","timeout":1200,"topLevel":false}, null, null, $get("spMenuBar_exportAnchor"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuClickBehavior, {"clickAction":function() {OpenDataExportWindow(null, null, 'kml')},"clickClass":"clicked","preventDefault":false}, null, null, $get("spMenuBar_actionExportKML"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuHoverBehavior, {"isTop":false,"mouseOutClass":"taskItem","mouseOverClass":"taskItemFocus"}, null, null, $get("spMenuBar_actionExportKML"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuClickBehavior, {"clickAction":function() {OpenDataExportWindow(null, null, 'gpx')},"clickClass":"clicked","preventDefault":false}, null, null, $get("spMenuBar_actionExportGPX"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuHoverBehavior, {"isTop":false,"mouseOutClass":"taskItem","mouseOverClass":"taskItemFocus"}, null, null, $get("spMenuBar_actionExportGPX"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuClickBehavior, {"clickAction":function() {OpenDataExportWindow(null, null, 'rss')},"clickClass":"clicked","preventDefault":false}, null, null, $get("spMenuBar_actionExportRSS"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuHoverBehavior, {"isTop":false,"mouseOutClass":"taskItem","mouseOverClass":"taskItemFocus"}, null, null, $get("spMenuBar_actionExportRSS"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuClickBehavior, {"clickAction":function(){deleteCollClick();},"clickClass":"clicked","preventDefault":false}, null, null, $get("spMenuBar_actionDelete"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuHoverBehavior, {"isTop":false,"mouseOutClass":"taskItem","mouseOverClass":"taskItemFocus"}, null, null, $get("spMenuBar_actionDelete"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuHoverBehavior, {"isTop":true,"mouseOutClass":"taskItem","mouseOverClass":"taskItemFocus"}, null, null, $get("spMenuBar_newCollection"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuClickBehavior, {"clickAction":function() { scratchPad.createNewCollection(); },"clickClass":"clicked","preventDefault":false}, null, null, $get("spMenuBar_newCollection"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuHoverBehavior, {"isTop":true,"mouseOutClass":"taskItem","mouseOverClass":"taskItemFocus"}, null, null, $get("spMenuBar_import"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuClickBehavior, {"clickAction":function() { showImport('CE-import Collections'); },"clickClass":"clicked","preventDefault":false}, null, null, $get("spMenuBar_import"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuHoverBehavior, {"isTop":false,"mouseOutClass":"taskItem","mouseOverClass":"taskItemFocus"}, null, null, $get("sToPanel_sToEmail"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuClickBehavior, {"clickAction":function(){VEShell.SendToPanel.invokeSendToEmail();},"clickClass":"clicked","preventDefault":false}, null, null, $get("sToPanel_sToEmail"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuHoverBehavior, {"isTop":true,"mouseOutClass":"taskItem","mouseOverClass":"taskItemFocus"}, null, null, $get("sToPanel_erostolc"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuDropDownBehavior, {"bounderId":"null","clickClass":"clicked","dropDownPanelId":"sendToOptions","droppedClass":"dropped","onHide":"","onHideType":"","onShow":"","onShowType":"","timeout":0,"topLevel":true}, null, null, $get("sToPanel_erostolc"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuHoverBehavior, {"isTop":false,"mouseOutClass":"taskItem","mouseOverClass":"taskItemFocus"}, null, null, $get("mPanel_mSave"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuClickBehavior, {"clickAction":function(){VEShell.MoreDropDown.invokeSave();},"clickClass":"clicked","preventDefault":false}, null, null, $get("mPanel_mSave"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuHoverBehavior, {"isTop":false,"mouseOutClass":"taskItem","mouseOverClass":"taskItemFocus"}, null, null, $get("mPanel_mZoom"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuClickBehavior, {"clickAction":function(){VEShell.MoreDropDown.invokeZoom();},"clickClass":"clicked","preventDefault":false}, null, null, $get("mPanel_mZoom"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuHoverBehavior, {"isTop":false,"mouseOutClass":"taskItem","mouseOverClass":"taskItemFocus"}, null, null, $get("mPanel_mMenu"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuClickBehavior, {"clickAction":function(){VEShell.MoreDropDown.invokeMenu();},"clickClass":"clicked","preventDefault":false}, null, null, $get("mPanel_mMenu"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuHoverBehavior, {"isTop":false,"mouseOutClass":"taskItem","mouseOverClass":"taskItemFocus"}, null, null, $get("mPanel_mStreetside"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuClickBehavior, {"clickAction":function(){VEShell.MoreDropDown.invokeStreetside();},"clickClass":"clicked","preventDefault":false}, null, null, $get("mPanel_mStreetside"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuHoverBehavior, {"isTop":false,"mouseOutClass":"taskItem","mouseOverClass":"taskItemFocus"}, null, null, $get("mPanel_mBookIt"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuClickBehavior, {"clickAction":function(){VEShell.MoreDropDown.invokeBookIt();},"clickClass":"clicked","preventDefault":false}, null, null, $get("mPanel_mBookIt"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuHoverBehavior, {"isTop":false,"mouseOutClass":"taskItem","mouseOverClass":"taskItemFocus"}, null, null, $get("mPanel_mMall"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuClickBehavior, {"clickAction":function(){VEShell.MoreDropDown.invokeMallMap();},"clickClass":"clicked","preventDefault":false}, null, null, $get("mPanel_mMall"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuHoverBehavior, {"isTop":true,"mouseOutClass":"taskItem","mouseOverClass":"taskItemFocus"}, null, null, $get("mPanel_moreLink"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuDropDownBehavior, {"bounderId":"null","clickClass":"clicked","dropDownPanelId":"moreOptions","droppedClass":"dropped","onHide":"","onHideType":"","onShow":"","onShowType":"","timeout":0,"topLevel":true}, null, null, $get("mPanel_moreLink"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuClickBehavior, {"clickAction":function(){
+                saveToCollection(); 
+                },"clickClass":"clicked","preventDefault":false}, null, null, $get("cDialog_cDlgForm_save"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MenuClickBehavior, {"clickAction":function(){
+                hideDialog(true); 
+                VE_Annotations.ClosePopup();
+            },"clickClass":"clicked","preventDefault":false}, null, null, $get("cDialog_cDlgForm_cancel"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.MapLoader, {"controlId":"MapControl","heading":0,"latitude":40.4255,"longitude":-3.6839,"mapDiv":"msve_mapContainer","persistId":"MapControl_MapControl","scriptUrl":null,"style":"r","zoom":6}, null, null, $get("MapControl"));
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.Environment, {"abuseReporting":"https://support.live.com/default.aspx?productKey=wlcollectionsabuse&mkt=es-es&page=wlsupport_home_options_form_byemail&ct=eformts&Pleaseenterthecollec=","adsClientId":"maps7ads5","adsPreferencesUrl":"http://choice.microsoft.com/","adultFilter":"Moderate","appGalleryMarkupUrl":"/maps/AppGalleryDisplayProvider.ashx","appServerUrl":null,"autoRefresh":true,"autoRefreshDelay":250,"bestMapViewCenterPoint":null,"bestMapViewInitialViewportSizeByZoomLevel":null,"bestMapViewOriginalBoundingBox":null,"bingMapsBetaPreviewUrl":"/mapspreview/signup","bingMapsRestServicesUrl":"http://dev.virtualearth.net/REST/v1/Locations","bingPermalinkDocumentationURL":"http://msdn.microsoft.com/es-es/library/dn217138.aspx","bingPlacesEditUrl":"https://www.bingplaces.com/DashBoard/Edit?Id={0}&market={1}","bingPlacesHomeUrl":"https://www.bingplaces.com/","buildVersion":"20160119.1437","businessOwnerNewUrl":"http://primeplace.nokia.com/app/home?&partner_id=bing-maps&language={0}","businessOwnersUrl":"http://go.microsoft.com/fwlink/?LinkID=257557","cacheBust":"","connectUrl":"http://go.microsoft.com/fwlink/?LinkId=285456","contextRelativeApplicationPath":"/maps","cookiePath":"/maps","cookielessApplicationDomain":"http://sc1.maps.live.com/","cosmosIP":"150.244.199.109","credentials":"Anqg-XzYo-sBPlzOWFHIcjC3F8s17P_O7L4RrevsHVg4fJk6g_eEmUBphtSn4ySg","currentUrlApiVersion":2,"dateLocalizedTemplate":"dd/MM/yyyy","defaultStreetsideTo360View":true,"disableBlockViewToggle":true,"domain":"http://www.bing.com/maps/","elvBE":"","elvPath":"local","emailProductName":"Bing Mapas ","embedTermsURL":"http://go.microsoft.com/?linkid=9687451","enableOptIn":true,"enableSyndicatedAds":true,"enableSyndicatedAdsForLocations":true,"enableTransitHotRegions":true,"entityTypesForAds":"Airport,AmusementPark,PopulatedPlace,Zoo","facebookAppId":"111239619098","facebookFormatUrl":"?app_id={0}&link={1}&picture={2}&name=Bing%20Maps&caption={4}&description={5}&message={6}&redirect_uri={7}","facebookUrl":"http://www.facebook.com/","feedbackRoot":"http://feedback.live.com/","flightIds":"0","footerBusinessOwnersLinkEnabled":false,"geoCommunityDefaultServiceSizeLimit":204800,"geoCommunityServiceUrl":"http://upload.maps.bing.com/","geoLocationAccuracyThreshold":500,"hasOptInCookie":false,"helpLink":"http://onlinehelp.microsoft.com/es-es/bing/%1.aspx","humanScaleServicesGetBubblesUriFormat":"GetBubbles.ashx?c={0}&n={1}&s={2}&e={3}&w={4}&key=Anqg-XzYo-sBPlzOWFHIcjC3F8s17P_O7L4RrevsHVg4fJk6g_eEmUBphtSn4ySg&gen=4904","humanScaleServicesGetPoiBubbleUriFormat":"","imagePath":"http://sc1.maps.live.com//i/out/20160119.1437","isBingPadApp":false,"isBingWWAMode":false,"isClientRenderModeBingJson":false,"isExternalPreview":true,"isGeoCommunityEnabled":true,"isIgnoreOptInSet":false,"isLocateMeEnabled":true,"isMapAppEnabled":true,"isMapExploreEnabled":false,"isMapsAutosuggestEnabled":false,"isOnCorpnet":false,"isOnDemandTiles1Flight":false,"isOnDemandTiles2Flight":false,"isOnPreviewFlight":false,"isPreviewExternalSupportedMarket":true,"isPreviewSupportedMarket":true,"isPrintEnabled":true,"isSchool":false,"isSendToLinkEnabled":true,"isShareEnabled":true,"isSilverlightStreetsideEnabled":true,"isSilverlightSupported":true,"isStreetsideEnabled":true,"isStreetsideLocale":true,"isSupportedBrowser":true,"isTouchTablet":false,"isTouchTabletBrowser":false,"isWikipediaInfoEnabled":false,"linkEncodingAppendage":"&encType=1","liveFileStore":"https://auth.bay.livefilestore.com/storageservice/passport/challenge.aspx?silent=true","locale":"es-es","locationHomeText":"Domicilio","locationOtherText":"Otros","locationSavedText":"Se ha guardado la ubicación","locationWorkText":"Trabajo","mapAppDynamicUrl":"/maps/MapAppsScript.ashx","mapControlHSServerDomain":"http://dev.virtualearth.net/mapcontrol/HumanScaleServices/","maxUrlLength":2048,"navigationQueryPanDistanceSquared":1048576,"navigationQueryTimeoutSeconds":5,"navigationQueryZoomLevel":0,"nokiaPrimeMarket":false,"pageMethodPath":"/maps/default.aspx","passportLogOnButtonHtml":"\u003ca href=\"#\" onclick=\"VEShell.App.get_passport().signIn(); return false;\"\u003eIniciar sesión\u003c/a\u003e","passportLogOnUrl":"https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=12&ct=1453978325&rver=6.1.6206.0&wp=MBI&wreply=http:%2F%2Fwww.bing.com%2Fpassport.aspx%3Frequrl%3Dhttp%253a%252f%252fwww.bing.com%252fmaps%252fConfirmSignIn.aspx&lc=3082&id=264960","passportSignedIn":false,"plainTitle":"Mapas","primarySerializationSeparators":",|,~","productName":"Bing Mapas","revIPLocation":{"Latitude":40.4255,"Longitude":-3.6839},"saveThisLocationText":"Guardar esta ubicación","scheme":"http","scriptDomain":"http://sc1.maps.live.com/","secondarySerializationSeparators":",,_","serviceAppServerUrl":"http://sc1.maps.live.com","shareProxyFormatRelativeUrl":"shareproxy.ashx?p={0}&t={1}&u={2}","staticContentAppServerUrl":"http://sc1.maps.live.com/","streetsideOverlayMercatorTileUriFormat":"http://ak.dynamic.t{subdomain}.tiles.virtualearth.net/comp/ch/{quadkey}?it=Z,HC&og=113","styleDomain":"http://sc1.maps.live.com/","surfLookupUrl":"http://{0}/customerfeedback/surf/entity/{1}","surfSubmitUrl":"http://{0}/customerfeedback/queue/full/surf?ft=Maps.{1}&src={2}&id={3}&cm={4}&ct={5}","tfeUrl":"http://www.bing.com/maps/GetMap.ashx","transitCollinsBartTileServer":"http://ecn.t{subdomain}.tiles.virtualearth.net/tiles/pt{quadkey}.png?g=4906&n=z&productSet=mmCB","transitNavteqTileServer":"http://ecn.t{subdomain}.tiles.virtualearth.net/tiles/pt{quadkey}.png?g=4906&n=z&productSet=mmNT","transitPOIMaxLat":60,"transitPOIMaxLon":2.5,"transitPOIMinLat":49,"transitPOIMinLon":-8,"transitPOIMinZoom":13,"twitterFormatUrl":"?url={0}&text={1}{2}&related=BingMaps,Bing&count=none","twitterUrl":"http://www.twitter.com/","uploadApplicationDomain":"http://upload.maps.bing.com/","useCachedAds":true,"useFrontDoorHydration":false,"useFrontDoorRail":false,"useSilverlightForStreetside":false,"useV2BingClientAPI":false,"useWhere1BoundingBox":false,"userFirstName":"","userRegion":"ES","venueMapCountryNameServiceUrl":"http://dev.virtualearth.net/REST/v1/JsonFilter/VenueMaps/datacountryregion/countryregion?jsonp=loadCountryNamesForLocaleCallback&culture={culture}&key={credentials}","venueMapLandingPageJSUrl":"http://venuemaps.virtualearth.net/venues/all.js","venueMapVenueTypeServiceUrl":"http://dev.virtualearth.net/REST/v1/JsonFilter/VenueMaps/datavenue/types?jsonp=loadVenueTypesForLocaleCallback&culture={culture}&key={credentials}","where1BoundingBox":null}, null, null);
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.VenueMapSettings, {"environment":"default","lsvFormCode":"LLVNMP","socialWidgetAppId":"34BCFE49F0A166C7E5E679230858F48FCCDEAB9B","socialWidgetUrl":"http://www.bing.com/social/socialwidget/fuse-montage-twitter-widget-v1.htm?appid={0}&query=from%3a{1}&title={2}&autorefresh={3}"}, null, null);
+});
+Sys.Application.add_init(function() {
+    $create(VEShell.HyperExtenderManager, null, null, null);
+});
+Sys.Application.add_init(function() {
+    $create(nStuff.UpdateHistory, {"options":{ dataID: 'backButton', initialEntry: null, postbackID: 'backButton'}}, null, null);
+});
+}//]]></script>
+</form>
+
+		
+		<div id="VE_MessageControl"><div id="VE_MessageControl_message">Espera un momento...</div></div>
+
+		<div id="recalllist" class="recalllist">
+			<div class="pl_shadow">
+				<ul id="savedLocations" class="pl_dropDown"></ul>
+            </div>
+		</div>
+
+		
+		<div id = "logging"></div>
+
+		
+		
+
+		
+		<script type="text/javascript" x="FA75D3C5">//<![CDATA[
+
+		    window.pageViewId = 'E394A139BACA476FACF04F80DB3ACAC4';
+			VEBootstrap.Go();
+		//]]></script>
+		
+		
+	</body>
+	
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--MultiWiiWinGUI, Version 2.3.5096.35312-->
+<!--MultiWii mission-->
+<!--MultiWii FC software revision 2.3dev-->
+<MISSION>
+    <VERSION value="2.3 pre5" />
+    <MISSIONITEM no="1" action="WAYPOINT" parameter="0" lat="47.4022889" lon="19.0704900" alt="25" />
+    <MISSIONITEM no="2" action="WAYPOINT" parameter="0" lat="47.4027936" lon="19.0721959" alt="25" />
+    <MISSIONITEM no="3" action="WAYPOINT" parameter="0" lat="47.4026229" lon="19.0728933" alt="25" />
+    <MISSIONITEM no="4" action="WAYPOINT" parameter="0" lat="47.4020311" lon="19.0735745" alt="25" />
+    <MISSIONITEM no="5" action="WAYPOINT" parameter="0" lat="47.4020311" lon="19.0735745" alt="25" />
+    <MISSIONITEM no="6" action="WAYPOINT" parameter="0" lat="47.4016861" lon="19.0739501" alt="25" />
+    <MISSIONITEM no="7" action="WAYPOINT" parameter="0" lat="47.4013339" lon="19.0735906" alt="25" />
+    <MISSIONITEM no="8" action="WAYPOINT" parameter="0" lat="47.4011814" lon="19.0729040" alt="25" />
+    <MISSIONITEM no="9" action="WAYPOINT" parameter="0" lat="47.4010979" lon="19.0720296" alt="25" />
+    <MISSIONITEM no="10" action="WAYPOINT" parameter="0" lat="47.4011851" lon="19.0714395" alt="25" />
+    <MISSIONITEM no="11" action="WAYPOINT" parameter="0" lat="47.4014356" lon="19.0707099" alt="25" />
+    <MISSIONITEM no="12" action="WAYPOINT" parameter="0" lat="47.4018386" lon="19.0704203" alt="25" />
+    <MISSIONITEM no="13" action="WAYPOINT" parameter="0" lat="47.4020057" lon="19.0710586" alt="25" />
+    <MISSIONITEM no="14" action="WAYPOINT" parameter="0" lat="47.4021146" lon="19.0716916" alt="25" />
+    <MISSIONITEM no="15" action="WAYPOINT" parameter="0" lat="47.4021545" lon="19.0724105" alt="25" />
+    <MISSIONITEM no="16" action="WAYPOINT" parameter="0" lat="47.4019802" lon="19.0728450" alt="25" />
+    <MISSIONITEM no="17" action="WAYPOINT" parameter="0" lat="47.4018386" lon="19.0732259" alt="25" />
+    <MISSIONITEM no="18" action="WAYPOINT" parameter="0" lat="47.4015808" lon="19.0731239" alt="25" />
+    <MISSIONITEM no="19" action="WAYPOINT" parameter="0" lat="47.4014429" lon="19.0722603" alt="25" />
+    <MISSIONITEM no="20" action="WAYPOINT" parameter="0" lat="47.4014356" lon="19.0717828" alt="25" />
+    <MISSIONITEM no="21" action="WAYPOINT" parameter="0" lat="47.4015954" lon="19.0712464" alt="25" />
+    <MISSIONITEM no="22" action="WAYPOINT" parameter="0" lat="47.4018314" lon="19.0712678" alt="25" />
+    <MISSIONITEM no="23" action="WAYPOINT" parameter="0" lat="47.4019476" lon="19.0719062" alt="25" />
+    <MISSIONITEM no="24" action="WAYPOINT" parameter="0" lat="47.4018895" lon="19.0724051" alt="25" />
+</MISSION>
