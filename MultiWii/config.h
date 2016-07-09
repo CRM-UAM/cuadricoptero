@@ -77,7 +77,7 @@
 
   /***************************    Internal i2c Pullups   ********************************/
     /* enable internal I2C pull ups (in most cases it is better to use external pullups) */
-    //#define INTERNAL_I2C_PULLUPS
+    #define INTERNAL_I2C_PULLUPS
 
   /**********************************  constant loop time  ******************************/
     #define LOOP_TIME 2800
@@ -91,7 +91,7 @@
          please submit any correction to this list.
            Note from Alex: I only own some boards, for other boards, I'm not sure, the info was gathered via rc forums, be cautious */
       //#define FFIMUv1         // first 9DOF+baro board from Jussi, with HMC5843                   <- confirmed by Alex
-      //#define FFIMUv2         // second version of 9DOF+baro board from Jussi, with HMC5883       <- confirmed by Alex
+      #define FFIMUv2         // second version of 9DOF+baro board from Jussi, with HMC5883       <- confirmed by Alex
       //#define FREEIMUv1       // v0.1 & v0.2 & v0.3 version of 9DOF board from Fabio
       //#define FREEIMUv03      // FreeIMU v0.3 and v0.3.1
       //#define FREEIMUv035     // FreeIMU v0.3.5 no baro
@@ -151,7 +151,7 @@
       //#define MEGAWAP_V2_STD     // available here: http://www.multircshop.com                    <- confirmed by Alex
       //#define MEGAWAP_V2_ADV
       //#define HK_MultiWii_SE_V2  // Hobbyking board with MPU6050 + HMC5883L + BMP085
-      #define HK_MultiWii_328P   // Also labeled "Hobbybro" on the back.  ITG3205 + BMA180 + BMP085 + NMC5583L + DSM2 Connector (Spektrum Satellite)  
+      //#define HK_MultiWii_328P   // Also labeled "Hobbybro" on the back.  ITG3205 + BMA180 + BMP085 + NMC5583L + DSM2 Connector (Spektrum Satellite)  
       //#define RCNet_FC           // RCNet FC with MPU6050 and MS561101BA  http://www.rcnet.com
       //#define RCNet_FC_GPS       // RCNet FC with MPU6050 + MS561101BA + HMC5883L + UBLOX GPS http://www.rcnet.com
       //#define FLYDU_ULTRA        // MEGA+10DOF+MT3339 FC
@@ -582,7 +582,7 @@ At this moment you can use this function only with WinGUI 2.3 release. MultiWiiC
   /************************        AP FlightMode        **********************************/
   /*** FUNCTIONALITY TEMPORARY REMOVED ***/
     /* Temporarily Disables GPS_HOLD_MODE to be able to make it possible to adjust the Hold-position when moving the sticks.*/
-    //#define AP_MODE 40  // Create a deadspan for GPS.
+    #define AP_MODE 40  // Create a deadspan for GPS.
         
   /************************   Assisted AcroTrainer    ************************************/
     /* Train Acro with auto recovery. Value set the point where ANGLE_MODE takes over.
@@ -671,7 +671,7 @@ At this moment you can use this function only with WinGUI 2.3 release. MultiWiiC
                                    // note: Now a GPS can share MSP on the same port. The only constrain is to not use it simultaneously, and use the same port speed.
 
     // avoid using 115200 baud because with 16MHz arduino the 115200 baudrate have more than 2% speed error (57600 have 0.8% error)
-    #define GPS_BAUD   4800       // GPS_BAUD will override SERIALx_COM_SPEED for the selected port
+    #define GPS_BAUD   57600       // GPS_BAUD will override SERIALx_COM_SPEED for the selected port
 
    /* GPS protocol 
        NMEA  - Standard NMEA protocol GGA, GSA and RMC  sentences are needed
@@ -963,7 +963,7 @@ Also note, that maqgnetic declination changes with time, so recheck your value e
 
     /* defines the neutral zone of throttle stick during altitude hold, default setting is
        +/-50 uncommend and change the value below if you want to change it. */
-    #define ALT_HOLD_THROTTLE_NEUTRAL_ZONE    50 // Maybe set to 100
+    #define ALT_HOLD_THROTTLE_NEUTRAL_ZONE    100
     //#define ALT_HOLD_THROTTLE_MIDPOINT        1500  // in us    - if uncommented, this value is used in ALT_HOLD for throttle stick middle point instead of initialThrottleHold parameter.
 
 
