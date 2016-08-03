@@ -723,14 +723,14 @@ At this moment you can use this function only with WinGUI 2.3 release. MultiWiiC
 Convert the degree+minutes into decimal degree by ==> degree+minutes*(1/60)
 Note the sign on declination it could be negative or positive (WEST or EAST)
 Also note, that maqgnetic declination changes with time, so recheck your value every 3-6 months */
-#define MAG_DECLINATION  4.02f   //(**)
+#define MAG_DECLINATION  -0.8167f   // madrid, 3 de agosto 2016
 
 // Adds a forward predictive filterig to compensate gps lag. Code based on Jason Short's lead filter implementation
 #define GPS_LEAD_FILTER               //(**)
 
 // add a 5 element moving average filter to GPS coordinates, helps eliminate gps noise but adds latency comment out to disable
 // use it with NMEA gps only 
-//#define GPS_FILTERING                 //(**)
+#define GPS_FILTERING                 //(**)
 
 // if we are within this distance to a waypoint then we consider it reached (distance is in cm)
 #define GPS_WP_RADIUS              100      //(**)
