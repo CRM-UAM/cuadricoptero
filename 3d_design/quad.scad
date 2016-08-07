@@ -20,34 +20,52 @@ module arm(angle=0, length=120) {
 }
 
 module all_arms(N=4) {
-    for (i = [1:N]) arm(angle=45+i*360/N);
+    for(i=[1:N]) arm(angle=45+i*360/N);
 }
+
+middle_sphere_diameter=90;
+middle_length=110;
+middle_side_len=35;
+middle_corner_radius=5;
 
 module quad_body() {
     union() {
         all_arms();
-        sphere(r=90/2, h=10, center=true);
+        sphere(r=middle_sphere_diameter/2);
+        translate([0,0,-middle_sphere_diameter/2+middle_side_len/2+middle_corner_radius]) {
+            hull() {
+                translate([middle_length/2,middle_side_len/2,middle_side_len/2]) sphere(r=middle_corner_radius);
+                translate([middle_length/2,middle_side_len/2,-middle_side_len/2]) sphere(r=middle_corner_radius);
+                translate([middle_length/2,-middle_side_len/2,middle_side_len/2]) sphere(r=middle_corner_radius);
+                translate([middle_length/2,-middle_side_len/2,-middle_side_len/2]) sphere(r=middle_corner_radius);
+                
+                translate([-middle_length/2,middle_side_len/2,middle_side_len/2]) sphere(r=middle_corner_radius);
+                translate([-middle_length/2,middle_side_len/2,-middle_side_len/2]) sphere(r=middle_corner_radius);
+                translate([-middle_length/2,-middle_side_len/2,middle_side_len/2]) sphere(r=middle_corner_radius);
+                translate([-middle_length/2,-middle_side_len/2,-middle_side_len/2]) sphere(r=middle_corner_radius);
+            }
+        }
     }
 }
 
 %quad_body();
-translate([0,0,-8]) arduino();
-translate([10,0,-40]) battery();
+translate([-3,0,-1]) arduino();
+translate([0,0,-middle_sphere_diameter/2+middle_side_len/2+middle_corner_radius]) battery();
 
-translate([-60,0,-30]) rotate([0,0,180]) camera();
+translate([-70,0,-20]) rotate([0,0,180]) camera();
 
 translate([0,0,36]) rotate([0,0,-90]) gps();
 translate([0,0,33]) IMU();
-translate([-10,-14,12]) video_tx();
-translate([-18,20,12]) rotate([0,0,180]) radio_rx();
+translate([50,0,10]) rotate([0,0,0]) video_tx();
+translate([14,17,36]) rotate([0,0,180]) rotate([0,90,0]) radio_rx_without_case();
 
-
+translate([0,-20,-20]) rotate([0,180,0]) ultrasound();
+translate([0,20,-20]) rotate([0,180,0]) rotate([0,0,180]) ultrasound();
 
 // From: https://github.com/Obijuan/printbot_part_library/tree/master/sensors/ultrasound
 module ultrasound() {
     color("darkgray")
-    translate([0,ultrasound_posY,0])
-        translate([0,-4.5,14]) rotate([90,0,0]) import("libs/BAT-ultrasonic.stl");
+        translate([0,-4.5,0]) rotate([90,0,0]) import("libs/BAT-ultrasonic.stl");
 }
 
 // From: https://github.com/bq/zum/tree/master/zum-bt328/stl
@@ -67,22 +85,29 @@ module battery() {
 }
 
 module radio_rx() {
-    translate([-43+4,-15/4,-4]) {
-        translate([-10,9,6]) rotate([0,90,0]) cylinder(r=10/2,h=10);
-        cube([43,15,23]);
-        translate([43-4,15/4,23]) cylinder(r=2/2,h=28);
-        translate([43,15/4,4]) rotate([0,90,0]) cylinder(r=2/2,h=28);
+    translate([-4,-10,-4.5]) %cube([43,14,23]);
+    radio_rx_without_case();
+}
+
+module radio_rx_without_case() {
+    translate([-2,-1,-2.5]) {
+        cube([30,3,17.5]);
+        translate([30-7,-5,0]) cube([7,5,2]);
     }
+    translate([0,0,17.5-2.5]) cylinder(r=1.5/2,h=29);
+    translate([-2,0,0]) rotate([0,-90,0]) cylinder(r=1.5/2,h=30);
 }
 
 module video_tx() {
-    translate([-5,10,3]) cube([5,10,5]);
-    cube([30,21,9]);
-    translate([30,14,9/2]) {
-        rotate([0,90,0]) cylinder(r=10/2,h=21);
-        translate([21-3,0,0]) {
-            cylinder(r=4/2,h=51);
-            translate([0,0,51]) cylinder(r1=40/2,r2=30/2,h=18);
+    translate([-30-21+3,-14,0]) {
+        translate([-5,10,3]) cube([5,10,5]);
+        cube([30,21,9]);
+        translate([30,14,9/2]) {
+            rotate([0,90,0]) cylinder(r=10/2,h=21);
+            translate([21-3,0,0]) {
+                cylinder(r=4/2,h=51);
+                translate([0,0,51]) cylinder(r1=40/2,r2=30/2,h=18);
+            }
         }
     }
 }
