@@ -48,15 +48,23 @@ module quad_body() {
     }
 }
 
+module quad_body_lowerHalf() {
+        difference() {
+            quad_body();
+            translate([-1000/2,-1000/2,-0.1]) cube([1000,1000,1000]);
+        }
+}
+
+//!rotate([180,0,0]) quad_body_lowerHalf(); // uncomment to select print mode
 %quad_body();
-translate([-3,0,-1]) arduino();
+translate([-3,0,2]) arduino();
 translate([0,0,-middle_sphere_diameter/2+middle_side_len/2+middle_corner_radius]) battery();
 
 translate([-70,0,-20]) rotate([0,0,180]) camera();
 
 translate([0,0,36]) rotate([0,0,-90]) gps();
 translate([0,0,33]) IMU();
-translate([50,0,10]) rotate([0,0,0]) video_tx();
+translate([53,0,14]) rotate([0,0,0]) video_tx();
 translate([14,17,36]) rotate([0,0,180]) rotate([0,90,0]) radio_rx_without_case();
 
 translate([0,-20,-20]) rotate([0,180,0]) ultrasound();
@@ -123,9 +131,9 @@ module gps() {
 module IMU() {
     translate([-20/2,-15.5/2,-10]) {
         cube([10,3,12]);
-        translate([0,0,1]) cube([20,15.5,2]); // MPU6050 gyro+acc
+        translate([0,0,1]) cube([11,13,2]); // BMP180 barometer
         translate([0,0,5]) cube([13,15,2]); // HMC5883L magnetometer
-        translate([0,0,9]) cube([11,13,2]); // BMP180 barometer
+        translate([0,0,9]) cube([20,15.5,2]); // MPU6050 gyro+acc
     }
 }
 
