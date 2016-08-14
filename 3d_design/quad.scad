@@ -1,9 +1,9 @@
 
 // Increase the resolution of default shapes
-//$fa = 5; // Minimum angle for fragments [degrees]
-//$fs = 0.5; // Minimum fragment size [mm]
-$fa = 15; // Minimum angle for fragments [degrees]
-$fs = 2; // Minimum fragment size [mm]
+$fa = 5; // Minimum angle for fragments [degrees]
+$fs = 0.5; // Minimum fragment size [mm]
+//$fa = 15; // Minimum angle for fragments [degrees]
+//$fs = 2; // Minimum fragment size [mm]
 
 module propeller(holes=false) { // the position is relative to each motor's axis
     if(holes) {
@@ -17,13 +17,13 @@ module propeller(holes=false) { // the position is relative to each motor's axis
     } else {
         cylinder(r=27/2, h=15); // motor
         translate([0,0,15]) cylinder(r=14/2, h=19); // shaft
-        *translate([0,0,15+3]) cylinder(r=155/2, h=10); // propeller
+        translate([0,0,15+3]) cylinder(r=155/2, h=10); // propeller
     }
 }
 
 module esc_motor_driver(holes=false) { // the position is relative to each motor's axis
     rotate([0,0,180]) translate([30,0,0]) if(holes) {
-        translate([0,-10,-11]) cube([45,20,11]); // hole for ESC
+        translate([-5,-10,-11]) cube([45,20,11]); // hole for ESC
         translate([-20,-4.5,-5]) {// hole for ESC wires
             cube([50,9,5]);
             cube([10,9,15]);
@@ -60,21 +60,20 @@ middle_side_len=35;
 middle_corner_radius=5;
 
 module quad_body_noHoles() {
-    union() {
-        all_arms();
-        sphere(r=middle_sphere_diameter/2);
-        translate([0,0,-middle_sphere_diameter/2+middle_side_len/2+middle_corner_radius]) {
-            hull() {
-                translate([middle_length/2,middle_side_len/2,middle_side_len/2]) sphere(r=middle_corner_radius);
-                translate([middle_length/2,middle_side_len/2,-middle_side_len/2]) sphere(r=middle_corner_radius);
-                translate([middle_length/2,-middle_side_len/2,middle_side_len/2]) sphere(r=middle_corner_radius);
-                translate([middle_length/2,-middle_side_len/2,-middle_side_len/2]) sphere(r=middle_corner_radius);
-                
-                translate([-middle_length/2,middle_side_len/2,middle_side_len/2]) sphere(r=middle_corner_radius);
-                translate([-middle_length/2,middle_side_len/2,-middle_side_len/2]) sphere(r=middle_corner_radius);
-                translate([-middle_length/2,-middle_side_len/2,middle_side_len/2]) sphere(r=middle_corner_radius);
-                translate([-middle_length/2,-middle_side_len/2,-middle_side_len/2]) sphere(r=middle_corner_radius);
-            }
+    all_arms();
+    sphere(r=middle_sphere_diameter/2);
+    // battery support
+    translate([0,0,-middle_sphere_diameter/2+middle_side_len/2+middle_corner_radius]) {
+        hull() {
+            translate([middle_length/2,middle_side_len/2,middle_side_len/2]) sphere(r=middle_corner_radius);
+            translate([middle_length/2,middle_side_len/2,-middle_side_len/2]) sphere(r=middle_corner_radius);
+            translate([middle_length/2,-middle_side_len/2,middle_side_len/2]) sphere(r=middle_corner_radius);
+            translate([middle_length/2,-middle_side_len/2,-middle_side_len/2]) sphere(r=middle_corner_radius);
+            
+            translate([-middle_length/2,middle_side_len/2,middle_side_len/2]) sphere(r=middle_corner_radius);
+            translate([-middle_length/2,middle_side_len/2,-middle_side_len/2]) sphere(r=middle_corner_radius);
+            translate([-middle_length/2,-middle_side_len/2,middle_side_len/2]) sphere(r=middle_corner_radius);
+            translate([-middle_length/2,-middle_side_len/2,-middle_side_len/2]) sphere(r=middle_corner_radius);
         }
     }
 }
@@ -83,8 +82,8 @@ module quad_body(cut=0) {
     difference() {
         quad_body_noHoles();
         vitamins(holes=true);
-        if(cut==1) translate([-1000/2,-1000/2,-0.1]) cube([1000,1000,1000]);
-        if(cut==2) translate([-1000/2,-1000/2,-1000+0.1]) cube([1000,1000,1000]);
+        if(cut==1) translate([0,0,-0.2]) cylinder(r=500/2,h=100);
+        if(cut==2) translate([0,0,0.2]) rotate([180,0,0]) cylinder(r=500/2,h=100);
     }
     %vitamins();
 }
@@ -103,17 +102,41 @@ module vitamins(holes=false) {
     translate([53,0,14]) rotate([0,0,0]) video_tx(holes);
     translate([14,17,36]) rotate([0,0,180]) rotate([0,90,0]) radio_rx_without_case(holes);
 
-    translate([0,-20,-20]) rotate([0,180,0]) ultrasound(holes);
-    translate([0,20,-20]) rotate([0,180,0]) rotate([0,0,180]) ultrasound(holes);
+    translate([0,-19,-19]) rotate([0,180,0]) ultrasound(holes);
+    translate([0,19,-19]) rotate([0,180,0]) rotate([0,0,180]) ultrasound(holes);
 }
 
 // From: https://github.com/Obijuan/printbot_part_library/tree/master/sensors/ultrasound
-module ultrasound(holes=false) {
+module ultrasound(holes=false, slot=19) {
+    translate([0,-4.5,0]) rotate([90,0,0])
     if(holes) {
-        
+        difference() { // flush hole top
+            union() {
+                translate([14,0,0]) { // hole for emmiter
+                    hull() {
+                        cylinder(r=17/2,h=14);
+                        translate([0,-slot-7,0]) cylinder(r=17/2,h=14);
+                    }
+                    translate([0,0,13.5]) cylinder(r1=17/2,r2=70/2,h=50);
+                }
+                translate([-14,0,0]) { // hole for receiver
+                    hull() {
+                        cylinder(r=17/2,h=14);
+                        translate([0,-slot-7,0]) cylinder(r=17/2,h=14);
+                    }
+                    translate([0,0,13.5]) cylinder(r1=17/2,r2=70/2,h=50);
+                }
+                hull() { // hole for the PCB
+                    translate([-18,0,-3]) cylinder(r=20/2,h=5);
+                    translate([18,0,-3]) cylinder(r=20/2,h=5);
+                    translate([-18,-slot,-3]) cylinder(r=20/2,h=5);
+                    translate([18,-slot,-3]) cylinder(r=20/2,h=5);
+                }
+            }
+            translate([-100/2,-100-slot,-100/2]) cube([100,100,100]);
+        }
     } else {
-        translate([0,-4.5,0])
-            rotate([90,0,0]) import("libs/BAT-ultrasonic.stl");
+        import("libs/BAT-ultrasonic.stl");
     }
 }
 
