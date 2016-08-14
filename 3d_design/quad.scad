@@ -1,9 +1,10 @@
 
 // Increase the resolution of default shapes
 $fa = 5; // Minimum angle for fragments [degrees]
-$fs = 0.5; // Minimum fragment size [mm]
-//$fa = 15; // Minimum angle for fragments [degrees]
-//$fs = 2; // Minimum fragment size [mm]
+$fs = 1; // Minimum fragment size [mm]
+
+N_arms = 4;
+arm_length = 120;
 
 module propeller(holes=false) { // the position is relative to each motor's axis
     if(holes) {
@@ -13,11 +14,11 @@ module propeller(holes=false) { // the position is relative to each motor's axis
             hull() for(j=[7.5,10]) translate([j,0,-7]) rotate([180,0,0]) cylinder(r=5/2, h=20);
         }
         // hole for the motor
-        cylinder(r=29/2, h=15);
+        cylinder(r=31/2, h=15);
     } else {
         cylinder(r=27/2, h=15); // motor
         translate([0,0,15]) cylinder(r=14/2, h=19); // shaft
-        translate([0,0,15+3]) cylinder(r=155/2, h=10); // propeller
+        *translate([0,0,15+3]) cylinder(r=155/2, h=10); // propeller
     }
 }
 
@@ -28,18 +29,23 @@ module esc_motor_driver(holes=false) { // the position is relative to each motor
             cube([50,9,5]);
             cube([10,9,15]);
         }
+        // hole for the zip-tie on each arm
+        translate([0,0,-5]) rotate([0,90,0]) difference() {
+            cylinder(r=25/2+3, h=5, center=true);
+            cylinder(r=25/2, h=6, center=true);
+        }
     } else {
         translate([6,-9,-10]) cube([34,18,8]);
     }
 }
 
-module arm(angle=0, length=120) {
+module arm(angle=0) {
     rotate([0,0,angle]) {
-        translate([length,0,0]) {
+        translate([arm_length,0,0]) {
             difference() {
                 translate([0,0,-5]) hull() {
                     cylinder(r=27/2, h=10, center=true);
-                    translate([-length,0,0]) sphere(r=50/2, h=10, center=true);
+                    translate([-arm_length,0,0]) sphere(r=50/2, h=10, center=true);
                 }
                 propeller(holes=true);
                 esc_motor_driver(holes=true);
@@ -50,8 +56,8 @@ module arm(angle=0, length=120) {
     }
 }
 
-module all_arms(N=4) {
-    for(i=[1:N]) arm(angle=45+i*360/N);
+module all_arms() {
+    for(i=[1:N_arms]) arm(angle=45+i*360/N_arms);
 }
 
 middle_sphere_diameter=90;
@@ -81,6 +87,7 @@ module quad_body_noHoles() {
 module quad_body(cut=0) {
     difference() {
         quad_body_noHoles();
+        additional_holes();
         vitamins(holes=true);
         if(cut==1) translate([0,0,-0.2]) cylinder(r=500/2,h=100);
         if(cut==2) translate([0,0,0.2]) rotate([180,0,0]) cylinder(r=500/2,h=100);
@@ -88,8 +95,44 @@ module quad_body(cut=0) {
     %vitamins();
 }
 
-//!rotate([180,0,0]) quad_body_lowerHalf(); // uncomment to select print mode
-quad_body(cut=1);
+// Uncomment the option that you wish to render
+//quad_body(); // full quadcopter (assembled)
+quad_body(cut=1); // lower half
+//rotate([180,0,0]) quad_body(cut=1); // lower half (flipped for 3D printing)
+//quad_body(cut=2); // upper half
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+module additional_holes() {
+    difference() {
+        union() {
+            sphere(r=middle_sphere_diameter/2-5);
+            for(i=[1:N_arms]) rotate([0,0,45+i*360/N_arms]) hull() {
+                sphere(r=40/2);
+                translate([arm_length/1.5,0,0]) sphere(r=5/2);
+            }
+        }
+        // flush bottom
+        translate([-100/2,-100/2,-50]) cube([100,100,50]);
+    }
+}
 
 module vitamins(holes=false) {
     translate([-3,0,2]) arduino(holes);
@@ -135,21 +178,37 @@ module ultrasound(holes=false, slot=19) {
             }
             translate([-100/2,-100-slot,-100/2]) cube([100,100,100]);
         }
-    } else {
-        import("libs/BAT-ultrasonic.stl");
-    }
+    } else import("libs/BAT-ultrasonic.stl");
 }
 
 // From: https://github.com/bq/zum/tree/master/zum-bt328/stl
+module arduino_itself() {
+    translate([34.5,26.5,1.6])
+        rotate([0,0,180])
+            import("libs/zum_bt_328.stl");
+}
+
 module arduino(holes=false, hole_len=4) {
     if(holes) {
+        // main hole for the board
+        translate([0,0,-2]) linear_extrude(height=4) offset(r=1) projection() hull() arduino_itself();
+        difference() {
+            minkowski() {
+                hull() arduino_itself();
+                sphere(r=1); // add 1mm offset around the shape of the arduino board
+            }
+            // flush bottom
+            translate([-100/2,-100/2,-50]) cube([100,100,50]);
+        }
+        
+        // screws
         screw_diam = 3;
         translate([19.25,-24.25,0]) cylinder(r=screw_diam/2, h=hole_len*5, center=true);
         translate([20.5,24,0]) cylinder(r=screw_diam/2, h=hole_len*5, center=true);
         translate([-31.5,19,0]) cylinder(r=screw_diam/2, h=hole_len*5, center=true);
         translate([-31.5,-9,0]) cylinder(r=screw_diam/2, h=hole_len*5, center=true);
         for(i=[-1,1]) for(j=[-1,1]) translate([10*i,10*j,0]) cylinder(r=screw_diam/2, h=hole_len*5, center=true);
-    } else translate([34.5,26.5,1.6]) rotate([0,0,180]) import("libs/zum_bt_328.stl");
+    } else arduino_itself();
 }
 
 module battery(holes=false) {
