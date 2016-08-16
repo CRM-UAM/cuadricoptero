@@ -1,7 +1,7 @@
 
-// Increase the resolution of default shapes
-$fa = 5; // Minimum angle for fragments [degrees]
-$fs = 1; // Minimum fragment size [mm]
+// Uncomment the following to increase the resolution
+//$fa = 5; // Minimum angle for fragments [degrees]
+//$fs = 1; // Minimum fragment size [mm]
 
 N_arms = 4;
 arm_length = 120;
@@ -11,14 +11,14 @@ module propeller(holes=false) { // the position is relative to each motor's axis
         // x4 screw holes for each motor
         for(i=[1:4]) rotate([0,0,360*i/4+45]) {
             hull() for(j=[7.5,10]) translate([j,0,0]) cylinder(r=3.5/2, h=40, center=true);
-            hull() for(j=[7.5,10]) translate([j,0,-7]) rotate([180,0,0]) cylinder(r=5/2, h=20);
+            hull() for(j=[7.5,10]) translate([j,0,-7]) rotate([180,0,0]) cylinder(r=6.5/2, h=20);
         }
         // hole for the motor
         cylinder(r=31/2, h=15);
     } else {
         cylinder(r=27/2, h=15); // motor
         translate([0,0,15]) cylinder(r=14/2, h=19); // shaft
-        *translate([0,0,15+3]) cylinder(r=155/2, h=10); // propeller
+        translate([0,0,15+3]) cylinder(r=155/2, h=10); // propeller
     }
 }
 
@@ -29,11 +29,9 @@ module esc_motor_driver(holes=false) { // the position is relative to each motor
             cube([50,9,5]);
             cube([10,9,15]);
         }
-        // hole for the zip-tie on each arm
-        translate([0,0,-5]) rotate([0,90,0]) difference() {
-            cylinder(r=25/2+3, h=5, center=true);
-            cylinder(r=25/2, h=6, center=true);
-        }
+        // holes for the zip-tie on each arm
+        translate([-9,8,0]) cube([5,2.5,100],center=true);
+        translate([-9,-8,0]) cube([5,2.5,100],center=true);
     } else {
         translate([6,-9,-10]) cube([34,18,8]);
     }
@@ -44,7 +42,7 @@ module arm(angle=0) {
         translate([arm_length,0,0]) {
             difference() {
                 translate([0,0,-5]) hull() {
-                    cylinder(r=27/2, h=10, center=true);
+                    cylinder(r=29/2, h=10, center=true);
                     translate([-arm_length,0,0]) sphere(r=50/2, h=10, center=true);
                 }
                 propeller(holes=true);
