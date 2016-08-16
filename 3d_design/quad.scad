@@ -119,9 +119,6 @@ quad_body(cut=1); // lower half
 
 
 
-
-
-
 module additional_holes() {
     difference() {
         union() {
@@ -177,6 +174,7 @@ module ultrasound(holes=false, slot=19) {
                     translate([-18,-slot,-3]) cylinder(r=20/2,h=5);
                     translate([18,-slot,-3]) cylinder(r=20/2,h=5);
                 }
+                translate([-12/2,-90,0]) cube([12,100,8]);
             }
             translate([-100/2,-100-slot,-100/2]) cube([100,100,100]);
         }
