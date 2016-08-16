@@ -1,5 +1,9 @@
+// 3D-printable quadcopter
+// Original author: Carlos Garcia Saura (@carlosgs)
+// License: CC-BY-SA 4.0 (Attribution-ShareAlike 4.0 International, http://creativecommons.org/licenses/by-sa/4.0/)
+// Designed with http://www.openscad.org/
 
-// Uncomment the following to increase the resolution
+// Uncomment to increase global shape resolution
 //$fa = 5; // Minimum angle for fragments [degrees]
 //$fs = 1; // Minimum fragment size [mm]
 
