@@ -4,8 +4,8 @@
 // Designed with http://www.openscad.org/
 
 // Uncomment to increase global shape resolution
-//$fa = 5; // Minimum angle for fragments [degrees]
-//$fs = 1; // Minimum fragment size [mm]
+$fa = 5; // Minimum angle for fragments [degrees]
+$fs = 1; // Minimum fragment size [mm]
 
 N_arms = 4;
 arm_length = 120;
@@ -22,7 +22,7 @@ module propeller(holes=false) { // the position is relative to each motor's axis
     } else {
         cylinder(r=27/2, h=15); // motor
         translate([0,0,15]) cylinder(r=14/2, h=19); // shaft
-        translate([0,0,15+3]) cylinder(r=155/2, h=10); // propeller
+        *translate([0,0,15+3]) cylinder(r=155/2, h=10); // propeller
     }
 }
 
@@ -94,30 +94,8 @@ module quad_body(cut=0) {
         if(cut==1) translate([0,0,-0.2]) cylinder(r=500/2,h=100);
         if(cut==2) translate([0,0,0.2]) rotate([180,0,0]) cylinder(r=500/2,h=100);
     }
-    %vitamins();
+    //%vitamins();
 }
-
-// Uncomment the option that you wish to render
-//quad_body(); // full quadcopter (assembled)
-quad_body(cut=1); // lower half
-//rotate([180,0,0]) quad_body(cut=1); // lower half (flipped for 3D printing)
-//quad_body(cut=2); // upper half
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 module additional_holes() {
     difference() {
@@ -154,14 +132,14 @@ module ultrasound(holes=false, slot=19) {
     if(holes) {
         difference() { // flush hole top
             union() {
-                translate([14,0,0]) { // hole for emmiter
+                translate([13.5,0,0]) { // hole for emmiter
                     hull() {
                         cylinder(r=17/2,h=14);
                         translate([0,-slot-7,0]) cylinder(r=17/2,h=14);
                     }
                     translate([0,0,13.5]) cylinder(r1=17/2,r2=70/2,h=50);
                 }
-                translate([-14,0,0]) { // hole for receiver
+                translate([-13.5,0,0]) { // hole for receiver
                     hull() {
                         cylinder(r=17/2,h=14);
                         translate([0,-slot-7,0]) cylinder(r=17/2,h=14);
@@ -214,12 +192,13 @@ module arduino(holes=false, hole_len=4) {
 module battery(holes=false) {
     if(holes) {
         // pocket to allow sliding-in the battery
-        translate([106/2,0,35/2]) cube([15,32,15],center=true);
-        translate([30/2-6.9+3,0,0]) cube([106+30,40,36],center=true);
+        translate([106/2,0,35/2]) cube([28,32,15],center=true);
+        translate([30/2-6.9+3,0,0]) cube([106+30,38,36],center=true);
         // hole for velcro strap
-        translate([106/2,0,35/2]) cube([4,25,200],center=true);
+        //translate([106/2,0,35/2]) cube([4,25,200],center=true);
     } else {
-        cube([106,37,35],center=true);
+        cube([105,35,33],center=true);
+        translate([106/2,0,35/2]) cube([20,31,10],center=true);
     }
 }
 
@@ -292,3 +271,13 @@ module camera(holes=false) {
         rotate([0,90,0]) cylinder(r=9,h=20);
     }
 }
+
+
+
+
+// Uncomment the option that you wish to render
+
+//quad_body(); // full quadcopter (assembled)
+quad_body(cut=1); // lower half
+//rotate([180,0,0]) quad_body(cut=1); // lower half (flipped for 3D printing)
+//quad_body(cut=2); // upper half
