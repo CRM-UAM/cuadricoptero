@@ -19,6 +19,8 @@ module propeller(holes=false) { // the position is relative to each motor's axis
         }
         // hole for the motor
         cylinder(r=31/2, h=15);
+        // hole for the motor shaft
+        translate([0,0,-2]) cylinder(r=7/2, h=3);
     } else {
         cylinder(r=27/2, h=15); // motor
         translate([0,0,15]) cylinder(r=14/2, h=19); // shaft
